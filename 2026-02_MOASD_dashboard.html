@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOASD — Clinic Health Report | February 2026</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231B2A4A'/><text x='16' y='22' text-anchor='middle' fill='%232dd4bf' font-size='18' font-weight='900'>O</text></svg>">
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.12.7/Recharts.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;line-height:1.6;color:#2D3748;background:linear-gradient(135deg,#f0f4f8,#e8ecf1);min-height:100vh}
+button{font-family:inherit;cursor:pointer}
+@media print{body{background:white}nav{position:static!important}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+var e=React.createElement,us=React.useState;
+var RC=Recharts;
+var NAVY="#1B2A4A",TEAL="#2C7A7B",SLATE="#4A5568",GREEN="#276749",GBG="#C6F6D5",RBG="#FED7D7",ABG="#FEF3C7";
+
+// ── Injected data ──────────────────────────────────────────────────────────
+var CLIENT_CODE="MOASD";
+var MONTH_LABEL="February 2026";
+var LOC_COUNT=2;
+var CO={"sc": 74.9, "del": 7.1, "cu": 67.5};
+var LOCS=[{"name": "La jolla", "score": 67, "sc": {"v": 88.2, "p": null}, "del": {"v": 8.2, "p": null}, "dm": 7.7, "cu": {"v": 45.6, "p": null}, "cm": 47.1, "tx": {"v": 0.4, "p": null}, "mpc": 13.0, "ia": {"v": 93.3, "p": 87.5}, "ppn": 3.7, "cpn": 3.5, "nu": {"v": 35.5, "p": 35.3}}, {"name": "MOASD", "score": 59, "sc": {"v": 72.8, "p": 42.8}, "del": {"v": 6.0, "p": 5.9}, "dm": 5.7, "cu": {"v": 69.3, "p": 67.0}, "cm": 72.6, "tx": {"v": 0.2, "p": 0.1}, "mpc": 17.7, "ia": {"v": 100.0, "p": null}, "ppn": 6.9, "cpn": 3.0, "nu": {"v": 55.2, "p": 55.5}}];
+var INS={"es": "MOASD delivered a performance score of 59 out of 100 (where 50 represents the network average) in February 2026, demonstrating solid operational fundamentals alongside a critical breakthrough in scheduling discipline. Scheduler Compliance surged from 42.8% in January to 72.8% in February—a 30-point improvement that now sits just 2.1 points below the company average of 74.86%—while the clinic maintained tight control on patient flow with an average delay of 6.0 minutes, below the company average of 7.11 minutes. Chair Utilization rose modestly from 67.0% in January to 69.3% in February, and iAssign Utilization reached 100.0%, indicating flawless adoption of our assignment protocol.", "hi": "MOASD achieved a 30-point month-over-month gain in Scheduler Compliance, rising from 42.8% in January to 72.8% in February, which now positions the clinic within 2.1 points of the company average of 74.86% and demonstrates strong operational discipline. iAssign Utilization stands at a perfect 100.0%, reflecting complete adherence to our assignment system and indicating that nurse-to-chair assignment efficiency may be operating at optimal levels. Average Delay of 6.0 minutes runs 1.1 minutes below the company average of 7.11 minutes, confirming that MOASD is delivering faster patient throughput and better appointment-to-treatment flow.", "ae": "We noticed that Treatments Past Closing rose from 0.1 in January to 0.2 in February—a small absolute number but worth monitoring as the clinic scales compliance improvements, as scheduling discipline gains may occasionally push treatments closer to end-of-day without careful buffer management. Chair Utilization, while healthy at 69.3%, sits 2.2 points below the company average of 67.46%, suggesting room to optimize patient volume or appointment density; we'd recommend reviewing whether current scheduling templates are capturing available capacity fully, especially given the strong compliance gains that have already been realized.", "rc": "The network's largest performance gap sits at La Jolla, where Chair Utilization stands at 45.6%—a 21.9-point deficit versus the company average of 67.46%—despite the clinic's strong Scheduler Compliance of 88.2% and iAssign Utilization of 93.3%. We recommend conducting a scheduling template audit at La Jolla to review appointment block sizing, patient throughput per chair, and idle time patterns; this concrete review may reveal capacity constraints in template design that are preventing the clinic from translating its discipline into higher asset utilization."};
+// ──────────────────────────────────────────────────────────────────────────
+
+function gbc(v,b,lo){if(b==null)return TEAL;if(lo){return v<=b?TEAL:v>b*1.15?"#E53E3E":"#DD6B20"}return v>=b?TEAL:v<b*0.85?"#E53E3E":"#DD6B20"}
+
+function Delta(p){
+  var c=p.c,pr=p.p,h=p.h!==false;
+  if(pr==null)return null;
+  var d=c-pr;
+  if(Math.abs(d)<0.05)return e("span",{style:{color:"#A0AEC0",fontSize:10,marginLeft:4}},"\u2192");
+  var g=h?d>0:d<0,a=d>0?"\u2191":"\u2193";
+  return e("span",{style:{color:g?GREEN:"#9B2335",fontSize:10,fontWeight:600,marginLeft:5}},
+    a+Math.abs(d).toFixed(1),
+    e("span",{style:{color:"#A0AEC0",fontSize:9,fontWeight:400,marginLeft:3}},"(was "+pr.toFixed(1)+")")
+  );
+}
+function SB(p){
+  var s=p.s,bg=s>=60?GBG:s<40?RBG:ABG,co=s>=60?GREEN:s<40?"#9B2335":"#92400E";
+  return e("span",{style:{display:"inline-block",fontSize:11,fontWeight:700,background:bg,color:co,padding:"2px 8px",borderRadius:5,marginLeft:6}},s);
+}
+function KC(p){
+  var v=p.v,b=p.b,h=p.h!==false,pr=p.p,su=p.su||"%",dc=p.dc||1;
+  if(v==null)return e("td",{style:{padding:"8px 14px",textAlign:"center",color:"#CBD5E0"}},"\u2014");
+  var bg="transparent",co=SLATE;
+  if(b!=null){var df=v-b,th=Math.abs(b)*0.05;if(Math.abs(df)<=th)bg="#EDF2F7";else if((df>0)===h){bg=GBG;co=GREEN}else{bg=RBG;co="#9B2335"}}
+  return e("td",{style:{padding:"8px 14px",textAlign:"center",fontWeight:600,background:bg,color:co,whiteSpace:"nowrap",borderBottom:"1px solid #E2E8F0"}},
+    v.toFixed(dc)+su," ",e(Delta,{c:v,p:pr,h:h}));
+}
+function RBC(p){
+  var data=p.data,bv=p.bv,bl=p.bl,title=p.title,yl=p.yl,lo=p.lo,su=p.su||"%";
+  if(!data||data.length===0)return e("div",{style:{padding:20,color:SLATE}},title+": no data");
+  var mx=Math.max.apply(null,data.map(function(d){return d.value||0}).concat([bv||0]))*1.22||10;
+  var rl=function(props){
+    var x=props.x,y=props.y,w=props.width,v=props.value;
+    return e("text",{x:x+w/2,y:y-8,textAnchor:"middle",fontSize:data.length>15?9:11,fontWeight:700,fill:"#2D3748"},
+      (typeof v==="number"?v.toFixed(1):v)+su);
+  };
+  var angle=data.length>10?-45:0;
+  var marginBottom=data.length>10?60:20;
+  return e("div",{style:{background:"#F7F8FA",border:"1px solid #E2E8F0",borderRadius:8,padding:"18px 14px 10px"}},
+    e("h4",{style:{fontSize:13,fontWeight:700,color:NAVY,marginBottom:16}},title),
+    e(RC.ResponsiveContainer,{width:"100%",height:300},
+      e(RC.BarChart,{data:data,margin:{top:24,right:20,bottom:marginBottom,left:10},barCategoryGap:"30%"},
+        e(RC.CartesianGrid,{vertical:false,stroke:"#EDF2F7",strokeWidth:0.8}),
+        e(RC.XAxis,{dataKey:"name",tick:{fontSize:data.length>15?8:10,fill:SLATE,fontWeight:500},angle:angle,textAnchor:data.length>10?"end":"middle",axisLine:{stroke:"#CBD5E0"},tickLine:{stroke:"#CBD5E0"},interval:0}),
+        e(RC.YAxis,{domain:[0,Math.ceil(mx/10)*10],tick:{fontSize:10,fill:"#718096"},axisLine:{stroke:"#CBD5E0"},tickLine:false,
+          label:{value:yl,angle:-90,position:"insideLeft",style:{fontSize:11,fill:SLATE},offset:-5}}),
+        bv!=null&&e(RC.ReferenceLine,{y:bv,stroke:NAVY,strokeDasharray:"6 3",strokeWidth:1.8,
+          label:{value:bl+" ("+bv.toFixed(1)+su+")",position:"insideTopRight",style:{fontSize:10,fill:NAVY,fontWeight:600}}}),
+        e(RC.Bar,{dataKey:"value",radius:[3,3,0,0],maxBarSize:60,isAnimationActive:false},
+          data.map(function(en,i){return e(RC.Cell,{key:i,fill:gbc(en.value,bv,lo),fillOpacity:0.88})}),
+          data.length<=20&&e(RC.LabelList,{content:rl})
+        )
+      )
+    )
+  );
+}
+
+function App(){
+  var st=us("overview"),tab=st[0],setTab=st[1];
+  var validLocs=LOCS.filter(function(l){return l.score!=null});
+  var avg=validLocs.length>0?Math.round(validLocs.reduce(function(s,l){return s+(l.score||50)},0)/validLocs.length):50;
+  var tb=function(id){return{padding:"8px 18px",borderRadius:8,fontSize:13,fontWeight:600,border:"none",transition:"all 0.2s",background:tab===id?NAVY:"transparent",color:tab===id?"white":SLATE}};
+  var st2={fontSize:12,fontWeight:700,color:NAVY,textTransform:"uppercase",letterSpacing:0.8,paddingBottom:10,marginBottom:14,borderBottom:"2px solid "+NAVY};
+
+  function locAvg(field,sub){
+    var vals=LOCS.map(function(l){return sub?l[field][sub]:l[field]}).filter(function(v){return v!=null&&!isNaN(v)});
+    return vals.length?vals.reduce(function(a,b){return a+b},0)/vals.length:null;
+  }
+  var avgDel=locAvg("del","v"),avgDelP=locAvg("del","p");
+  var avgTx=locAvg("tx","v"),avgTxP=locAvg("tx","p");
+  var avgSc=locAvg("sc","v"),avgScP=locAvg("sc","p");
+  var avgCu=locAvg("cu","v"),avgCuP=locAvg("cu","p");
+  function pctChange(curr,prev){
+    if(curr==null||prev==null||prev===0)return null;
+    return ((curr-prev)/Math.abs(prev)*100).toFixed(1);
+  }
+
+  // For large client sets (TNO=30), use top10 + bottom10 for charts
+  function chartData(field, sub, lowerBetter){
+    var d=LOCS.filter(function(l){return sub?l[field][sub]!=null:l[field]!=null})
+              .map(function(l){return{name:l.name,value:sub?l[field][sub]:l[field]}});
+    if(d.length>20){
+      var sorted=d.slice().sort(function(a,b){return lowerBetter?a.value-b.value:b.value-a.value});
+      return sorted.slice(0,10).concat(sorted.slice(-10))
+                   .filter(function(x,i,a){return a.findIndex(function(y){return y.name===x.name})===i});
+    }
+    return d;
+  }
+
+  return e("div",null,
+    e("nav",{style:{background:NAVY,color:"white",padding:"12px 0",position:"sticky",top:0,zIndex:50,boxShadow:"0 2px 12px rgba(0,0,0,.2)"}},
+      e("div",{style:{maxWidth:1200,margin:"0 auto",padding:"0 24px",display:"flex",alignItems:"center",justifyContent:"space-between"}},
+        e("div",{style:{display:"flex",alignItems:"center",gap:10}},
+          e("div",{style:{width:30,height:30,borderRadius:8,background:"linear-gradient(135deg,#2dd4bf,#14b8a6)",display:"flex",alignItems:"center",justifyContent:"center"}},
+            e("span",{style:{color:"white",fontWeight:900,fontSize:14}},"O")),
+          e("span",{style:{fontWeight:700,fontSize:16}},"OncoSmart"),
+          e("span",{style:{color:"#94a3b8",fontSize:13,marginLeft:4}},"Clinic Health Report")),
+        e("div",{style:{display:"flex",alignItems:"center",gap:14,fontSize:13}},
+          e("span",{style:{color:"#94a3b8"}},CLIENT_CODE),
+          e("span",{style:{background:TEAL,padding:"4px 12px",borderRadius:20,fontSize:11,fontWeight:600}},MONTH_LABEL)))),
+
+    e("div",{style:{maxWidth:1200,margin:"0 auto",padding:"32px 24px"}},
+
+      e("div",{style:{marginBottom:28}},
+        e("h1",{style:{fontSize:28,fontWeight:800,color:"#0f172a",letterSpacing:-0.5,margin:0}},CLIENT_CODE),
+        e("p",{style:{color:SLATE,marginTop:4,fontSize:13}},MONTH_LABEL+" \u00b7 Monthly Performance Summary")),
+
+      // SUMMARY CARDS
+      e("div",{style:{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:16,marginBottom:28}},
+        [
+          {l:"Locations",v:String(LOC_COUNT),s:"Active clinics"},
+          {l:"Avg Performance Score",v:String(avg),s:"Network avg: 50",g:avg>=50},
+          {l:"Company Avg Compliance",v:CO.sc!=null?(CO.sc.toFixed(1)+"%"):"—",s:"Scheduler compliance"},
+          {l:"Company Avg Delay",v:CO.del!=null?(CO.del.toFixed(1)+" min"):"—",s:"Patient wait time"}
+        ].map(function(c){
+          return e("div",{key:c.l,style:{background:"white",borderRadius:12,border:"1px solid #E2E8F0",padding:"20px 22px",boxShadow:"0 1px 4px rgba(0,0,0,.04)"}},
+            e("p",{style:{fontSize:10,fontWeight:700,textTransform:"uppercase",letterSpacing:1.2,color:"#94a3b8",margin:0}},c.l),
+            e("p",{style:{fontSize:30,fontWeight:800,letterSpacing:-1,margin:"4px 0 2px",color:c.g===false?"#9B2335":c.g===true?GREEN:"#0f172a"}},c.v),
+            e("p",{style:{fontSize:11,color:"#94a3b8",margin:0}},c.s))})),
+
+      // ONCOSMART KPI CARDS
+      e("div",{style:{marginBottom:28}},
+        e("div",{style:{textAlign:"center",marginBottom:20}},
+          e("p",{style:{fontSize:14,fontWeight:700,color:TEAL,textTransform:"uppercase",letterSpacing:1.5,margin:0}},"Change Since Prior Month (Company Average)")),
+        e("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}},
+          [
+            {title:"Treatment Delay",value:avgDel!=null?(avgDel.toFixed(1)+" min"):"—",color:"#38BDF8",pct:pctChange(avgDel,avgDelP),good:avgDel!=null&&avgDelP!=null&&avgDel<avgDelP},
+            {title:"Extended Hours",value:avgTx!=null?(avgTx.toFixed(2)+"/day"):"—",color:"#FB923C",pct:pctChange(avgTx,avgTxP),good:avgTx!=null&&avgTxP!=null&&avgTx<avgTxP},
+            {title:"Scheduler Compliance",value:avgSc!=null?(avgSc.toFixed(1)+"%"):"—",color:"#2DD4BF",pct:pctChange(avgSc,avgScP),good:avgSc!=null&&avgScP!=null&&avgSc>avgScP},
+            {title:"Chair Utilization",value:avgCu!=null?(avgCu.toFixed(1)+"%"):"—",color:"#C084FC",pct:pctChange(avgCu,avgCuP),good:avgCu!=null&&avgCuP!=null&&avgCu>avgCuP}
+          ].map(function(kpi){
+            var sign=kpi.pct!=null&&Number(kpi.pct)>0?"+":"";
+            return e("div",{key:kpi.title,style:{background:"white",borderRadius:12,overflow:"hidden",boxShadow:"0 2px 8px rgba(0,0,0,.06)",border:"1px solid #E2E8F0"}},
+              e("div",{style:{height:6,background:kpi.color}}),
+              e("div",{style:{padding:"20px 24px",textAlign:"center"}},
+                e("p",{style:{fontSize:14,fontWeight:600,color:"#475569",margin:"0 0 12px"}},kpi.title),
+                e("p",{style:{fontSize:32,fontWeight:800,color:kpi.color,margin:"0 0 6px",letterSpacing:-1}},kpi.value),
+                kpi.pct!=null
+                  ?e("p",{style:{fontSize:12,color:kpi.good?"#16a34a":"#dc2626",fontWeight:600,margin:"0 0 16px"}},sign+kpi.pct+"% vs prior month")
+                  :e("p",{style:{fontSize:12,color:"#A0AEC0",margin:"0 0 16px"}},"No prior month data")))}))),
+
+      // TABS
+      e("div",{style:{display:"flex",gap:4,marginBottom:24,background:"white",borderRadius:12,padding:4,border:"1px solid #E2E8F0",width:"fit-content"}},
+        [["overview","Performance Overview"],["ioptimize","iOptimize Metrics"],["iassign","iAssign Metrics"],["charts","Charts"]].map(function(t){
+          return e("button",{key:t[0],onClick:function(){setTab(t[0])},style:tb(t[0])},t[1])})),
+
+      // OVERVIEW TAB
+      tab==="overview"&&e("div",null,
+        INS.es&&e("div",{style:{background:"white",borderRadius:12,border:"1px solid #E2E8F0",padding:"24px 28px",marginBottom:20,boxShadow:"0 1px 4px rgba(0,0,0,.04)"}},
+          e("h2",{style:st2},"Performance Overview"),
+          e("p",{style:{fontSize:13,lineHeight:1.8}},INS.es)),
+        (INS.hi||INS.ae)&&e("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:16}},
+          INS.hi&&e("div",{style:{background:"#F0FFF4",borderRadius:10,padding:"18px 20px",borderLeft:"4px solid "+GREEN}},
+            e("p",{style:{fontSize:10,fontWeight:700,textTransform:"uppercase",letterSpacing:1,color:"#718096",marginBottom:8}},"What\u2019s Working Well"),
+            e("p",{style:{fontSize:13,lineHeight:1.8,margin:0}},INS.hi)),
+          INS.ae&&e("div",{style:{background:"#EBF8FF",borderRadius:10,padding:"18px 20px",borderLeft:"4px solid #2B6CB0"}},
+            e("p",{style:{fontSize:10,fontWeight:700,textTransform:"uppercase",letterSpacing:1,color:"#718096",marginBottom:8}},"Areas to Explore"),
+            e("p",{style:{fontSize:13,lineHeight:1.8,margin:0}},INS.ae))),
+        INS.rc&&e("div",{style:{background:"#EBF4FF",borderRadius:10,padding:"18px 20px",borderLeft:"4px solid "+NAVY,marginBottom:28}},
+          e("p",{style:{fontSize:10,fontWeight:700,textTransform:"uppercase",letterSpacing:1,color:"#718096",marginBottom:8}},"How We Can Help"),
+          e("p",{style:{fontSize:13,lineHeight:1.8,margin:0}},INS.rc)),
+        e("p",{style:{fontSize:10,fontWeight:700,textTransform:"uppercase",letterSpacing:1.2,color:"#94a3b8",marginBottom:12}},"Clinic Performance Scores"),
+        e("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:16,marginBottom:12}},
+          LOCS.map(function(l){return e("div",{key:l.name,style:{background:"white",borderRadius:12,border:"1px solid #E2E8F0",padding:"20px 22px",boxShadow:"0 1px 4px rgba(0,0,0,.04)"}},
+            e("div",{style:{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16}},
+              e("span",{style:{fontWeight:700,fontSize:15,color:"#0f172a"}},l.name),e(SB,{s:l.score||50})),
+            e("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,textAlign:"center"}},
+              [{lb:"Compliance",v:l.sc.v,su:"%",p:l.sc.p,h:true},{lb:"Avg Delay",v:l.del.v,su:" min",p:l.del.p,h:false},{lb:"Chair Util",v:l.cu.v,su:"%",p:l.cu.p,h:true}].map(function(k){
+                return e("div",{key:k.lb},
+                  e("p",{style:{fontSize:10,color:"#94a3b8",margin:"0 0 3px"}},k.lb),
+                  k.v!=null
+                    ?e("p",{style:{fontSize:17,fontWeight:700,color:"#1e293b",margin:0}},k.v.toFixed(1)+k.su)
+                    :e("p",{style:{fontSize:17,fontWeight:700,color:"#CBD5E0",margin:0}},"\u2014"),
+                  k.v!=null&&e(Delta,{c:k.v,p:k.p,h:k.h}))})),
+            e("div",{style:{marginTop:16}},
+              e("div",{style:{display:"flex",justifyContent:"space-between",fontSize:9,color:"#94a3b8",marginBottom:3}},
+                e("span",null,"0"),e("span",null,"Network Avg (50)"),e("span",null,"100")),
+              e("div",{style:{height:10,background:"#f1f5f9",borderRadius:99,overflow:"hidden",position:"relative"}},
+                e("div",{style:{height:"100%",borderRadius:99,width:Math.min(l.score||50,100)+"%",background:(l.score||50)>=60?"#10b981":(l.score||50)>=40?"#f59e0b":"#ef4444"}}),
+                e("div",{style:{position:"absolute",top:0,bottom:0,left:"50%",width:1,background:"#64748b",opacity:0.4}}))))})),
+        e("p",{style:{fontSize:11,color:"#94a3b8",fontStyle:"italic",marginTop:8}},"Performance Score: weighted blend of compliance (25%), delay (20%), chair utilization (20%), iAssign adoption (15%), overtime (10%), and nurse utilization (10%). 50 = network average, 100 = top decile.")),
+
+      // iOPTIMIZE TAB
+      tab==="ioptimize"&&e("div",{style:{background:"white",borderRadius:12,border:"1px solid #E2E8F0",overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,.04)"}},
+        e("div",{style:{padding:"16px 24px",borderBottom:"1px solid #E2E8F0"}},
+          e("h2",{style:Object.assign({},st2,{marginBottom:4})},"iOptimize \u2014 Scheduling & Flow Metrics"),
+          e("p",{style:{fontSize:11,color:"#718096"}},"Colour coding vs company average \u00b7 Arrows show MoM change with prior value")),
+        e("div",{style:{overflowX:"auto"}},
+          e("table",{style:{width:"100%",borderCollapse:"collapse",fontSize:12.5}},
+            e("thead",null,e("tr",{style:{background:NAVY,color:"white"}},
+              ["Location","Scheduler Compliance","Avg Delay (min)","Median Delay","Chair Utilization","Chair Util. Median","Tx Past Close","Mins Past Close / Pt"].map(function(h){
+                return e("th",{key:h,style:{padding:"10px 14px",textAlign:h==="Location"?"left":"center",fontWeight:600,fontSize:11,whiteSpace:"nowrap"}},h)}))),
+            e("tbody",null,
+              LOCS.map(function(l){return e("tr",{key:l.name,style:{borderBottom:"1px solid #E2E8F0"}},
+                e("td",{style:{padding:"8px 14px",fontWeight:600,color:NAVY,whiteSpace:"nowrap"}},l.name,e(SB,{s:l.score||50})),
+                e(KC,{v:l.sc.v,b:CO.sc,p:l.sc.p}),
+                e(KC,{v:l.del.v,b:CO.del,h:false,p:l.del.p,su:" min"}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center",color:SLATE,borderBottom:"1px solid #E2E8F0"}},l.dm!=null?(l.dm+" min"):"\u2014"),
+                e(KC,{v:l.cu.v,b:CO.cu,p:l.cu.p}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center",color:SLATE,borderBottom:"1px solid #E2E8F0"}},l.cm!=null?(l.cm+"%"):"\u2014"),
+                e(KC,{v:l.tx.v,b:0.5,h:false,p:l.tx.p,su:"/day"}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center",color:SLATE,borderBottom:"1px solid #E2E8F0"}},l.mpc+" min"))}),
+              CO.sc!=null&&e("tr",{style:{background:"#EBF4FF",fontWeight:700,color:NAVY}},
+                e("td",{style:{padding:"8px 14px"}},"Company Average"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}},CO.sc.toFixed(1)+"%"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}},CO.del!=null?CO.del.toFixed(1)+" min":"\u2014"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}},CO.cu!=null?CO.cu.toFixed(1)+"%":"\u2014"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}}),
+                e("td",{style:{padding:"8px 14px",textAlign:"center"}})))),
+        e("div",{style:{padding:"10px 24px",borderTop:"1px solid #f1f5f9",display:"flex",gap:14,fontSize:11}},
+          [{c:GBG,b:"#9ae6b4",t:"Above avg"},{c:RBG,b:"#feb2b2",t:"Below avg"},{c:"#EDF2F7",b:"#CBD5E0",t:"Within 5%"}].map(function(x){
+            return e("span",{key:x.t,style:{display:"inline-flex",alignItems:"center",gap:4}},
+              e("span",{style:{width:12,height:12,borderRadius:3,background:x.c,border:"1px solid "+x.b,display:"inline-block"}}),x.t)}))),
+
+      // iASSIGN TAB
+      tab==="iassign"&&e("div",{style:{background:"white",borderRadius:12,border:"1px solid #E2E8F0",overflow:"hidden",boxShadow:"0 1px 4px rgba(0,0,0,.04)"}},
+        e("div",{style:{padding:"16px 24px",borderBottom:"1px solid #E2E8F0"}},
+          e("h2",{style:Object.assign({},st2,{marginBottom:4})},"iAssign \u2014 Staffing & Nurse Metrics")),
+        e("div",{style:{overflowX:"auto"}},
+          e("table",{style:{width:"100%",borderCollapse:"collapse",fontSize:12.5}},
+            e("thead",null,e("tr",{style:{background:NAVY,color:"white"}},
+              ["Location","iAssign Utilization","Patients / Nurse","Chairs / Nurse","Nurse Utilization"].map(function(h){
+                return e("th",{key:h,style:{padding:"10px 14px",textAlign:h==="Location"?"left":"center",fontWeight:600,fontSize:11}},h)}))),
+            e("tbody",null,
+              LOCS.map(function(l){return e("tr",{key:l.name,style:{borderBottom:"1px solid #E2E8F0"}},
+                e("td",{style:{padding:"8px 14px",fontWeight:600,color:NAVY}},l.name),
+                l.ia.v!=null
+                  ?e("td",{style:{padding:"8px 14px",textAlign:"center",fontWeight:600,color:GREEN,background:GBG,borderBottom:"1px solid #E2E8F0"}},l.ia.v.toFixed(1)+"%")
+                  :e("td",{style:{padding:"8px 14px",textAlign:"center",color:"#CBD5E0",borderBottom:"1px solid #E2E8F0"}},"\u2014"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center",borderBottom:"1px solid #E2E8F0"}},l.ppn!=null?l.ppn:"\u2014"),
+                e("td",{style:{padding:"8px 14px",textAlign:"center",borderBottom:"1px solid #E2E8F0"}},l.cpn!=null?l.cpn:"\u2014"),
+                e(KC,{v:l.nu.v,b:67,p:l.nu.p}))}))))),
+
+      // CHARTS TAB
+      tab==="charts"&&LOCS.length>0&&e("div",null,
+        LOCS.length>20&&e("p",{style:{fontSize:11,color:"#718096",marginBottom:16,fontStyle:"italic"}},"Charts show top 10 and bottom 10 locations by performance. Full data available in the tables above."),
+        e("div",{style:{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}},
+          e(RBC,{data:chartData("sc","v",false),bv:CO.sc,bl:"Company Avg",title:"Scheduler Compliance by Location",yl:"Compliance (%)",su:"%"}),
+          e(RBC,{data:chartData("del","v",true),bv:CO.del,bl:"Company Avg",title:"Avg Delay Before Treatment",yl:"Minutes",lo:true,su:" min"}),
+          e(RBC,{data:chartData("cu","v",false),bv:CO.cu,bl:"Company Avg",title:"Chair Utilization by Location",yl:"Chair Utilization (%)",su:"%"}),
+          e(RBC,{data:chartData("ia","v",false).filter(function(d){return d.value!=null}),bv:null,bl:"",title:"iAssign Utilization by Location",yl:"iAssign Utilization (%)",su:"%"}))),
+
+      // FOOTER
+      e("div",{style:{marginTop:48,textAlign:"center",fontSize:11,color:"#94a3b8",padding:"20px 0",borderTop:"1px solid #E2E8F0"}},
+        CLIENT_CODE+" \u00b7 "+MONTH_LABEL+" Clinic Health Report \u00b7 Prepared by the OncoSmart Analytics Team",e("br"),
+        "Confidential \u2014 for internal review only")
+    )
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(e(App));
+</script>
+</body>
+</html>
