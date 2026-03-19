@@ -161,8 +161,11 @@ function barChart(title,items,refVal,refLabel,lo,su){
   su=su||"%";
   if(!items||items.length===0)return '<div class="chart-section"><div class="chart-title">'+title+'</div><p style="color:#94a3b8;font-size:12px">No data</p></div>';
 
-  var n=items.length;
-  var maxV=Math.max.apply(null,items.map(function(d){return d.v||0;}).concat([refVal||0]))*1.15||10;
+  // Sort: best performers first
+  var sorted=items.slice().sort(function(a,b){return lo?a.v-b.v:b.v-a.v;});
+  var n=sorted.length;
+
+  var maxV=Math.max.apply(null,sorted.map(function(d){return d.v||0;}).concat([refVal||0]))*1.1||10;
   maxV=Math.ceil(maxV/10)*10;
 
   function bc(v){
@@ -171,51 +174,54 @@ function barChart(title,items,refVal,refLabel,lo,su){
     return v>=refVal?TEAL:v<refVal*0.85?"#E53E3E":"#DD6B20";
   }
 
-  // Horizontal bar chart - scales to any number of rows
-  var rowH=22, padL=130, padR=80, padT=20, padB=30;
-  var svgW=540;
-  var chartW=svgW-padL-padR;
+  var rowH=24;
+  var nameW=140;  // fixed width for location names
+  var valW=55;    // fixed width for value labels on right
+  var refW=20;    // extra padding for ref line label
+  var padT=28;    // top padding for ref line label
+  var padB=8;
+  var svgW=560;
+  var barAreaW=svgW-nameW-valW-refW;
   var svgH=padT+padB+(n*rowH);
 
   var s=[];
 
-  // Reference line (vertical)
+  // Reference line
   if(refVal!=null){
-    var rx=padL+(refVal/maxV)*chartW;
-    s.push('<line x1="'+rx+'" y1="'+padT+'" x2="'+rx+'" y2="'+(padT+n*rowH)+'" stroke="#1B2A4A" stroke-width="1.5" stroke-dasharray="4,3"/>');
-    s.push('<text x="'+rx+'" y="'+(padT-6)+'" text-anchor="middle" font-size="9" fill="#1B2A4A" font-weight="600">'+refLabel+'</text>');
-    s.push('<text x="'+rx+'" y="'+(padT-6+10)+'" text-anchor="middle" font-size="8" fill="#1B2A4A">('+refVal.toFixed(1)+su+')</text>');
+    var rx=nameW+(refVal/maxV)*barAreaW;
+    s.push('<line x1="'+rx+'" y1="'+(padT-4)+'" x2="'+rx+'" y2="'+(padT+n*rowH)+'" stroke="#1B2A4A" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>');
+    s.push('<text x="'+rx+'" y="'+(padT-8)+'" text-anchor="middle" font-size="9" fill="#1B2A4A" font-weight="600">'+refLabel+' ('+refVal.toFixed(1)+su+')</text>');
   }
 
   // Rows
-  items.forEach(function(item,i){
+  sorted.forEach(function(item,i){
     var v=item.v||0;
-    var bw=Math.max((v/maxV)*chartW,2);
+    var bw=Math.max((v/maxV)*barAreaW,2);
     var by=padT+(i*rowH);
+    var mid=by+rowH*0.65;
     var color=bc(v);
-    var mid=by+rowH/2;
 
-    // Alternating row background
-    if(i%2===0)s.push('<rect x="0" y="'+by+'" width="'+svgW+'" height="'+rowH+'" fill="#F7F8FA"/>');
+    // Alternating background
+    if(i%2===0)s.push('<rect x="0" y="'+by+'" width="'+svgW+'" height="'+rowH+'" fill="#F7F8FA" opacity="0.6"/>');
 
-    // Location name
-    var nm=item.name.length>18?item.name.substring(0,17)+'\u2026':item.name;
-    s.push('<text x="'+(padL-6)+'" y="'+(mid+4)+'" text-anchor="end" font-size="10" fill="#2D3748">'+nm+'</text>');
+    // Location name - right-aligned in name column
+    var nm=item.name.length>17?item.name.substring(0,16)+'\u2026':item.name;
+    s.push('<text x="'+(nameW-8)+'" y="'+mid+'" text-anchor="end" font-size="10" fill="#374151">'+nm+'</text>');
 
-    // Bar
-    s.push('<rect x="'+padL+'" y="'+(by+3)+'" width="'+bw+'" height="'+(rowH-6)+'" rx="2" fill="'+color+'" fill-opacity="0.85"/>');
+    // Bar - starts right after name column
+    s.push('<rect x="'+nameW+'" y="'+(by+4)+'" width="'+bw+'" height="'+(rowH-8)+'" rx="3" fill="'+color+'" fill-opacity="0.85"/>');
 
-    // Value label
-    s.push('<text x="'+(padL+bw+5)+'" y="'+(mid+4)+'" text-anchor="start" font-size="10" font-weight="600" fill="#2D3748">'+v.toFixed(1)+su+'</text>');
+    // Value - always in fixed value column, never overlaps bar
+    s.push('<text x="'+(nameW+barAreaW+8)+'" y="'+mid+'" text-anchor="start" font-size="10" font-weight="700" fill="'+color+'">'+v.toFixed(1)+su+'</text>');
   });
 
-  // Bottom axis
-  s.push('<line x1="'+padL+'" y1="'+(padT+n*rowH)+'" x2="'+(padL+chartW)+'" y2="'+(padT+n*rowH)+'" stroke="#CBD5E0" stroke-width="1"/>');
+  // Bottom line
+  s.push('<line x1="'+nameW+'" y1="'+(padT+n*rowH)+'" x2="'+(nameW+barAreaW)+'" y2="'+(padT+n*rowH)+'" stroke="#E2E8F0" stroke-width="1"/>');
 
   return '<div class="chart-section">'
     +'<div class="chart-title">'+title+'</div>'
-    +'<div class="bar-chart" style="overflow-y:auto;max-height:600px">'
-    +'<svg width="100%" viewBox="0 0 '+svgW+' '+svgH+'" xmlns="http://www.w3.org/2000/svg" style="display:block;min-height:'+svgH+'px">'
+    +'<div class="bar-chart" style="padding:0;overflow:visible">'
+    +'<svg width="100%" viewBox="0 0 '+svgW+' '+svgH+'" xmlns="http://www.w3.org/2000/svg" style="display:block">'
     +s.join('')+'</svg>'
     +'</div></div>';
 }
