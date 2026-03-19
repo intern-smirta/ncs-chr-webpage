@@ -59,10 +59,6 @@ h1{font-size:28px;font-weight:800;color:#0f172a;letter-spacing:-.5px;margin:0}
 .score-kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center}
 .score-kpi-label{font-size:10px;color:#94a3b8;margin:0 0 3px}
 .score-kpi-val{font-size:17px;font-weight:700;color:#1e293b;margin:0}
-.score-kpi-delta{font-size:10px;font-weight:600;margin-top:2px}
-.score-kpi-delta.up{color:#276749}
-.score-kpi-delta.down{color:#9B2335}
-.score-kpi-delta.flat{color:#A0AEC0}
 .progress-wrap{margin-top:16px}
 .progress-labels{display:flex;justify-content:space-between;font-size:9px;color:#94a3b8;margin-bottom:3px}
 .progress-bar{height:10px;background:#f1f5f9;border-radius:99px;overflow:hidden;position:relative}
@@ -92,8 +88,7 @@ tr.avg-row td{background:#EBF4FF;font-weight:700;color:#1B2A4A}
 .bar-chart{background:#F7F8FA;border:1px solid #E2E8F0;border-radius:8px;padding:16px;overflow-x:auto}
 .bar-wrap{display:flex;align-items:flex-end;gap:6px;min-height:160px;padding-bottom:24px;position:relative;border-bottom:1px solid #CBD5E0}
 .bar-col{display:flex;flex-direction:column;align-items:center;flex:1;min-width:30px;max-width:80px}
-.bar{width:100%;border-radius:3px 3px 0 0;position:relative;min-height:4px;transition:opacity .2s}
-.bar:hover{opacity:.8}
+.bar{width:100%;border-radius:3px 3px 0 0;min-height:4px}
 .bar-val{font-size:9px;font-weight:700;color:#2D3748;margin-bottom:3px;text-align:center}
 .bar-name{font-size:8px;color:#718096;text-align:center;word-break:break-word;margin-top:4px;max-width:60px}
 .ref-line{position:absolute;left:0;right:0;border-top:2px dashed #1B2A4A;z-index:10}
@@ -102,269 +97,238 @@ tr.avg-row td{background:#EBF4FF;font-weight:700;color:#1B2A4A}
 footer{margin-top:48px;text-align:center;font-size:11px;color:#94a3b8;padding:20px 0;border-top:1px solid #E2E8F0}
 @media(max-width:768px){.cards{grid-template-columns:1fr 1fr}.kpi-cards{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.charts-grid{grid-template-columns:1fr}}
 @media print{body{background:white}nav{position:static}}
+
 </style>
 </head>
 <body>
-<nav>
-  <div class="nav-inner">
-    <div class="nav-left">
-      <div class="logo">O</div>
-      <span class="nav-brand">OncoSmart</span>
-      <span class="nav-sub">Clinic Health Report</span>
-    </div>
-    <div class="nav-right">
-      <span class="nav-client">MOASD</span>
-      <span class="nav-badge">February 2026</span>
-    </div>
-  </div>
-</nav>
-<div class="container">
-  <h1>MOASD</h1>
-  <p class="page-sub">February 2026 &middot; Monthly Performance Summary</p>
-
-  <div id="app"></div>
-</div>
-
+<nav><div class="nav-inner"><div class="nav-left"><div class="logo">O</div><span class="nav-brand">OncoSmart</span><span class="nav-sub">Clinic Health Report</span></div><div class="nav-right"><span class="nav-client">MOASD</span><span class="nav-badge">February 2026</span></div></div></nav>
+<div class="container"><h1>MOASD</h1><p class="page-sub">February 2026 · Monthly Performance Summary</p><div id="app"></div></div>
 <script>
 var DATA = {"client_code": "MOASD", "month_label": "February 2026", "loc_count": 2, "co": {"sc": 74.9, "del": 7.1, "cu": 67.5}, "locs": [{"name": "La jolla", "score": 67, "sc": {"v": 88.2, "p": null}, "del": {"v": 8.2, "p": null}, "dm": 7.7, "cu": {"v": 45.6, "p": null}, "cm": 47.1, "tx": {"v": 0.4, "p": null}, "mpc": 13.0, "ia": {"v": 93.3, "p": 87.5}, "ppn": 3.7, "cpn": 3.5, "nu": {"v": 35.5, "p": 35.3}}, {"name": "MOASD", "score": 59, "sc": {"v": 72.8, "p": 42.8}, "del": {"v": 6.0, "p": 5.9}, "dm": 5.7, "cu": {"v": 69.3, "p": 67.0}, "cm": 72.6, "tx": {"v": 0.2, "p": 0.1}, "mpc": 17.7, "ia": {"v": 100.0, "p": null}, "ppn": 6.9, "cpn": 3.0, "nu": {"v": 55.2, "p": 55.5}}], "ins": {"es": "MOASD delivered a performance score of 59 out of 100 (where 50 represents the network average) in February 2026, demonstrating solid operational fundamentals alongside a critical breakthrough in scheduling discipline. Scheduler Compliance surged from 42.8% in January to 72.8% in February\u2014a 30-point improvement that now sits just 2.1 points below the company average of 74.86%\u2014while the clinic maintained tight control on patient flow with an average delay of 6.0 minutes, below the company average of 7.11 minutes. Chair Utilization rose modestly from 67.0% in January to 69.3% in February, and iAssign Utilization reached 100.0%, indicating flawless adoption of our assignment protocol.", "hi": "MOASD achieved a 30-point month-over-month gain in Scheduler Compliance, rising from 42.8% in January to 72.8% in February, which now positions the clinic within 2.1 points of the company average of 74.86% and demonstrates strong operational discipline. iAssign Utilization stands at a perfect 100.0%, reflecting complete adherence to our assignment system and indicating that nurse-to-chair assignment efficiency may be operating at optimal levels. Average Delay of 6.0 minutes runs 1.1 minutes below the company average of 7.11 minutes, confirming that MOASD is delivering faster patient throughput and better appointment-to-treatment flow.", "ae": "We noticed that Treatments Past Closing rose from 0.1 in January to 0.2 in February\u2014a small absolute number but worth monitoring as the clinic scales compliance improvements, as scheduling discipline gains may occasionally push treatments closer to end-of-day without careful buffer management. Chair Utilization, while healthy at 69.3%, sits 2.2 points below the company average of 67.46%, suggesting room to optimize patient volume or appointment density; we'd recommend reviewing whether current scheduling templates are capturing available capacity fully, especially given the strong compliance gains that have already been realized.", "rc": "The network's largest performance gap sits at La Jolla, where Chair Utilization stands at 45.6%\u2014a 21.9-point deficit versus the company average of 67.46%\u2014despite the clinic's strong Scheduler Compliance of 88.2% and iAssign Utilization of 93.3%. We recommend conducting a scheduling template audit at La Jolla to review appointment block sizing, patient throughput per chair, and idle time patterns; this concrete review may reveal capacity constraints in template design that are preventing the clinic from translating its discipline into higher asset utilization."}};
-
 var NAVY="#1B2A4A",TEAL="#2C7A7B",GREEN="#276749";
+var EM="\u2014", MID="\u00b7", UP="\u2191", DN="\u2193", RT="\u2192", AP="\u2019";
 
-function fmt(v, dec, su) {
-  if(v == null) return "—";
-  return v.toFixed(dec||1) + (su||"");
+function nd(){return EM;}
+
+function delta(v,p,hb){
+  if(v==null||p==null)return "";
+  var d=v-p;
+  if(Math.abs(d)<0.05)return '<span style="color:#A0AEC0;font-size:10px"> '+RT+'</span>';
+  var good=hb?d>0:d<0, arrow=d>0?UP:DN, color=good?"#276749":"#9B2335";
+  return '<span style="color:'+color+';font-size:10px;font-weight:600;margin-left:4px">'+arrow+Math.abs(d).toFixed(1)+'</span>'
+       +'<span style="color:#A0AEC0;font-size:9px;margin-left:3px">(was '+p.toFixed(1)+')</span>';
 }
 
-function delta(v, p, higher_better) {
-  if(v==null||p==null) return "";
-  var d = v - p;
-  if(Math.abs(d) < 0.05) return '<span style="color:#A0AEC0;font-size:10px"> →</span>';
-  var good = higher_better ? d > 0 : d < 0;
-  var arrow = d > 0 ? "↑" : "↓";
-  var color = good ? "#276749" : "#9B2335";
-  return '<span style="color:'+color+';font-size:10px;font-weight:600;margin-left:4px">'+arrow+Math.abs(d).toFixed(1)+'</span><span style="color:#A0AEC0;font-size:9px;margin-left:3px">(was '+p.toFixed(1)+')</span>';
+function cellCls(v,b,hb){
+  if(v==null)return "dash";
+  if(b==null)return "";
+  var diff=v-b, th=Math.abs(b)*0.05;
+  if(Math.abs(diff)<=th)return "neutral";
+  return (diff>0)===hb?"above":"below";
 }
 
-function cellClass(v, b, higher_better) {
-  if(v==null) return "dash";
-  if(b==null) return "";
-  var diff = v - b, thresh = Math.abs(b)*0.05;
-  if(Math.abs(diff) <= thresh) return "neutral";
-  if((diff>0) === higher_better) return "above";
-  return "below";
+function badge(s){
+  var c=s>=60?"green":s<40?"red":"yellow";
+  return '<span class="badge '+c+'">'+s+'</span>';
 }
 
-function badge(s) {
-  var cls = s>=60?"green":s<40?"red":"yellow";
-  return '<span class="badge '+cls+'">'+s+'</span>';
+function scoreColor(s){return s>=60?"green":s<40?"red":"yellow";}
+
+function avgL(f,sub){
+  var vals=DATA.locs.map(function(l){return sub?l[f][sub]:l[f];}).filter(function(v){return v!=null;});
+  return vals.length?vals.reduce(function(a,b){return a+b;},0)/vals.length:null;
 }
 
-function scoreColor(s) {
-  return s>=60?"green":s<40?"red":"yellow";
-}
+var avgScore=DATA.locs.length?Math.round(DATA.locs.reduce(function(s,l){return s+(l.score||50);},0)/DATA.locs.length):50;
+var avgDel=avgL("del","v"), avgDelP=avgL("del","p");
+var avgTx =avgL("tx","v"),  avgTxP =avgL("tx","p");
+var avgSc =avgL("sc","v"),  avgScP =avgL("sc","p");
+var avgCu =avgL("cu","v"),  avgCuP =avgL("cu","p");
 
-// Summary cards
-function avgLocs(field, sub) {
-  var vals = DATA.locs.map(function(l){ return sub ? l[field][sub] : l[field]; }).filter(function(v){ return v!=null; });
-  return vals.length ? vals.reduce(function(a,b){return a+b},0)/vals.length : null;
-}
-var avgScore = DATA.locs.length ? Math.round(DATA.locs.reduce(function(s,l){return s+(l.score||50)},0)/DATA.locs.length) : 50;
-var avgDel=avgLocs("del","v"), avgDelP=avgLocs("del","p");
-var avgTx=avgLocs("tx","v"),  avgTxP=avgLocs("tx","p");
-var avgSc=avgLocs("sc","v"),  avgScP=avgLocs("sc","p");
-var avgCu=avgLocs("cu","v"),  avgCuP=avgLocs("cu","p");
-
-function pctChange(c,p) {
-  if(c==null||p==null||p===0) return null;
+function pct(c,p){
+  if(c==null||p==null||p===0)return null;
   return ((c-p)/Math.abs(p)*100).toFixed(1);
 }
 
-function kpiChangeHtml(curr, prev, good) {
-  var pct = pctChange(curr, prev);
-  if(pct==null) return '<p class="kpi-change none">No prior month data</p>';
-  var sign = Number(pct)>0?"+":"";
-  var cls = good ? "good" : "bad";
-  return '<p class="kpi-change '+cls+'">'+sign+pct+'% vs prior month</p>';
+function kpiChange(curr,prev,good){
+  var p=pct(curr,prev);
+  if(p==null)return '<p class="kpi-change none">No prior month data</p>';
+  var sign=Number(p)>0?"+":"", cls=good?"good":"bad";
+  return '<p class="kpi-change '+cls+'">'+sign+p+'% vs prior month</p>';
 }
 
-// Bar chart
-function barChart(title, items, refVal, refLabel, lowerBetter, suffix) {
-  suffix = suffix || "%";
-  if(!items || items.length === 0) return '<div class="chart-section"><div class="chart-title">'+title+'</div><p style="color:#94a3b8;font-size:12px">No data</p></div>';
-  var display = items;
-  if(items.length > 20) {
-    var sorted = items.slice().sort(function(a,b){ return lowerBetter ? a.v-b.v : b.v-a.v; });
-    var top10 = sorted.slice(0,10);
-    var bot10 = sorted.slice(-10);
-    var seen = {};
-    display = [];
-    top10.concat(bot10).forEach(function(x){ if(!seen[x.name]){ seen[x.name]=1; display.push(x); } });
+function barChart(title,items,refVal,refLabel,lo,su){
+  su=su||"%";
+  if(!items||items.length===0)return '<div class="chart-section"><div class="chart-title">'+title+'</div><p style="color:#94a3b8;font-size:12px">No data</p></div>';
+  var disp=items;
+  if(items.length>20){
+    var sorted=items.slice().sort(function(a,b){return lo?a.v-b.v:b.v-a.v;});
+    var seen={},out=[];
+    sorted.slice(0,10).concat(sorted.slice(-10)).forEach(function(x){if(!seen[x.name]){seen[x.name]=1;out.push(x);}});
+    disp=out;
   }
-  var maxV = Math.max.apply(null, display.map(function(d){return d.v||0}).concat([refVal||0])) * 1.2 || 10;
-  var barColor = function(v) {
-    if(refVal==null) return TEAL;
-    if(lowerBetter) return v<=refVal ? TEAL : v>refVal*1.15 ? "#E53E3E" : "#DD6B20";
-    return v>=refVal ? TEAL : v<refVal*0.85 ? "#E53E3E" : "#DD6B20";
-  };
-  var refPct = refVal ? (refVal/maxV*100) : null;
-  var barsHtml = display.map(function(item) {
-    var h = item.v ? (item.v/maxV*100) : 0;
-    return '<div class="bar-col">'+
-      '<div class="bar-val">'+item.v.toFixed(1)+suffix+'</div>'+
-      '<div class="bar" style="height:'+h+'%;background:'+barColor(item.v)+';width:100%"></div>'+
-      '<div class="bar-name">'+item.name+'</div>'+
-    '</div>';
-  }).join('');
-  var refHtml = refPct ? '<div class="ref-line" style="bottom:'+refPct+'%"><span class="ref-label">'+refLabel+' ('+refVal.toFixed(1)+suffix+')</span></div>' : '';
-  var note = items.length>20 ? '<p style="font-size:11px;color:#718096;margin-top:8px;font-style:italic">Showing top 10 and bottom 10 of '+items.length+' locations</p>' : '';
-  return '<div class="chart-section">'+
-    '<div class="chart-title">'+title+'</div>'+
-    '<div class="bar-chart">'+
-      '<div class="bar-wrap" style="position:relative">'+refHtml+barsHtml+'</div>'+
-    '</div>'+note+
-  '</div>';
+  var maxV=Math.max.apply(null,disp.map(function(d){return d.v||0;}).concat([refVal||0]))*1.2||10;
+  function bc(v){
+    if(refVal==null)return TEAL;
+    if(lo)return v<=refVal?TEAL:v>refVal*1.15?"#E53E3E":"#DD6B20";
+    return v>=refVal?TEAL:v<refVal*0.85?"#E53E3E":"#DD6B20";
+  }
+  var refPct=refVal?(refVal/maxV*100):null;
+  var bars=disp.map(function(item){
+    var h=item.v?(item.v/maxV*100):0;
+    return '<div class="bar-col">'
+      +'<div class="bar-val">'+item.v.toFixed(1)+su+'</div>'
+      +'<div class="bar" style="height:'+h+'%;background:'+bc(item.v)+';width:100%"></div>'
+      +'<div class="bar-name">'+item.name+'</div>'
+      +'</div>';
+  }).join("");
+  var refHtml=refPct
+    ?'<div class="ref-line" style="bottom:'+refPct+'%"><span class="ref-label">'+refLabel+" ("+refVal.toFixed(1)+su+")</span></div>"
+    :"";
+  var note=items.length>20
+    ?'<p style="font-size:11px;color:#718096;margin-top:8px;font-style:italic">Showing top 10 and bottom 10 of '+items.length+' locations</p>'
+    :"";
+  return '<div class="chart-section">'
+    +'<div class="chart-title">'+title+'</div>'
+    +'<div class="bar-chart"><div class="bar-wrap">'+refHtml+bars+'</div></div>'
+    +note+'</div>';
 }
 
-function render() {
-  var co = DATA.co, locs = DATA.locs, ins = DATA.ins;
-
-  var html = '';
+function render(){
+  var co=DATA.co, locs=DATA.locs, ins=DATA.ins, h="";
 
   // Summary cards
-  html += '<div class="cards">';
-  html += '<div class="card"><p class="card-label">Locations</p><p class="card-val">'+DATA.loc_count+'</p><p class="card-sub">Active clinics</p></div>';
-  html += '<div class="card"><p class="card-label">Avg Performance Score</p><p class="card-val '+(avgScore>=50?"good":"")+'">'+avgScore+'</p><p class="card-sub">Network avg: 50</p></div>';
-  html += '<div class="card"><p class="card-label">Company Avg Compliance</p><p class="card-val">'+(co.sc?co.sc.toFixed(1)+"%":"—")+'</p><p class="card-sub">Scheduler compliance</p></div>';
-  html += '<div class="card"><p class="card-label">Company Avg Delay</p><p class="card-val">'+(co.del?co.del.toFixed(1)+" min":"—")+'</p><p class="card-sub">Patient wait time</p></div>';
-  html += '</div>';
+  h+='<div class="cards">';
+  h+='<div class="card"><p class="card-label">Locations</p><p class="card-val">'+DATA.loc_count+'</p><p class="card-sub">Active clinics</p></div>';
+  h+='<div class="card"><p class="card-label">Avg Performance Score</p><p class="card-val'+(avgScore>=50?' good':'')+'">'+avgScore+'</p><p class="card-sub">Network avg: 50</p></div>';
+  h+='<div class="card"><p class="card-label">Company Avg Compliance</p><p class="card-val">'+(co.sc?co.sc.toFixed(1)+"%":EM)+'</p><p class="card-sub">Scheduler compliance</p></div>';
+  h+='<div class="card"><p class="card-label">Company Avg Delay</p><p class="card-val">'+(co.del?co.del.toFixed(1)+" min":EM)+'</p><p class="card-sub">Patient wait time</p></div>';
+  h+='</div>';
 
   // KPI change cards
-  html += '<p style="text-align:center;font-size:14px;font-weight:700;color:'+TEAL+';text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px">Change Since Prior Month (Company Average)</p>';
-  html += '<div class="kpi-cards">';
-  var kpis = [
-    {title:"Treatment Delay", val:avgDel, suf:" min", color:"#38BDF8", good:avgDel!=null&&avgDelP!=null&&avgDel<avgDelP, prev:avgDelP},
-    {title:"Extended Hours", val:avgTx, suf:"/day", color:"#FB923C", good:avgTx!=null&&avgTxP!=null&&avgTx<avgTxP, prev:avgTxP},
-    {title:"Scheduler Compliance", val:avgSc, suf:"%", color:"#2DD4BF", good:avgSc!=null&&avgScP!=null&&avgSc>avgScP, prev:avgScP},
-    {title:"Chair Utilization", val:avgCu, suf:"%", color:"#C084FC", good:avgCu!=null&&avgCuP!=null&&avgCu>avgCuP, prev:avgCuP}
+  h+='<p style="text-align:center;font-size:14px;font-weight:700;color:'+TEAL+';text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px">Change Since Prior Month (Company Average)</p>';
+  h+='<div class="kpi-cards">';
+  var kpis=[
+    {title:"Treatment Delay",   val:avgDel, suf:" min", color:"#38BDF8", good:avgDel!=null&&avgDelP!=null&&avgDel<avgDelP, prev:avgDelP},
+    {title:"Extended Hours",    val:avgTx,  suf:"/day", color:"#FB923C", good:avgTx!=null &&avgTxP!=null &&avgTx<avgTxP,  prev:avgTxP},
+    {title:"Scheduler Compliance",val:avgSc,suf:"%",    color:"#2DD4BF", good:avgSc!=null &&avgScP!=null &&avgSc>avgScP,  prev:avgScP},
+    {title:"Chair Utilization", val:avgCu,  suf:"%",    color:"#C084FC", good:avgCu!=null &&avgCuP!=null &&avgCu>avgCuP,  prev:avgCuP}
   ];
-  kpis.forEach(function(k) {
-    html += '<div class="kpi-card"><div class="kpi-bar" style="background:'+k.color+'"></div><div class="kpi-inner">';
-    html += '<p class="kpi-title">'+k.title+'</p>';
-    html += '<p class="kpi-value" style="color:'+k.color+'">'+(k.val!=null?k.val.toFixed(k.suf==="/day"?2:1)+k.suf:"—")+'</p>';
-    html += kpiChangeHtml(k.val, k.prev, k.good);
-    html += '</div></div>';
+  kpis.forEach(function(k){
+    h+='<div class="kpi-card"><div class="kpi-bar" style="background:'+k.color+'"></div><div class="kpi-inner">';
+    h+='<p class="kpi-title">'+k.title+'</p>';
+    h+='<p class="kpi-value" style="color:'+k.color+'">'+(k.val!=null?k.val.toFixed(k.suf==="/day"?2:1)+k.suf:EM)+'</p>';
+    h+=kpiChange(k.val,k.prev,k.good);
+    h+='</div></div>';
   });
-  html += '</div>';
+  h+='</div>';
 
   // Tabs
-  html += '<div class="tabs">';
-  ['overview','ioptimize','iassign','charts'].forEach(function(t,i) {
-    var labels = ['Performance Overview','iOptimize Metrics','iAssign Metrics','Charts'];
-    html += '<button class="tab'+(i===0?' active':'')+'" onclick="switchTab(''+t+'')" id="tab-'+t+'">'+labels[i]+'</button>';
+  h+='<div class="tabs">';
+  [["overview","Performance Overview"],["ioptimize","iOptimize Metrics"],["iassign","iAssign Metrics"],["charts","Charts"]].forEach(function(t,i){
+    h+='<button class="tab'+(i===0?' active':'')+'" onclick="switchTab(\''+t[0]+'\')" id="tab-'+t[0]+'">'+t[1]+'</button>';
   });
-  html += '</div>';
+  h+='</div>';
 
   // Overview tab
-  html += '<div class="tab-content active" id="content-overview">';
-  if(ins.es) html += '<div class="section-box"><div class="section-title">Performance Overview</div><p class="prose">'+ins.es+'</p></div>';
-  if(ins.hi||ins.ae) {
-    html += '<div class="two-col">';
-    if(ins.hi) html += '<div class="insight-green"><div class="insight-label">What's Working Well</div><p class="prose">'+ins.hi+'</p></div>';
-    if(ins.ae) html += '<div class="insight-blue"><div class="insight-label">Areas to Explore</div><p class="prose">'+ins.ae+'</p></div>';
-    html += '</div>';
+  h+='<div class="tab-content active" id="content-overview">';
+  if(ins.es)h+='<div class="section-box"><div class="section-title">Performance Overview</div><p class="prose">'+ins.es+'</p></div>';
+  if(ins.hi||ins.ae){
+    h+='<div class="two-col">';
+    if(ins.hi)h+='<div class="insight-green"><div class="insight-label">What'+AP+'s Working Well</div><p class="prose">'+ins.hi+'</p></div>';
+    if(ins.ae)h+='<div class="insight-blue"><div class="insight-label">Areas to Explore</div><p class="prose">'+ins.ae+'</p></div>';
+    h+='</div>';
   }
-  if(ins.rc) html += '<div class="insight-navy"><div class="insight-label">How We Can Help</div><p class="prose">'+ins.rc+'</p></div>';
-  html += '<p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#94a3b8;margin-bottom:12px">Clinic Performance Scores</p>';
-  html += '<div class="score-grid">';
-  locs.forEach(function(l) {
-    var sc = l.score||50;
-    html += '<div class="score-card">';
-    html += '<div class="score-header"><span class="score-name">'+l.name+'</span>'+badge(sc)+'</div>';
-    html += '<div class="score-kpis">';
-    [{'lb':'Compliance','f':'sc','su':'%','h':true},{'lb':'Avg Delay','f':'del','su':' min','h':false},{'lb':'Chair Util','f':'cu','su':'%','h':true}].forEach(function(k) {
-      var v = l[k.f].v, p = l[k.f].p;
-      var dlt = delta(v, p, k.h);
-      html += '<div>';
-      html += '<p class="score-kpi-label">'+k.lb+'</p>';
-      html += '<p class="score-kpi-val">'+(v!=null?v.toFixed(1)+k.su:"—")+'</p>';
-      if(dlt) html += '<div>'+dlt+'</div>';
-      html += '</div>';
+  if(ins.rc)h+='<div class="insight-navy"><div class="insight-label">How We Can Help</div><p class="prose">'+ins.rc+'</p></div>';
+  h+='<p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#94a3b8;margin-bottom:12px">Clinic Performance Scores</p>';
+  h+='<div class="score-grid">';
+  locs.forEach(function(l){
+    var s=l.score||50;
+    h+='<div class="score-card">';
+    h+='<div class="score-header"><span class="score-name">'+l.name+'</span>'+badge(s)+'</div>';
+    h+='<div class="score-kpis">';
+    [{lb:"Compliance",f:"sc",su:"%",hb:true},{lb:"Avg Delay",f:"del",su:" min",hb:false},{lb:"Chair Util",f:"cu",su:"%",hb:true}].forEach(function(k){
+      var v=l[k.f].v, p=l[k.f].p;
+      h+='<div><p class="score-kpi-label">'+k.lb+'</p><p class="score-kpi-val">'+(v!=null?v.toFixed(1)+k.su:EM)+'</p>'+(v!=null?'<div>'+delta(v,p,k.hb)+'</div>':'')+'</div>';
     });
-    html += '</div>';
-    html += '<div class="progress-wrap"><div class="progress-labels"><span>0</span><span>Network Avg (50)</span><span>100</span></div>';
-    html += '<div class="progress-bar"><div class="progress-fill '+scoreColor(sc)+'" style="width:'+Math.min(sc,100)+'%"></div><div class="progress-mid"></div></div></div>';
-    html += '</div>';
+    h+='</div>';
+    h+='<div class="progress-wrap"><div class="progress-labels"><span>0</span><span>Network Avg (50)</span><span>100</span></div>';
+    h+='<div class="progress-bar"><div class="progress-fill '+scoreColor(s)+'" style="width:'+Math.min(s,100)+'%"></div><div class="progress-mid"></div></div></div>';
+    h+='</div>';
   });
-  html += '</div>';
-  html += '<p class="footnote">Performance Score: weighted blend of compliance (25%), delay (20%), chair utilization (20%), iAssign adoption (15%), overtime (10%), and nurse utilization (10%). 50 = network average, 100 = top decile.</p>';
-  html += '</div>';
+  h+='</div>';
+  h+='<p class="footnote">Performance Score: weighted blend of compliance (25%), delay (20%), chair utilization (20%), iAssign adoption (15%), overtime (10%), and nurse utilization (10%). 50 = network average, 100 = top decile.</p>';
+  h+='</div>';
 
   // iOptimize tab
-  html += '<div class="tab-content" id="content-ioptimize">';
-  html += '<div class="section-box">';
-  html += '<div class="section-title">iOptimize &mdash; Scheduling &amp; Flow Metrics</div>';
-  html += '<p style="font-size:11px;color:#718096;margin-bottom:12px">Colour coding vs company average &middot; Arrows show MoM change with prior value</p>';
-  html += '<div class="table-wrap"><table>';
-  html += '<thead><tr><th class="left">Location</th><th>Scheduler Compliance</th><th>Avg Delay (min)</th><th>Median Delay</th><th>Chair Utilization</th><th>Chair Util. Median</th><th>Tx Past Close</th><th>Mins Past Close / Pt</th></tr></thead><tbody>';
-  locs.forEach(function(l) {
-    html += '<tr>';
-    html += '<td class="left">'+l.name+badge(l.score||50)+'</td>';
-    html += '<td class="'+cellClass(l.sc.v,co.sc,true)+'">'+(l.sc.v!=null?l.sc.v.toFixed(1)+"%":"—")+delta(l.sc.v,l.sc.p,true)+'</td>';
-    html += '<td class="'+cellClass(l.del.v,co.del,false)+'">'+(l.del.v!=null?l.del.v.toFixed(1)+" min":"—")+delta(l.del.v,l.del.p,false)+'</td>';
-    html += '<td>'+(l.dm!=null?l.dm+" min":"—")+'</td>';
-    html += '<td class="'+cellClass(l.cu.v,co.cu,true)+'">'+(l.cu.v!=null?l.cu.v.toFixed(1)+"%":"—")+delta(l.cu.v,l.cu.p,true)+'</td>';
-    html += '<td>'+(l.cm!=null?l.cm+"%":"—")+'</td>';
-    html += '<td class="'+cellClass(l.tx.v,0.5,false)+'">'+(l.tx.v!=null?l.tx.v.toFixed(1)+"/day":"—")+delta(l.tx.v,l.tx.p,false)+'</td>';
-    html += '<td>'+l.mpc+' min</td>';
-    html += '</tr>';
+  h+='<div class="tab-content" id="content-ioptimize"><div class="section-box">';
+  h+='<div class="section-title">iOptimize '+EM+' Scheduling &amp; Flow Metrics</div>';
+  h+='<p style="font-size:11px;color:#718096;margin-bottom:12px">Colour coding vs company average '+MID+' Arrows show MoM change with prior value</p>';
+  h+='<div class="table-wrap"><table><thead><tr>';
+  h+='<th class="left">Location</th><th>Scheduler Compliance</th><th>Avg Delay (min)</th><th>Median Delay</th><th>Chair Utilization</th><th>Chair Util. Median</th><th>Tx Past Close</th><th>Mins Past Close / Pt</th>';
+  h+='</tr></thead><tbody>';
+  locs.forEach(function(l){
+    h+='<tr><td class="left">'+l.name+badge(l.score||50)+'</td>';
+    h+='<td class="'+cellCls(l.sc.v,co.sc,true)+'">'+(l.sc.v!=null?l.sc.v.toFixed(1)+"%":EM)+delta(l.sc.v,l.sc.p,true)+'</td>';
+    h+='<td class="'+cellCls(l.del.v,co.del,false)+'">'+(l.del.v!=null?l.del.v.toFixed(1)+" min":EM)+delta(l.del.v,l.del.p,false)+'</td>';
+    h+='<td>'+(l.dm!=null?l.dm+" min":EM)+'</td>';
+    h+='<td class="'+cellCls(l.cu.v,co.cu,true)+'">'+(l.cu.v!=null?l.cu.v.toFixed(1)+"%":EM)+delta(l.cu.v,l.cu.p,true)+'</td>';
+    h+='<td>'+(l.cm!=null?l.cm+"%":EM)+'</td>';
+    h+='<td class="'+cellCls(l.tx.v,0.5,false)+'">'+(l.tx.v!=null?l.tx.v.toFixed(1)+"/day":EM)+delta(l.tx.v,l.tx.p,false)+'</td>';
+    h+='<td>'+l.mpc+' min</td></tr>';
   });
-  if(co.sc) {
-    html += '<tr class="avg-row"><td class="left">Company Average</td><td>'+co.sc.toFixed(1)+'%</td><td>'+(co.del?co.del.toFixed(1)+' min':'—')+'</td><td></td><td>'+(co.cu?co.cu.toFixed(1)+'%':'—')+'</td><td></td><td></td><td></td></tr>';
+  if(co.sc){
+    h+='<tr class="avg-row"><td class="left">Company Average</td>';
+    h+='<td>'+co.sc.toFixed(1)+'%</td>';
+    h+='<td>'+(co.del?co.del.toFixed(1)+' min':EM)+'</td><td></td>';
+    h+='<td>'+(co.cu?co.cu.toFixed(1)+'%':EM)+'</td><td></td><td></td><td></td></tr>';
   }
-  html += '</tbody></table></div>';
-  html += '<div class="legend"><span class="legend-item"><span class="legend-dot" style="background:#C6F6D5;border:1px solid #9ae6b4"></span>Above avg</span><span class="legend-item"><span class="legend-dot" style="background:#FED7D7;border:1px solid #feb2b2"></span>Below avg</span><span class="legend-item"><span class="legend-dot" style="background:#EDF2F7;border:1px solid #CBD5E0"></span>Within 5%</span></div>';
-  html += '</div></div>';
+  h+='</tbody></table></div>';
+  h+='<div class="legend">';
+  h+='<span class="legend-item"><span class="legend-dot" style="background:#C6F6D5;border:1px solid #9ae6b4"></span>Above avg</span>';
+  h+='<span class="legend-item"><span class="legend-dot" style="background:#FED7D7;border:1px solid #feb2b2"></span>Below avg</span>';
+  h+='<span class="legend-item"><span class="legend-dot" style="background:#EDF2F7;border:1px solid #CBD5E0"></span>Within 5%</span>';
+  h+='</div></div></div>';
 
   // iAssign tab
-  html += '<div class="tab-content" id="content-iassign">';
-  html += '<div class="section-box">';
-  html += '<div class="section-title">iAssign &mdash; Staffing &amp; Nurse Metrics</div>';
-  html += '<div class="table-wrap"><table>';
-  html += '<thead><tr><th class="left">Location</th><th>iAssign Utilization</th><th>Patients / Nurse</th><th>Chairs / Nurse</th><th>Nurse Utilization</th></tr></thead><tbody>';
-  locs.forEach(function(l) {
-    html += '<tr>';
-    html += '<td class="left">'+l.name+'</td>';
-    html += '<td style="background:#C6F6D5;color:#276749;font-weight:600">'+(l.ia.v!=null?l.ia.v.toFixed(1)+"%":"—")+'</td>';
-    html += '<td>'+(l.ppn!=null?l.ppn:"—")+'</td>';
-    html += '<td>'+(l.cpn!=null?l.cpn:"—")+'</td>';
-    html += '<td class="'+cellClass(l.nu.v,67,true)+'">'+(l.nu.v!=null?l.nu.v.toFixed(1)+"%":"—")+delta(l.nu.v,l.nu.p,true)+'</td>';
-    html += '</tr>';
+  h+='<div class="tab-content" id="content-iassign"><div class="section-box">';
+  h+='<div class="section-title">iAssign '+EM+' Staffing &amp; Nurse Metrics</div>';
+  h+='<div class="table-wrap"><table><thead><tr>';
+  h+='<th class="left">Location</th><th>iAssign Utilization</th><th>Patients / Nurse</th><th>Chairs / Nurse</th><th>Nurse Utilization</th>';
+  h+='</tr></thead><tbody>';
+  locs.forEach(function(l){
+    h+='<tr><td class="left">'+l.name+'</td>';
+    h+='<td style="background:#C6F6D5;color:#276749;font-weight:600">'+(l.ia.v!=null?l.ia.v.toFixed(1)+"%":EM)+'</td>';
+    h+='<td>'+(l.ppn!=null?l.ppn:EM)+'</td>';
+    h+='<td>'+(l.cpn!=null?l.cpn:EM)+'</td>';
+    h+='<td class="'+cellCls(l.nu.v,67,true)+'">'+(l.nu.v!=null?l.nu.v.toFixed(1)+"%":EM)+delta(l.nu.v,l.nu.p,true)+'</td>';
+    h+='</tr>';
   });
-  html += '</tbody></table></div></div></div>';
+  h+='</tbody></table></div></div></div>';
 
   // Charts tab
-  html += '<div class="tab-content" id="content-charts">';
-  html += '<div class="charts-grid">';
-  html += barChart("Scheduler Compliance by Location", locs.filter(function(l){return l.sc.v!=null}).map(function(l){return{name:l.name,v:l.sc.v}}) , co.sc, "Company Avg", false, "%");
-  html += barChart("Avg Delay Before Treatment", locs.filter(function(l){return l.del.v!=null}).map(function(l){return{name:l.name,v:l.del.v}}), co.del, "Company Avg", true, " min");
-  html += barChart("Chair Utilization by Location", locs.filter(function(l){return l.cu.v!=null}).map(function(l){return{name:l.name,v:l.cu.v}}), co.cu, "Company Avg", false, "%");
-  html += barChart("iAssign Utilization by Location", locs.filter(function(l){return l.ia&&l.ia.v!=null}).map(function(l){return{name:l.name,v:l.ia.v}}), null, "", false, "%");
-  html += '</div></div>';
+  h+='<div class="tab-content" id="content-charts"><div class="charts-grid">';
+  h+=barChart("Scheduler Compliance by Location",locs.filter(function(l){return l.sc.v!=null;}).map(function(l){return{name:l.name,v:l.sc.v};}),co.sc,"Company Avg",false,"%");
+  h+=barChart("Avg Delay Before Treatment",locs.filter(function(l){return l.del.v!=null;}).map(function(l){return{name:l.name,v:l.del.v};}),co.del,"Company Avg",true," min");
+  h+=barChart("Chair Utilization by Location",locs.filter(function(l){return l.cu.v!=null;}).map(function(l){return{name:l.name,v:l.cu.v};}),co.cu,"Company Avg",false,"%");
+  h+=barChart("iAssign Utilization by Location",locs.filter(function(l){return l.ia&&l.ia.v!=null;}).map(function(l){return{name:l.name,v:l.ia.v};}),null,"",false,"%");
+  h+='</div></div>';
 
   // Footer
-  html += '<footer>MOASD &middot; February 2026 Clinic Health Report &middot; Prepared by the OncoSmart Analytics Team<br>Confidential &mdash; for internal review only</footer>';
+  h+='<footer>MOASD '+MID+' February 2026 Clinic Health Report '+MID+' Prepared by the OncoSmart Analytics Team<br>Confidential '+EM+' for internal review only</footer>';
 
-  document.getElementById('app').innerHTML = html;
+  document.getElementById("app").innerHTML=h;
 }
 
-function switchTab(id) {
-  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('active'); });
-  document.querySelectorAll('.tab-content').forEach(function(t){ t.classList.remove('active'); });
-  document.getElementById('tab-'+id).classList.add('active');
-  document.getElementById('content-'+id).classList.add('active');
+function switchTab(id){
+  document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("active");});
+  document.querySelectorAll(".tab-content").forEach(function(t){t.classList.remove("active");});
+  document.getElementById("tab-"+id).classList.add("active");
+  document.getElementById("content-"+id).classList.add("active");
 }
 
 render();
+
 </script>
 </body>
 </html>
