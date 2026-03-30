@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 
-const BASE = import.meta.env.BASE_URL
-
 const cache = {}
 
 export function useClinicData(clientCode) {
@@ -17,7 +15,8 @@ export function useClinicData(clientCode) {
       return
     }
     setLoading(true)
-    fetch(`${BASE}data/${clientCode}.json`)
+    const url = `${import.meta.env.BASE_URL}data/${clientCode}.json`
+    fetch(url)
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()

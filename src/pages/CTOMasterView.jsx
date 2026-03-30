@@ -21,7 +21,7 @@ function ClinicCard({ client, onClick }) {
             {client.display_name}
           </div>
           <div className="text-xs text-slate-400 mt-0.5">
-            {client.location_count} location{client.location_count !== 1 ? 's' : ''} \u00b7 {client.latest_month}
+            {client.location_count} location{client.location_count !== 1 ? 's' : ''} {'\u00b7'} {client.latest_month}
           </div>
         </div>
         <ScoreBadge score={client.composite_score} size="sm" />
@@ -43,7 +43,7 @@ export default function CTOMasterView() {
   if (loading) return (
     <div className="min-h-screen bg-slate-50">
       <NavBar />
-      <div className="flex items-center justify-center h-64 text-slate-400">Loading\u2026</div>
+      <div className="flex items-center justify-center h-64 text-slate-400">{'Loading\u2026'}</div>
     </div>
   )
 

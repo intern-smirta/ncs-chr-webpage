@@ -17,7 +17,7 @@ export default function ClinicView() {
   if (loading) return (
     <div className="min-h-screen bg-slate-50">
       <NavBar />
-      <div className="flex items-center justify-center h-64 text-slate-400">Loading {clientCode}\u2026</div>
+      <div className="flex items-center justify-center h-64 text-slate-400">Loading {clientCode}{'\u2026'}</div>
     </div>
   )
 
@@ -58,7 +58,7 @@ export default function ClinicView() {
             <div className="flex-1 min-w-0">
               <h1 className="text-2xl font-bold text-white mb-1">{clientCode}</h1>
               <div className="text-slate-400 text-sm">
-                {ioptimize.length} location{ioptimize.length !== 1 ? 's' : ''} \u00b7 Report period: {activeMonth}
+                {ioptimize.length} location{ioptimize.length !== 1 ? 's' : ''} {'\u00b7'} Report period: {activeMonth}
               </div>
             </div>
             <ScoreBadge score={composite_score} size="lg" />

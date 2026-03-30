@@ -115,7 +115,7 @@ export default function ChatBot({ chatbotContext, currentMonthData }) {
               onChange={e => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               rows={1}
-              placeholder="Ask a question\u2026"
+              placeholder={"Ask a question\u2026"}
               className="flex-1 bg-slate-800 text-slate-100 text-sm rounded-xl px-3 py-2 resize-none outline-none placeholder-slate-500 border border-slate-700 focus:border-teal-500 transition-colors"
             />
             <button

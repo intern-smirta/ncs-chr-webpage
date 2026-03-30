@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 
-const BASE = import.meta.env.BASE_URL
-
 let cache = null
 
 export function useManifest() {
@@ -11,7 +9,8 @@ export function useManifest() {
 
   useEffect(() => {
     if (cache) return
-    fetch(`${BASE}data/manifest.json`)
+    const url = `${import.meta.env.BASE_URL}data/manifest.json`
+    fetch(url)
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()

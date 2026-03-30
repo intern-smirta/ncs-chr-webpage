@@ -15,7 +15,7 @@ export default function NavBar() {
           to="/"
           className="ml-auto text-slate-400 hover:text-teal-400 text-sm transition-colors"
         >
-          \u2190 All Clinics
+          {'\u2190'} All Clinics
         </Link>
       )}
     </nav>
