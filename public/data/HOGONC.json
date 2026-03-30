@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "client_code": "HOGONC",
+    "generated_at": "2026-03-01T00:00:00Z",
+    "months_available": ["2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"]
+  },
+  "months": {
+    "2026-02": {
+      "composite_score": 74.5,
+      "ioptimize": [
+        {
+          "location": "BCC MO",
+          "scheduler_compliance_avg": 46.99,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 9.81,
+          "avg_delay_median": 8.64,
+          "chair_utilization_avg": 82.1,
+          "chair_utilization_median": null,
+          "tx_past_close_avg": 3.2,
+          "tx_past_close_median": 3.0,
+          "tx_mins_past_close_avg": 12.5,
+          "tx_mins_past_close_median": 11.0,
+          "mom_deltas": { "scheduler_compliance": 2.1, "avg_delay_mins": -0.4 },
+          "vs_company": { "scheduler_compliance": "below", "avg_delay_mins": "above" },
+          "outlier_flags": ["avg_delay_mins"]
+        },
+        {
+          "location": "MTH MO",
+          "scheduler_compliance_avg": 71.2,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 6.5,
+          "avg_delay_median": 6.0,
+          "chair_utilization_avg": 88.3,
+          "chair_utilization_median": null,
+          "tx_past_close_avg": 1.8,
+          "tx_past_close_median": 1.5,
+          "tx_mins_past_close_avg": 8.2,
+          "tx_mins_past_close_median": 7.0,
+          "mom_deltas": { "scheduler_compliance": 5.3, "chair_utilization": 1.2 },
+          "vs_company": { "scheduler_compliance": "above", "chair_utilization": "above" },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [
+        {
+          "location": "BCC MO",
+          "iassign_utilization_avg": 88.5,
+          "patients_per_nurse_avg": 4.2,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 3.1,
+          "chairs_per_nurse_median": 3.0,
+          "nurse_utilization_avg": 71.0,
+          "nurse_utilization_median": 70.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
+          "location": "MTH MO",
+          "iassign_utilization_avg": 92.0,
+          "patients_per_nurse_avg": 3.8,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 2.9,
+          "chairs_per_nurse_median": 3.0,
+          "nurse_utilization_avg": 78.5,
+          "nurse_utilization_median": 79.0,
+          "mom_deltas": { "iassign_utilization": 3.5 },
+          "vs_company": { "iassign_utilization": "above" },
+          "outlier_flags": []
+        }
+      ],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": 61.2,
+          "avg_delay_avg": 7.8,
+          "chair_utilization_avg": 79.0,
+          "tx_past_close_avg": 2.5
+        },
+        "onco_benchmark": {
+          "scheduler_compliance_avg": 75.0,
+          "avg_delay_avg": 6.0,
+          "chair_utilization_avg": 85.0,
+          "tx_past_close_avg": 1.5
+        }
+      },
+      "ai_insights": {
+        "executive_summary": "HOGONC showed strong performance in February 2026, with MTH MO exceeding OncoSmart benchmarks on scheduler compliance and chair utilization. BCC MO continues to run delays above network average and warrants scheduling review.",
+        "highlights": [
+          "MTH MO scheduler compliance reached 71.2%, above the 61.2% company average.",
+          "iAssign utilization improved across both locations, with MTH MO reaching 92%."
+        ],
+        "concerns": [
+          "BCC MO average delay of 9.81 minutes is flagged as a statistical outlier above the network.",
+          "BCC MO scheduler compliance at 47% remains well below company average and OncoSmart benchmark."
+        ],
+        "recommendations": [
+          "Review BCC MO scheduling workflow \u2014 consider increasing iOptimize adoption from current 47% compliance.",
+          "Share MTH MO scheduling practices with BCC MO as an internal benchmark."
+        ]
+      }
+    },
+    "2026-01": {
+      "composite_score": 71.2,
+      "ioptimize": [
+        {
+          "location": "BCC MO",
+          "scheduler_compliance_avg": 44.89,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 10.21,
+          "avg_delay_median": 9.1,
+          "chair_utilization_avg": 80.5,
+          "chair_utilization_median": null,
+          "tx_past_close_avg": 3.6,
+          "tx_past_close_median": 3.5,
+          "tx_mins_past_close_avg": 14.1,
+          "tx_mins_past_close_median": 13.0,
+          "mom_deltas": {},
+          "vs_company": { "scheduler_compliance": "below" },
+          "outlier_flags": []
+        },
+        {
+          "location": "MTH MO",
+          "scheduler_compliance_avg": 65.9,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 7.2,
+          "avg_delay_median": 6.8,
+          "chair_utilization_avg": 87.1,
+          "chair_utilization_median": null,
+          "tx_past_close_avg": 2.0,
+          "tx_past_close_median": 2.0,
+          "tx_mins_past_close_avg": 9.5,
+          "tx_mins_past_close_median": 8.5,
+          "mom_deltas": {},
+          "vs_company": { "scheduler_compliance": "above" },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": 60.5,
+          "avg_delay_avg": 8.1,
+          "chair_utilization_avg": 78.5,
+          "tx_past_close_avg": 2.7
+        },
+        "onco_benchmark": {
+          "scheduler_compliance_avg": 75.0,
+          "avg_delay_avg": 6.0,
+          "chair_utilization_avg": 85.0,
+          "tx_past_close_avg": 1.5
+        }
+      },
+      "ai_insights": {
+        "executive_summary": "January 2026 showed steady performance. MTH MO leads on compliance while BCC MO improvement is needed.",
+        "highlights": ["MTH MO chair utilization at 87.1%, above company average."],
+        "concerns": ["BCC MO scheduler compliance still below 50%."],
+        "recommendations": ["Continue iOptimize adoption push at BCC MO."]
+      }
+    }
+  },
+  "chatbot_context": {
+    "kpi_definitions": {
+      "scheduler_compliance": {
+        "label": "Scheduler Compliance",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Percentage of appointments scheduled following iOptimize recommendations. Higher is better. Company average is typically 60-70%. OncoSmart benchmark target is 75%."
+      },
+      "avg_delay_mins": {
+        "label": "Avg Delay",
+        "unit": "mins",
+        "higher_is_better": false,
+        "explanation": "Average daily schedule delay in minutes. Lower is better."
+      },
+      "avg_chair_utilization": {
+        "label": "Chair Utilization",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Average chair utilization rate. Higher is better."
+      },
+      "avg_treatments_per_day": {
+        "label": "Tx Past Close/Day",
+        "unit": "count",
+        "higher_is_better": false,
+        "explanation": "Average treatments running past treatment close per day. Lower is better."
+      }
+    },
+    "data_notes": "Company Avg rows represent the network average across all locations for this client in the given month. Onco rows are global oncology benchmarks from the OncoSmart network. MoM (Month-over-Month) deltas compare the current month to the prior month. Composite scores are weighted 0 to 100 where 100 is best-in-class performance.",
+    "historical_kpis": [
+      { "month": "2025-09", "location": "BCC MO", "scheduler_compliance_avg": 41.2, "avg_delay_avg": 11.5, "chair_utilization_avg": 78.3, "tx_past_close_avg": 4.1 },
+      { "month": "2025-09", "location": "MTH MO", "scheduler_compliance_avg": 58.0, "avg_delay_avg": 8.9, "chair_utilization_avg": 83.0, "tx_past_close_avg": 2.5 },
+      { "month": "2025-10", "location": "BCC MO", "scheduler_compliance_avg": 43.0, "avg_delay_avg": 10.8, "chair_utilization_avg": 79.1, "tx_past_close_avg": 3.9 },
+      { "month": "2025-10", "location": "MTH MO", "scheduler_compliance_avg": 61.5, "avg_delay_avg": 8.1, "chair_utilization_avg": 84.5, "tx_past_close_avg": 2.2 },
+      { "month": "2025-11", "location": "BCC MO", "scheduler_compliance_avg": 44.5, "avg_delay_avg": 10.5, "chair_utilization_avg": 80.0, "tx_past_close_avg": 3.7 },
+      { "month": "2025-11", "location": "MTH MO", "scheduler_compliance_avg": 63.0, "avg_delay_avg": 7.8, "chair_utilization_avg": 85.5, "tx_past_close_avg": 2.1 },
+      { "month": "2025-12", "location": "BCC MO", "scheduler_compliance_avg": 44.0, "avg_delay_avg": 10.9, "chair_utilization_avg": 79.5, "tx_past_close_avg": 3.8 },
+      { "month": "2025-12", "location": "MTH MO", "scheduler_compliance_avg": 63.8, "avg_delay_avg": 7.5, "chair_utilization_avg": 86.0, "tx_past_close_avg": 2.0 },
+      { "month": "2026-01", "location": "BCC MO", "scheduler_compliance_avg": 44.89, "avg_delay_avg": 10.21, "chair_utilization_avg": 80.5, "tx_past_close_avg": 3.6 },
+      { "month": "2026-01", "location": "MTH MO", "scheduler_compliance_avg": 65.9, "avg_delay_avg": 7.2, "chair_utilization_avg": 87.1, "tx_past_close_avg": 2.0 },
+      { "month": "2026-02", "location": "BCC MO", "scheduler_compliance_avg": 46.99, "avg_delay_avg": 9.81, "chair_utilization_avg": 82.1, "tx_past_close_avg": 3.2 },
+      { "month": "2026-02", "location": "MTH MO", "scheduler_compliance_avg": 71.2, "avg_delay_avg": 6.5, "chair_utilization_avg": 88.3, "tx_past_close_avg": 1.8 }
+    ]
+  }
+}
