@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-03-01T00:00:00Z",
+  "latest_month": "2026-02",
+  "clients": [
+    { "code": "AON",   "display_name": "AON",   "latest_month": "2026-02", "location_count": 3, "composite_score": 72.1, "mom_trend": "up" },
+    { "code": "CCBD",  "display_name": "CCBD",  "latest_month": "2026-02", "location_count": 2, "composite_score": 68.4, "mom_trend": "flat" },
+    { "code": "CCI",   "display_name": "CCI",   "latest_month": "2026-02", "location_count": 4, "composite_score": 74.0, "mom_trend": "up" },
+    { "code": "CHC",   "display_name": "CHC",   "latest_month": "2026-02", "location_count": 3, "composite_score": 65.2, "mom_trend": "down" },
+    { "code": "HOGONC","display_name": "HOGONC","latest_month": "2026-02", "location_count": 4, "composite_score": 74.5, "mom_trend": "up" },
+    { "code": "LOA",   "display_name": "LOA",   "latest_month": "2026-02", "location_count": 2, "composite_score": 70.0, "mom_trend": "flat" },
+    { "code": "MOASD", "display_name": "MOASD", "latest_month": "2026-02", "location_count": 3, "composite_score": 63.8, "mom_trend": "down" },
+    { "code": "NCS",   "display_name": "NCS",   "latest_month": "2026-02", "location_count": 5, "composite_score": 79.2, "mom_trend": "up" },
+    { "code": "NMCC",  "display_name": "NMCC",  "latest_month": "2026-02", "location_count": 2, "composite_score": 66.1, "mom_trend": "flat" },
+    { "code": "NWMS",  "display_name": "NWMS",  "latest_month": "2026-02", "location_count": 3, "composite_score": 71.3, "mom_trend": "up" },
+    { "code": "NYOH",  "display_name": "NYOH",  "latest_month": "2026-02", "location_count": 4, "composite_score": 77.0, "mom_trend": "flat" },
+    { "code": "PCC",   "display_name": "PCC",   "latest_month": "2026-02", "location_count": 2, "composite_score": 69.5, "mom_trend": "up" },
+    { "code": "PCI",   "display_name": "PCI",   "latest_month": "2026-02", "location_count": 3, "composite_score": 73.4, "mom_trend": "flat" },
+    { "code": "TNO",   "display_name": "TNO",   "latest_month": "2026-02", "location_count": 2, "composite_score": 61.0, "mom_trend": "down" }
+  ],
+  "network_summary": {
+    "avg_composite_score": 70.4,
+    "top_performer": "NCS",
+    "most_improved": "AON"
+  }
+}
