@@ -7,6 +7,7 @@ import KpiCard from '../components/KpiCard'
 import KpiTable from '../components/KpiTable'
 import TrendChart from '../components/TrendChart'
 import InsightPanel from '../components/InsightPanel'
+import ChatBot from '../components/ChatBot'
 
 export default function ClinicView() {
   const { clientCode } = useParams()
@@ -157,6 +158,8 @@ export default function ClinicView() {
           </div>
         </section>
       </div>
+
+      <ChatBot chatbotContext={chatbot_context} currentMonthData={monthData} />
     </div>
   )
 }
