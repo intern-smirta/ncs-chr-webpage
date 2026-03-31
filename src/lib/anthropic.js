@@ -10,7 +10,7 @@ export function buildSystemPrompt(chatbotContext, currentMonthData) {
 
   const historyText = historical_kpis
     .map(r =>
-      `${r.month} | ${r.location} | Sched Compliance: ${r.scheduler_compliance_avg ?? '\u2014'}% | Avg Delay: ${r.avg_delay_avg ?? '\u2014'} min | Chair Util: ${r.chair_utilization_avg ?? '\u2014'}% | Tx Past Close: ${r.tx_past_close_avg ?? '\u2014'}/day`
+      `${r.month} | ${r.location} | Scheduler Compliance: ${r.scheduler_compliance_avg ?? '\u2014'}% | Avg Delay: ${r.avg_delay_avg ?? '\u2014'} min | Chair Utilization: ${r.chair_utilization_avg ?? '\u2014'}% | Tx Past Close: ${r.tx_past_close_avg ?? '\u2014'}/day`
     )
     .join('\n')
 
