@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NWMS",
-    "generated_at": "2026-03-31T00:41:36.987909Z",
+    "generated_at": "2026-03-31T20:57:52.180093Z",
     "months_available": [
       "2025-11",
       "2025-12",
@@ -13,6 +13,22 @@
     "2025-11": {
       "composite_score": 61.1,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 4.85,
+          "avg_delay_median": 4.67,
+          "chair_utilization_avg": 57.25,
+          "chair_utilization_median": 50.77,
+          "tx_past_close_avg": 0.75,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 30.31,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "scheduler_compliance_avg": null,
@@ -146,6 +162,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 64.55,
+          "patients_per_nurse_avg": 6.47,
+          "patients_per_nurse_median": 6.75,
+          "chairs_per_nurse_avg": 2.66,
+          "chairs_per_nurse_median": 2.38,
+          "nurse_utilization_avg": 67.89,
+          "nurse_utilization_median": 65.1,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "iassign_utilization_avg": 27.27,
@@ -287,6 +316,22 @@
     "2025-12": {
       "composite_score": 58.6,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.37,
+          "avg_delay_median": 4.44,
+          "chair_utilization_avg": 46.58,
+          "chair_utilization_median": 58.19,
+          "tx_past_close_avg": 0.77,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 24.92,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "scheduler_compliance_avg": null,
@@ -453,6 +498,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 87.1,
+          "patients_per_nurse_avg": 6.94,
+          "patients_per_nurse_median": 6.73,
+          "chairs_per_nurse_avg": 2.42,
+          "chairs_per_nurse_median": 2.44,
+          "nurse_utilization_avg": 66.05,
+          "nurse_utilization_median": 61.8,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Gig Harbour",
           "iassign_utilization_avg": 95.45,
           "patients_per_nurse_avg": 6.23,
@@ -600,6 +658,22 @@
     "2026-01": {
       "composite_score": 71.9,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 80.33,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.1,
+          "avg_delay_median": 4.0,
+          "chair_utilization_avg": 67.87,
+          "chair_utilization_median": 64.04,
+          "tx_past_close_avg": 1.06,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 30.13,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "scheduler_compliance_avg": 93.28,
@@ -777,6 +851,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 92.18,
+          "patients_per_nurse_avg": 6.76,
+          "patients_per_nurse_median": 7.0,
+          "chairs_per_nurse_avg": 2.65,
+          "chairs_per_nurse_median": 2.44,
+          "nurse_utilization_avg": 63.05,
+          "nurse_utilization_median": 63.8,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "iassign_utilization_avg": 83.33,
@@ -962,6 +1049,22 @@
     "2026-02": {
       "composite_score": 72.4,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 89.32,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 6.68,
+          "avg_delay_median": 5.97,
+          "chair_utilization_avg": 64.13,
+          "chair_utilization_median": 63.58,
+          "tx_past_close_avg": 1.09,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 27.84,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Federal Way",
           "scheduler_compliance_avg": 95.45,
@@ -1181,6 +1284,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 85.0,
+          "patients_per_nurse_avg": 7.11,
+          "patients_per_nurse_median": 7.0,
+          "chairs_per_nurse_avg": 2.81,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 63.63,
+          "nurse_utilization_median": 63.19,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Federal Way",
           "iassign_utilization_avg": 100.0,
           "patients_per_nurse_avg": 7.35,
@@ -1389,15 +1505,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "NWMS delivered solid operational momentum in February 2026, with four of five clinics posting measurable gains in schedule adherence and closing-time performance. The network's composite Performance Score sits above the 50-point midpoint across all locations, reflecting disciplined scheduling and improving nurse-to-chair alignment. One clinic requires focused attention on patient wait times, which currently outpace the company benchmark.",
+        "executive_summary": "The NWMS network achieved a composite performance score of 72.6 out of 100 in February 2026 (where 50 represents the network average), associated with strong gains in operational efficiency across most clinics. Month-over-month improvements in treatments running past closing time\u2014Federal Way declined 53.7% from 1.1 to 0.5 treatments per day, and Tacoma dropped 60.5% from 0.8 to 0.3\u2014demonstrate meaningful progress in schedule adherence. However, one clinic requires targeted attention: Tacoma's average patient delay of 8.5 minutes sits 27% above the company average of 6.68 minutes, presenting the network's most significant performance gap.",
         "highlights": [
-          "Federal Way demonstrated the month's most dramatic progress, with minutes past close per patient falling 61.3 percent from 42.2 minutes in January to 16.3 minutes in February, while nurse utilization rose 15.0 percent from 58.0 percent to 66.7 percent over the same period. Tacoma achieved parallel momentum, cutting treatments past closing daily from 0.8 in January to 0.3 in February, a 60.5 percent reduction, while a three-month trend in minutes past close per patient shows consistent improvement with an R\u00b2 of 0.99 and a three-month average of 25.1 minutes."
+          "Gig Harbour continues to lead the network with a composite score of 79 out of 100, supported by 100% iAssign utilization and an average delay of 5.5 minutes\u2014well below the company average of 6.68 minutes. Federal Way demonstrated exceptional month-over-month progress, with minutes past close per patient improving 61.3% from 42.2 minutes in January to 16.3 minutes in February, while nurse utilization rose 15.0 percentage points from 58.0% to 66.7% in the same period. Olympia's chair utilization has improved consistently over four consecutive months to a three-month average of 74.5%, now running 1.6 standard deviations above the company average of 64.13%, indicating strong asset utilization discipline."
         ],
         "concerns": [
-          "We noticed Puyallup's iAssign utilization stands at 42.1 percent, substantially below the clinic group mean of 86.4 percent and representing a concerning 67-point gap. This underadoption coincides with Puyallup's relatively lower Performance Score of 69 out of 100 (where 50 equals network average) and elevated minutes past close per patient at 26.5 minutes, 98.4 percent above the company mean of 26.4 minutes. Additionally, Tacoma's average patient delay of 8.5 minutes exceeds the company average of 6.68 minutes by 27 percent, representing the largest single-clinic gap in wait-time performance despite strong iAssign adoption at 100 percent."
+          "We noticed that Puyallup's iAssign utilization stands at 42.1%, running 1.9 standard deviations below the company average of 86.4%\u2014a gap of 50.5 percentage points that aligns with elevated minutes past close per patient of 41.8 minutes (1.7 standard deviations above the company mean of 26.4). This pattern suggests that lower iAssign adoption may be associated with scheduling fragmentation and extended operational hours. Separately, Olympia's treatments running past closing time average 3.2 per day, which runs 1.9 standard deviations above the company average of 1.1\u2014a substantial operational strain despite strong chair utilization of 80.0%."
         ],
         "recommendations": [
-          "We recommend Tacoma conduct a focused audit of its current scheduling templates against iOptimize recommendations, with particular attention to appointment spacing logic. While Tacoma's scheduler compliance of 93.8 percent sits above the company average of 89.32 percent and iAssign utilization is at full adoption, the persistent 8.5-minute delay suggests the templates themselves may benefit from refinement to better distribute patient arrival patterns and reduce bunching. This would be a natural complement to Tacoma's recent operational wins and may illuminate whether the delay stems from template structure or execution discipline."
+          "We recommend that Tacoma's scheduling leadership conduct a focused audit of appointment interval templates and nurse-to-chair assignment workflows to address the clinic's 27% delay gap above the company average. Given Tacoma's strong scheduler compliance of 93.8% alongside its elevated 8.5-minute average delay (versus the company average of 6.68 minutes), the root cause likely resides in appointment duration calibration or care pathway design rather than scheduling discipline; a structured review of these templates would help isolate whether adjustments to buffer time, procedure duration estimates, or nurse allocation could narrow this gap."
         ]
       }
     }

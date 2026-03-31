@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NMCC",
-    "generated_at": "2026-03-31T00:41:36.895086Z",
+    "generated_at": "2026-03-31T20:57:52.164279Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -38,6 +38,22 @@
             "iassign_utilization": "below"
           },
           "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 13.49,
+          "avg_delay_median": 13.03,
+          "chair_utilization_avg": 100.59,
+          "chair_utilization_median": 98.25,
+          "tx_past_close_avg": 1.83,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 27.24,
+          "tx_mins_past_close_median": 12.5,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
         }
       ],
       "iassign": [
@@ -61,6 +77,19 @@
             "avg_patients_per_nurse": "below",
             "iassign_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 86.96,
+          "patients_per_nurse_avg": 7.37,
+          "patients_per_nurse_median": 7.3,
+          "chairs_per_nurse_avg": 3.37,
+          "chairs_per_nurse_median": 3.22,
+          "nurse_utilization_avg": 75.28,
+          "nurse_utilization_median": 74.43,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         }
       ],
@@ -100,6 +129,19 @@
             "avg_patients_per_nurse": "below",
             "iassign_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 58.33,
+          "patients_per_nurse_avg": 6.97,
+          "patients_per_nurse_median": 7.33,
+          "chairs_per_nurse_avg": 3.26,
+          "chairs_per_nurse_median": 3.22,
+          "nurse_utilization_avg": 70.81,
+          "nurse_utilization_median": 71.86,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         }
       ],
@@ -146,6 +188,22 @@
             "iassign_utilization": "below"
           },
           "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 14.59,
+          "avg_delay_median": 14.12,
+          "chair_utilization_avg": 104.25,
+          "chair_utilization_median": 105.98,
+          "tx_past_close_avg": 1.45,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 26.25,
+          "tx_mins_past_close_median": 13.08,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
         }
       ],
       "iassign": [
@@ -174,6 +232,19 @@
             "avg_patients_per_nurse": "below",
             "iassign_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 7.33,
+          "patients_per_nurse_median": 7.42,
+          "chairs_per_nurse_avg": 3.22,
+          "chairs_per_nurse_median": 3.22,
+          "nurse_utilization_avg": 73.8,
+          "nurse_utilization_median": 74.37,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         }
       ],
@@ -235,6 +306,22 @@
             "iassign_utilization": "below"
           },
           "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 70.61,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 15.49,
+          "avg_delay_median": 13.99,
+          "chair_utilization_avg": 102.74,
+          "chair_utilization_median": 106.28,
+          "tx_past_close_avg": 1.18,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 33.77,
+          "tx_mins_past_close_median": 7.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
         }
       ],
       "iassign": [
@@ -268,6 +355,19 @@
             "avg_patients_per_nurse": "below",
             "iassign_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 95.45,
+          "patients_per_nurse_avg": 6.86,
+          "patients_per_nurse_median": 6.89,
+          "chairs_per_nurse_avg": 3.17,
+          "chairs_per_nurse_median": 3.14,
+          "nurse_utilization_avg": 70.18,
+          "nurse_utilization_median": 70.41,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         }
       ],
@@ -332,6 +432,22 @@
           "outlier_flags": []
         },
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 79.58,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 13.8,
+          "avg_delay_median": 14.11,
+          "chair_utilization_avg": 102.61,
+          "chair_utilization_median": 101.37,
+          "tx_past_close_avg": 1.15,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 31.87,
+          "tx_mins_past_close_median": 19.5,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "scheduler_compliance_avg": 76.73,
           "scheduler_compliance_median": null,
@@ -393,6 +509,19 @@
           "outlier_flags": []
         },
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.95,
+          "patients_per_nurse_median": 7.0,
+          "chairs_per_nurse_avg": 3.15,
+          "chairs_per_nurse_median": 3.1,
+          "nurse_utilization_avg": 71.59,
+          "nurse_utilization_median": 70.12,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "iassign_utilization_avg": 95.06,
           "patients_per_nurse_avg": 5.84,
@@ -426,15 +555,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "Albuquerque delivered a composite performance score of 63 out of 100 (where 50 represents the network average), marking solid mid-range execution in February 2026. The clinic posted scheduler compliance of 79.6% and average patient delay of 13.8 minutes, both tracking directly in line with company averages of 79.58% and 13.8 minutes respectively. Two meaningful month-over-month gains\u2014scheduler compliance rising from 70.6% in January to 79.6% in February, and average delay falling from 15.5 minutes in January to 13.8 minutes in February\u2014suggest the clinic is tightening operational discipline.",
+        "executive_summary": "Albuquerque delivered a composite performance score of 63 out of 100 (where 50 represents the network average), demonstrating solid operational execution in February 2026. The clinic achieved scheduler compliance of 79.6% and average patient delay of 13.8 minutes, both aligned with company benchmarks of 79.58% and 13.8 minutes respectively. However, chair utilization at 102.6% remains elevated, though a three-month declining trend suggests healthy normalisation toward optimal capacity.",
         "highlights": [
-          "Scheduler compliance improved by a 9-point margin, climbing from 70.6% in January to 79.6% in February, now matching the company benchmark. Albuquerque also achieved perfect iAssign utilization at 100%, demonstrating strong adoption of algorithmic assignment protocols. These gains coincided with a 1.7-minute reduction in average patient delay over the same period, reflecting tighter appointment flow."
+          "Scheduler compliance rose from 70.6% in January to 79.6% in February, a 12.7% improvement that brought Albuquerque into alignment with the company average of 79.58%. Alongside this gain, average patient delay fell from 15.5 minutes in January to 13.8 minutes in February, a 10.9% reduction that now matches the company benchmark and reflects improved patient flow discipline."
         ],
         "concerns": [
-          "We noticed that Albuquerque's chair utilization has been declining over the past three months, with a three-month average of 103.2% moving toward the 100% mark\u2014a healthy normalisation from overbooking rather than a concern, yet worth monitoring to ensure patient volume forecasting remains accurate. Nurse utilization sits at 71.6%, notably below the optimal threshold, suggesting capacity exists to absorb additional patient volume or complexity without stretching staffing resources."
+          "We noticed that chair utilization, while aligned with the company average of 102.61%, has declined steadily over three consecutive months (from a three-month average of 103.2% toward the current 102.6%), which reflects healthy normalisation of overbooking pressure and warrants continued monitoring to ensure the downward trend persists. Nurse utilization at 71.6% remains notably below optimal levels, suggesting capacity headroom that may warrant exploration into whether scheduling patterns, staffing mix, or clinical protocols could be adjusted to bring nurse deployment closer to full capacity."
         ],
         "recommendations": [
-          "We'd recommend exploring whether the declining chair utilization trend reflects intentional scheduling adjustments or external factors such as patient no-shows or volume seasonality. A brief operational review with the Albuquerque team\u2014perhaps comparing actual vs. iOptimize-recommended slot allocation over the past two months\u2014could clarify whether further optimization opportunities exist, and whether the spare nurse capacity can be strategically deployed to support growth."
+          "We recommend a brief operational review focused on Albuquerque's nurse utilization gap. A gap of approximately 28 percentage points between current deployment (71.6%) and optimal utilization (closer to 100%) may indicate either scheduling inefficiency or conservative staffing protocols. A collaborative conversation with the clinic leadership on whether this headroom reflects deliberate safety margins or underutilised capacity could unlock meaningful efficiency gains without compromising quality."
         ]
       }
     }

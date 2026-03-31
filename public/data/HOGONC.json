@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "HOGONC",
-    "generated_at": "2026-03-31T00:41:36.928122Z",
+    "generated_at": "2026-03-31T20:57:52.094652Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -36,6 +36,22 @@
             "avg_patients_per_nurse": "above",
             "iassign_utilization": "above"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 10.26,
+          "avg_delay_median": 9.4,
+          "chair_utilization_avg": 66.82,
+          "chair_utilization_median": 60.6,
+          "tx_past_close_avg": 2.72,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 18.43,
+          "tx_mins_past_close_median": 10.0,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -134,6 +150,19 @@
             "avg_patients_per_nurse": "above",
             "iassign_utilization": "above"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 88.57,
+          "patients_per_nurse_avg": 6.0,
+          "patients_per_nurse_median": 6.1,
+          "chairs_per_nurse_avg": 4.93,
+          "chairs_per_nurse_median": 4.88,
+          "nurse_utilization_avg": 52.77,
+          "nurse_utilization_median": 52.6,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -256,6 +285,22 @@
           "outlier_flags": []
         },
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 10.8,
+          "avg_delay_median": 9.75,
+          "chair_utilization_avg": 68.95,
+          "chair_utilization_median": 61.98,
+          "tx_past_close_avg": 1.09,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 10.02,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "MTHMO",
           "scheduler_compliance_avg": null,
           "scheduler_compliance_median": null,
@@ -370,6 +415,19 @@
             "avg_patients_per_nurse": "above",
             "iassign_utilization": "above"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 83.88,
+          "patients_per_nurse_avg": 5.88,
+          "patients_per_nurse_median": 5.79,
+          "chairs_per_nurse_avg": 4.55,
+          "chairs_per_nurse_median": 4.86,
+          "nurse_utilization_avg": 53.34,
+          "nurse_utilization_median": 54.16,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -500,6 +558,22 @@
             "avg_patients_per_nurse": "above",
             "iassign_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 47.81,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 9.72,
+          "avg_delay_median": 7.67,
+          "chair_utilization_avg": 58.95,
+          "chair_utilization_median": 62.64,
+          "tx_past_close_avg": 1.03,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 15.86,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -642,6 +716,19 @@
           "outlier_flags": []
         },
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 81.36,
+          "patients_per_nurse_avg": 5.74,
+          "patients_per_nurse_median": 5.71,
+          "chairs_per_nurse_avg": 4.58,
+          "chairs_per_nurse_median": 4.85,
+          "nurse_utilization_avg": 50.83,
+          "nurse_utilization_median": 48.89,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "MTHMO",
           "iassign_utilization_avg": 95.24,
           "patients_per_nurse_avg": 4.79,
@@ -775,10 +862,10 @@
           "tx_mins_past_close_avg": 19.75,
           "tx_mins_past_close_median": 15.88,
           "mom_deltas": {
+            "avg_treatment_mins_per_patient": 3.23,
             "scheduler_compliance": 20.15,
             "avg_chair_utilization": 18.62,
             "avg_delay_mins": -0.18,
-            "avg_treatment_mins_per_patient": 3.23,
             "avg_treatments_per_day": 0.14,
             "iassign_utilization": 18.81,
             "avg_patients_per_nurse": 0.6,
@@ -786,10 +873,10 @@
             "avg_nurse_to_patient_chair_time": 2.77
           },
           "vs_company": {
+            "avg_treatment_mins_per_patient": "above",
             "scheduler_compliance": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "above",
             "iassign_utilization": "below",
             "avg_patients_per_nurse": "above",
@@ -800,6 +887,22 @@
             "avg_chair_utilization",
             "avg_patients_per_nurse"
           ]
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 69.49,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 10.25,
+          "avg_delay_median": 9.07,
+          "chair_utilization_avg": 71.04,
+          "chair_utilization_median": 77.7,
+          "tx_past_close_avg": 1.28,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 13.18,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
         },
         {
           "location": "Global Avg",
@@ -841,9 +944,9 @@
           "tx_mins_past_close_median": 10.5,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "above",
             "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
@@ -933,10 +1036,10 @@
           "nurse_utilization_avg": 58.8,
           "nurse_utilization_median": 57.75,
           "mom_deltas": {
+            "avg_treatment_mins_per_patient": 3.23,
             "scheduler_compliance": 20.15,
             "avg_chair_utilization": 18.62,
             "avg_delay_mins": -0.18,
-            "avg_treatment_mins_per_patient": 3.23,
             "avg_treatments_per_day": 0.14,
             "iassign_utilization": 18.81,
             "avg_patients_per_nurse": 0.6,
@@ -944,10 +1047,10 @@
             "avg_nurse_to_patient_chair_time": 2.77
           },
           "vs_company": {
+            "avg_treatment_mins_per_patient": "above",
             "scheduler_compliance": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "above",
             "iassign_utilization": "below",
             "avg_patients_per_nurse": "above",
@@ -958,6 +1061,19 @@
             "avg_chair_utilization",
             "avg_patients_per_nurse"
           ]
+        },
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 95.0,
+          "patients_per_nurse_avg": 6.1,
+          "patients_per_nurse_median": 6.25,
+          "chairs_per_nurse_avg": 3.89,
+          "chairs_per_nurse_median": 3.78,
+          "nurse_utilization_avg": 54.08,
+          "nurse_utilization_median": 54.84,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
         },
         {
           "location": "Global Avg",
@@ -993,9 +1109,9 @@
           "nurse_utilization_median": 46.74,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "above",
             "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
@@ -1078,15 +1194,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "HOGONC's four clinics delivered mixed performance in February 2026, with a network Performance Score average of 42.75 out of 100 (where 50 represents the company average). Two clinics posted substantial month-over-month gains in scheduling compliance and chair utilization, while delays and nurse deployment remain areas requiring attention across the portfolio. The data suggests we have the operational foundations in place\u2014particularly strong iAssign adoption and improving scheduling discipline\u2014but uneven execution is holding back collective performance.",
+        "executive_summary": "HOGONC's four clinics delivered mixed performance in February 2026, with a network-wide Performance Score averaging 42.75 out of 100 (where 50 represents the company average). Two clinics\u2014NH MO and BCC MO\u2014posted substantial month-over-month gains, associated with improvements in scheduling compliance and chair utilization. However, MTH MO's average patient delay of 13.7 minutes sits 33% above the company benchmark of 10.25 minutes, representing our most actionable opportunity for operational refinement.",
         "highlights": [
-          "NH MO achieved the most dramatic turnaround, with Scheduler Compliance rising from 42.3% in January to 66.7% in February (a 24.4-point gain), accompanied by Chair Utilization climbing from 45.2% to 69.7% in the same period. BCC MO also showed disciplined improvement, with Scheduler Compliance rising from 47.0% in January to 67.1% in February (a 20.1-point gain) and iAssign Utilization jumping from 76.2% to 95.0%, now matching the company's highest adoption tier. Both clinics' gains in scheduling compliance coincide with tighter wait times: NH MO's Avg Delay improved from 7.5 minutes in January to 6.4 minutes in February, sitting 3.8 minutes below the company average of 10.25 minutes."
+          "NH MO executed a operational turnaround in February, with Scheduler Compliance climbing from 42.3% in January to 66.7% in February (a 24-point gain), while Chair Utilization rose from 45.2% in January to 69.7% in February. BCC MO similarly strengthened its scheduling discipline, with Scheduler Compliance improving from 47.0% in January to 67.1% in February (a 20-point gain), and iAssign Utilization rising from 76.2% in January to 95.0% in February, now matching the company's highest adoption rate alongside NH MO's 100% utilization."
         ],
         "concerns": [
-          "We noticed MTH MO's Avg Delay of 13.7 minutes stands 33% above the company average of 10.25 minutes\u2014the largest single performance gap in HOGONC\u2014despite solid Scheduler Compliance of 74.9%; this disconnect warrants exploring whether appointment spacing aligns with actual treatment duration or if chair-to-nurse capacity balance is creating bottlenecks. Additionally, MTH MO's Nurse Utilization sits at 45.8%, approximately 7.6 percentage points below PW MO (53.4%) and notably underdeployed relative to peer clinics, suggesting potential staffing or workflow alignment opportunities."
+          "We noticed that MTH MO's average delay of 13.7 minutes substantially exceeds the company average of 10.25 minutes, and the clinic also carries the lowest Nurse Utilization in the network at 45.8% compared to the company group average of 53.4%. One area worth exploring together is whether MTH MO's scheduling templates may benefit from review\u2014tighter alignment with iOptimize recommendations (currently 74.9% compliance, above the company average of 69.49%) could further reduce wait time variation. Additionally, PW MO's iAssign Utilization stands at 83.3%, the lowest across HOGONC, compared to company average of 94.7%, suggesting potential gains from targeted adoption support."
         ],
         "recommendations": [
-          "We recommend MTH MO conduct a targeted audit of scheduling templates and nurse-to-chair assignments to uncover why strong compliance (74.9%) is not translating into faster patient flow. Specifically, review whether scheduled appointment intervals match actual treatment cycle times and whether current nurse assignments are sized appropriately for the chair volume; this targeted diagnostic will help close the 33% delay gap versus company average and unlock the clinic's compliance gains."
+          "We recommend MTH MO conduct a focused audit of its appointment spacing and nurse-to-chair assignment workflow. With average delays at 13.7 minutes against the company benchmark of 10.25 minutes, a structured review of how iOptimize scheduling recommendations are being operationalized in real time\u2014and where bottlenecks emerge between chair readiness and nurse availability\u2014could unlock measurable improvement without requiring structural changes."
         ]
       }
     }

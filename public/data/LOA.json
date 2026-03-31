@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "LOA",
-    "generated_at": "2026-03-31T00:41:36.879856Z",
+    "generated_at": "2026-03-31T20:57:52.113297Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -14,6 +14,22 @@
     "2025-10": {
       "composite_score": 35.4,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 28.79,
+          "avg_delay_median": 26.63,
+          "chair_utilization_avg": 68.24,
+          "chair_utilization_median": 75.63,
+          "tx_past_close_avg": 1.18,
+          "tx_past_close_median": 0.5,
+          "tx_mins_past_close_avg": 17.89,
+          "tx_mins_past_close_median": 0.5,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "scheduler_compliance_avg": null,
@@ -116,6 +132,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 4.85,
+          "patients_per_nurse_median": 4.8,
+          "chairs_per_nurse_avg": 2.69,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 49.21,
+          "nurse_utilization_median": 49.43,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "iassign_utilization_avg": 100.0,
@@ -224,6 +253,22 @@
     "2025-11": {
       "composite_score": 37.0,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 28.61,
+          "avg_delay_median": 28.61,
+          "chair_utilization_avg": 68.77,
+          "chair_utilization_median": 73.07,
+          "tx_past_close_avg": 0.92,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 14.77,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "scheduler_compliance_avg": null,
@@ -362,6 +407,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 4.93,
+          "patients_per_nurse_median": 4.86,
+          "chairs_per_nurse_avg": 2.78,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 49.71,
+          "nurse_utilization_median": 49.21,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "iassign_utilization_avg": 100.0,
@@ -507,6 +565,22 @@
       "composite_score": 36.3,
       "ioptimize": [
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 28.15,
+          "avg_delay_median": 28.17,
+          "chair_utilization_avg": 74.02,
+          "chair_utilization_median": 77.72,
+          "tx_past_close_avg": 1.13,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 14.46,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Mt Pleasant",
           "scheduler_compliance_avg": null,
           "scheduler_compliance_median": null,
@@ -626,6 +700,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 5.28,
+          "patients_per_nurse_median": 5.23,
+          "chairs_per_nurse_avg": 2.84,
+          "chairs_per_nurse_median": 3.0,
+          "nurse_utilization_avg": 55.2,
+          "nurse_utilization_median": 51.85,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "iassign_utilization_avg": 100.0,
@@ -757,6 +844,22 @@
     "2026-01": {
       "composite_score": 30.1,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 44.93,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 29.51,
+          "avg_delay_median": 30.18,
+          "chair_utilization_avg": 68.91,
+          "chair_utilization_median": 74.31,
+          "tx_past_close_avg": 0.93,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 19.34,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "scheduler_compliance_avg": 39.43,
@@ -901,6 +1004,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 99.0,
+          "patients_per_nurse_avg": 4.86,
+          "patients_per_nurse_median": 4.78,
+          "chairs_per_nurse_avg": 2.76,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 48.31,
+          "nurse_utilization_median": 47.74,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Mt Pleasant",
           "iassign_utilization_avg": 100.0,
@@ -1057,6 +1173,22 @@
       "composite_score": 22.5,
       "ioptimize": [
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 61.11,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 26.39,
+          "avg_delay_median": 25.86,
+          "chair_utilization_avg": 70.19,
+          "chair_utilization_median": 72.81,
+          "tx_past_close_avg": 1.24,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 25.05,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "scheduler_compliance_avg": 76.73,
           "scheduler_compliance_median": null,
@@ -1206,6 +1338,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 4.96,
+          "patients_per_nurse_median": 4.93,
+          "chairs_per_nurse_avg": 2.78,
+          "chairs_per_nurse_median": 3.0,
+          "nurse_utilization_avg": 47.66,
+          "nurse_utilization_median": 46.53,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "iassign_utilization_avg": 95.06,
           "patients_per_nurse_avg": 5.84,
@@ -1348,15 +1493,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "The LOA network finished February 2026 with a composite performance score of 22.75 out of 100 (where 50 represents the network average), reflecting meaningful operational headwinds across all four clinics. While iAssign adoption remains universal at 100% across the board, persistent gaps in scheduler compliance, patient delays, and chair utilization signal systemic scheduling and capacity challenges that warrant coordinated attention.",
+        "executive_summary": "The LOA network is performing below the company average across most operational metrics in February 2026, with a composite performance score of 22.75 out of 100 (where 50 represents the network average). All four clinics are generating treatment delays and scheduling compliance gaps relative to company benchmarks of 26.39 minutes and 61.11% respectively. However, Summerville demonstrated meaningful month-over-month improvement, with scheduler compliance rising from 46.7% in January to 61.3% in February, and chair utilization climbing from 74.3% in January to 81.1% in February, suggesting the network is capable of sustained operational gains.",
         "highlights": [
-          "Summerville demonstrated the month's most compelling turnaround, with scheduler compliance rising 31.4% from 46.7% in January to 61.3% in February, now matching the company average of 61.11%. Alongside this compliance gain, chair utilization at Summerville climbed 9.2% from 74.3% in January to 81.1% in February, indicating tighter asset allocation and improved scheduling discipline."
+          "Summerville achieved a 31.4-percentage-point improvement in scheduler compliance, moving from 46.7% in January to 61.3% in February, now meeting the company average of 61.11%. Alongside this, Summerville's average patient delay decreased from 27.4 minutes in January to 25.5 minutes in February, positioning it just below the company average of 26.39 minutes. All four clinics maintained 100% iAssign utilization in February, demonstrating consistent adoption of the assignment protocol across the entire network."
         ],
         "concerns": [
-          "WestAshely's average patient delay of 35.3 minutes exceeds the company average of 26.39 minutes by 34%, the largest efficiency gap in the network, and warrants review of scheduling templates and appointment spacing to reduce bottlenecks. NorthCharleston's treatments running past closing have reached 2.8 per day, 1.6 standard deviations above the group mean of 1.2, while MtPleasant's minutes past close per patient sits at 41.7 minutes (79.6% above the group mean of 23.8), suggesting both clinics face scheduling boundaries that may require staffing or operational model recalibration."
+          "WestAshely's average delay of 35.3 minutes represents a 34% gap above the company average of 26.39 minutes, the largest performance gap in the network\u2014we noticed this coincides with the clinic's below-average scheduler compliance of 64.5% and notably low chair utilization of 60.5% relative to the company average of 70.19%, suggesting the scheduling workflow may benefit from a review of iOptimize template adherence and patient flow sequencing. NorthCharleston has logged 2.8 treatments past closing per day, nearly 2.5 times the Summerville rate of 1.3 and substantially above the group mean of 1.2, alongside a consistent three-month improvement in delay (currently 23.9 minutes, three-month average of 25.3 minutes), indicating that managing appointment duration and end-of-day scheduling precision warrants immediate collaborative attention."
         ],
         "recommendations": [
-          "We recommend that WestAshely pilot a targeted audit of nurse-to-chair assignment workflows under iAssign, since universal iAssign adoption has not yet translated the clinic's 100% utilization rate into faster patient flow. A structured review of how iAssign recommendations map to actual chair scheduling may reveal bottlenecks in the assignment-to-treatment cycle that are distinct from overall compliance scores."
+          "We recommend WestAshely conduct a structured audit of its current scheduling templates within iOptimize and the fidelity of nurse-to-chair assignment execution during peak hours, with a focus on identifying why the clinic's 64.5% scheduler compliance has not yet translated to improved patient flow; a paired review of the clinic's nursing workflow (currently at 48.0% utilization) alongside chair assignment patterns may reveal operational bottlenecks unrelated to scheduling discipline alone."
         ]
       }
     }
