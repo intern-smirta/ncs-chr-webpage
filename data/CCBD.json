@@ -1,0 +1,1194 @@
+{
+  "meta": {
+    "client_code": "CCBD",
+    "generated_at": "2026-03-31T00:22:24.566317Z",
+    "months_available": [
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02"
+    ]
+  },
+  "months": {
+    "2025-11": {
+      "composite_score": 42.8,
+      "ioptimize": [
+        {
+          "location": "Arlington",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 11.74,
+          "avg_delay_median": 10.04,
+          "chair_utilization_avg": 59.69,
+          "chair_utilization_median": 58.75,
+          "tx_past_close_avg": 4.11,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 22.74,
+          "tx_mins_past_close_median": 16.9,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "above"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Huguley",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 17.26,
+          "avg_delay_median": 16.11,
+          "chair_utilization_avg": 116.71,
+          "chair_utilization_median": 119.04,
+          "tx_past_close_avg": 3.28,
+          "tx_past_close_median": 1.5,
+          "tx_mins_past_close_avg": 28.41,
+          "tx_mins_past_close_median": 18.25,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "above"
+          },
+          "outlier_flags": [
+            "avg_chair_utilization"
+          ]
+        },
+        {
+          "location": "MCO",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 14.87,
+          "avg_delay_median": 12.46,
+          "chair_utilization_avg": 87.32,
+          "chair_utilization_median": 104.45,
+          "tx_past_close_avg": 1.82,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 19.4,
+          "tx_mins_past_close_median": 6.7,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Plano",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 37.56,
+          "avg_delay_median": 33.74,
+          "chair_utilization_avg": 57.88,
+          "chair_utilization_median": 58.13,
+          "tx_past_close_avg": 0.44,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 19.0,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        },
+        {
+          "location": "Weatherford",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 16.97,
+          "avg_delay_median": 17.49,
+          "chair_utilization_avg": 51.08,
+          "chair_utilization_median": 51.1,
+          "tx_past_close_avg": 2.44,
+          "tx_past_close_median": 2.0,
+          "tx_mins_past_close_avg": 32.64,
+          "tx_mins_past_close_median": 17.1,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "above"
+          },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [
+        {
+          "location": "Plano",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 4.18,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 3.27,
+          "chairs_per_nurse_median": 3.33,
+          "nurse_utilization_avg": 39.04,
+          "nurse_utilization_median": 38.35,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        }
+      ],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": null,
+          "avg_delay_avg": 19.68,
+          "chair_utilization_avg": 78.79,
+          "tx_past_close_avg": 2.41
+        },
+        "onco_benchmark": {}
+      },
+      "ai_insights": {
+        "executive_summary": "",
+        "highlights": [],
+        "concerns": [],
+        "recommendations": []
+      }
+    },
+    "2025-12": {
+      "composite_score": 34.4,
+      "ioptimize": [
+        {
+          "location": "Arlington",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 14.28,
+          "avg_delay_median": 11.81,
+          "chair_utilization_avg": 55.63,
+          "chair_utilization_median": 53.62,
+          "tx_past_close_avg": 1.43,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 25.97,
+          "tx_mins_past_close_median": 11.0,
+          "mom_deltas": {
+            "avg_chair_utilization": -4.06,
+            "avg_delay_mins": 2.54,
+            "avg_treatment_mins_per_patient": 3.23,
+            "avg_treatments_per_day": -2.68
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Huguley",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 15.29,
+          "avg_delay_median": 11.52,
+          "chair_utilization_avg": 125.07,
+          "chair_utilization_median": 129.24,
+          "tx_past_close_avg": 4.0,
+          "tx_past_close_median": 3.0,
+          "tx_mins_past_close_avg": 26.69,
+          "tx_mins_past_close_median": 22.5,
+          "mom_deltas": {
+            "avg_chair_utilization": 8.36,
+            "avg_delay_mins": -1.97,
+            "avg_treatment_mins_per_patient": -1.72,
+            "avg_treatments_per_day": 0.72
+          },
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "above"
+          },
+          "outlier_flags": [
+            "avg_chair_utilization"
+          ]
+        },
+        {
+          "location": "MCO",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 15.62,
+          "avg_delay_median": 13.82,
+          "chair_utilization_avg": 70.22,
+          "chair_utilization_median": 87.11,
+          "tx_past_close_avg": 1.75,
+          "tx_past_close_median": 0.5,
+          "tx_mins_past_close_avg": 17.52,
+          "tx_mins_past_close_median": 4.67,
+          "mom_deltas": {
+            "avg_chair_utilization": -17.1,
+            "avg_delay_mins": 0.75,
+            "avg_treatment_mins_per_patient": -1.88,
+            "avg_treatments_per_day": -0.07
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": [
+            "avg_treatment_mins_per_patient"
+          ]
+        },
+        {
+          "location": "Plano",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 38.12,
+          "avg_delay_median": 34.58,
+          "chair_utilization_avg": 57.68,
+          "chair_utilization_median": 61.25,
+          "tx_past_close_avg": 0.67,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 31.21,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {
+            "avg_chair_utilization": -0.2,
+            "avg_delay_mins": 0.56,
+            "avg_treatment_mins_per_patient": 12.21,
+            "avg_treatments_per_day": 0.23,
+            "avg_chairs_per_nurse": -0.46,
+            "avg_nurse_to_patient_chair_time": -1.89,
+            "avg_patients_per_nurse": -0.18,
+            "iassign_utilization": -4.77
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        },
+        {
+          "location": "Weatherford",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 20.35,
+          "avg_delay_median": 20.0,
+          "chair_utilization_avg": 54.81,
+          "chair_utilization_median": 55.0,
+          "tx_past_close_avg": 3.0,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 31.41,
+          "tx_mins_past_close_median": 10.0,
+          "mom_deltas": {
+            "avg_chair_utilization": 3.73,
+            "avg_delay_mins": 3.38,
+            "avg_treatment_mins_per_patient": -1.23,
+            "avg_treatments_per_day": 0.56
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "above"
+          },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [
+        {
+          "location": "MCO",
+          "iassign_utilization_avg": 8.33,
+          "patients_per_nurse_avg": 4.44,
+          "patients_per_nurse_median": 5.63,
+          "chairs_per_nurse_avg": 3.89,
+          "chairs_per_nurse_median": 3.21,
+          "nurse_utilization_avg": 43.45,
+          "nurse_utilization_median": 32.13,
+          "mom_deltas": {
+            "avg_chair_utilization": -17.1,
+            "avg_delay_mins": 0.75,
+            "avg_treatment_mins_per_patient": -1.88,
+            "avg_treatments_per_day": -0.07
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": [
+            "avg_treatment_mins_per_patient"
+          ]
+        },
+        {
+          "location": "Plano",
+          "iassign_utilization_avg": 95.23,
+          "patients_per_nurse_avg": 4.0,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 2.81,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 37.15,
+          "nurse_utilization_median": 35.9,
+          "mom_deltas": {
+            "avg_chair_utilization": -0.2,
+            "avg_delay_mins": 0.56,
+            "avg_treatment_mins_per_patient": 12.21,
+            "avg_treatments_per_day": 0.23,
+            "avg_chairs_per_nurse": -0.46,
+            "avg_nurse_to_patient_chair_time": -1.89,
+            "avg_patients_per_nurse": -0.18,
+            "iassign_utilization": -4.77
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        }
+      ],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": null,
+          "avg_delay_avg": 20.73,
+          "chair_utilization_avg": 71.72,
+          "tx_past_close_avg": 2.17
+        },
+        "onco_benchmark": {
+          "scheduler_compliance_avg": null,
+          "avg_delay_avg": 14.03,
+          "chair_utilization_avg": 73.48,
+          "tx_past_close_avg": 1.72
+        }
+      },
+      "ai_insights": {
+        "executive_summary": "",
+        "highlights": [],
+        "concerns": [],
+        "recommendations": []
+      }
+    },
+    "2026-01": {
+      "composite_score": 48.2,
+      "ioptimize": [
+        {
+          "location": "Arlington",
+          "scheduler_compliance_avg": 60.81,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 15.8,
+          "avg_delay_median": 12.1,
+          "chair_utilization_avg": 50.49,
+          "chair_utilization_median": 48.89,
+          "tx_past_close_avg": 1.76,
+          "tx_past_close_median": 0.5,
+          "tx_mins_past_close_avg": 16.7,
+          "tx_mins_past_close_median": 1.5,
+          "mom_deltas": {
+            "avg_chair_utilization": -5.14,
+            "avg_delay_mins": 1.52,
+            "avg_treatment_mins_per_patient": -9.27,
+            "avg_treatments_per_day": 0.33
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "above",
+            "scheduler_compliance": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Huguley",
+          "scheduler_compliance_avg": 65.73,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 17.82,
+          "avg_delay_median": 17.25,
+          "chair_utilization_avg": 107.16,
+          "chair_utilization_median": 119.43,
+          "tx_past_close_avg": 3.19,
+          "tx_past_close_median": 2.5,
+          "tx_mins_past_close_avg": 25.76,
+          "tx_mins_past_close_median": 20.42,
+          "mom_deltas": {
+            "avg_chair_utilization": -17.91,
+            "avg_delay_mins": 2.53,
+            "avg_treatment_mins_per_patient": -0.93,
+            "avg_treatments_per_day": -0.81
+          },
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "above",
+            "scheduler_compliance": "above"
+          },
+          "outlier_flags": [
+            "avg_chair_utilization",
+            "avg_treatments_per_day"
+          ]
+        },
+        {
+          "location": "MCO",
+          "scheduler_compliance_avg": 52.47,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 14.71,
+          "avg_delay_median": 14.95,
+          "chair_utilization_avg": 80.32,
+          "chair_utilization_median": 102.04,
+          "tx_past_close_avg": 0.54,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 24.38,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {
+            "avg_chair_utilization": 10.1,
+            "avg_delay_mins": -0.91,
+            "avg_treatment_mins_per_patient": 6.86,
+            "avg_treatments_per_day": -1.21,
+            "avg_chairs_per_nurse": -0.44,
+            "avg_nurse_to_patient_chair_time": 29.7,
+            "avg_patients_per_nurse": 2.74,
+            "iassign_utilization": -4.16
+          },
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Plano",
+          "scheduler_compliance_avg": 85.37,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 36.27,
+          "avg_delay_median": 34.92,
+          "chair_utilization_avg": 49.88,
+          "chair_utilization_median": 36.25,
+          "tx_past_close_avg": 0.38,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 36.0,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {
+            "avg_chair_utilization": -7.8,
+            "avg_delay_mins": -1.85,
+            "avg_treatment_mins_per_patient": 4.79,
+            "avg_treatments_per_day": -0.29,
+            "avg_chairs_per_nurse": -0.34,
+            "avg_nurse_to_patient_chair_time": -4.87,
+            "avg_patients_per_nurse": -0.6,
+            "iassign_utilization": -14.28
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        },
+        {
+          "location": "Weatherford",
+          "scheduler_compliance_avg": 80.72,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 19.2,
+          "avg_delay_median": 16.43,
+          "chair_utilization_avg": 48.41,
+          "chair_utilization_median": 45.6,
+          "tx_past_close_avg": 0.95,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 34.95,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {
+            "avg_chair_utilization": -6.4,
+            "avg_delay_mins": -1.15,
+            "avg_treatment_mins_per_patient": 3.54,
+            "avg_treatments_per_day": -2.05
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above"
+          },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [
+        {
+          "location": "MCO",
+          "iassign_utilization_avg": 4.17,
+          "patients_per_nurse_avg": 7.18,
+          "patients_per_nurse_median": 7.18,
+          "chairs_per_nurse_avg": 3.45,
+          "chairs_per_nurse_median": 3.0,
+          "nurse_utilization_avg": 73.15,
+          "nurse_utilization_median": 73.14,
+          "mom_deltas": {
+            "avg_chair_utilization": 10.1,
+            "avg_delay_mins": -0.91,
+            "avg_treatment_mins_per_patient": 6.86,
+            "avg_treatments_per_day": -1.21,
+            "avg_chairs_per_nurse": -0.44,
+            "avg_nurse_to_patient_chair_time": 29.7,
+            "avg_patients_per_nurse": 2.74,
+            "iassign_utilization": -4.16
+          },
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Plano",
+          "iassign_utilization_avg": 80.95,
+          "patients_per_nurse_avg": 3.4,
+          "patients_per_nurse_median": 3.4,
+          "chairs_per_nurse_avg": 2.47,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 32.28,
+          "nurse_utilization_median": 26.83,
+          "mom_deltas": {
+            "avg_chair_utilization": -7.8,
+            "avg_delay_mins": -1.85,
+            "avg_treatment_mins_per_patient": 4.79,
+            "avg_treatments_per_day": -0.29,
+            "avg_chairs_per_nurse": -0.34,
+            "avg_nurse_to_patient_chair_time": -4.87,
+            "avg_patients_per_nurse": -0.6,
+            "iassign_utilization": -14.28
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        }
+      ],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": 63.27,
+          "avg_delay_avg": 20.76,
+          "chair_utilization_avg": 73.42,
+          "tx_past_close_avg": 1.36
+        },
+        "onco_benchmark": {
+          "scheduler_compliance_avg": 58.16,
+          "avg_delay_avg": 14.29,
+          "chair_utilization_avg": 69.01,
+          "tx_past_close_avg": 1.08
+        }
+      },
+      "ai_insights": {
+        "executive_summary": "",
+        "highlights": [],
+        "concerns": [],
+        "recommendations": []
+      }
+    },
+    "2026-02": {
+      "composite_score": 35.3,
+      "ioptimize": [
+        {
+          "location": "Arlington",
+          "scheduler_compliance_avg": 71.13,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 11.85,
+          "avg_delay_median": 11.43,
+          "chair_utilization_avg": 54.11,
+          "chair_utilization_median": 52.37,
+          "tx_past_close_avg": 2.4,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 11.48,
+          "tx_mins_past_close_median": 2.7,
+          "mom_deltas": {
+            "avg_chair_utilization": 3.62,
+            "avg_delay_mins": -3.95,
+            "avg_treatment_mins_per_patient": -5.22,
+            "avg_treatments_per_day": 0.64,
+            "scheduler_compliance": 10.32
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Global Avg",
+          "scheduler_compliance_avg": 76.73,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 11.68,
+          "avg_delay_median": null,
+          "chair_utilization_avg": 67.95,
+          "chair_utilization_median": null,
+          "tx_past_close_avg": 1.06,
+          "tx_past_close_median": null,
+          "tx_mins_past_close_avg": 19.03,
+          "tx_mins_past_close_median": null,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Huguley",
+          "scheduler_compliance_avg": 70.11,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 13.46,
+          "avg_delay_median": 12.44,
+          "chair_utilization_avg": 129.36,
+          "chair_utilization_median": 134.81,
+          "tx_past_close_avg": 5.8,
+          "tx_past_close_median": 4.5,
+          "tx_mins_past_close_avg": 35.46,
+          "tx_mins_past_close_median": 23.58,
+          "mom_deltas": {
+            "avg_chair_utilization": 22.2,
+            "avg_delay_mins": -4.36,
+            "avg_treatment_mins_per_patient": 9.7,
+            "avg_treatments_per_day": 2.61,
+            "scheduler_compliance": 4.38
+          },
+          "vs_company": {
+            "avg_chair_utilization": "above",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "above",
+            "scheduler_compliance": "below"
+          },
+          "outlier_flags": [
+            "avg_chair_utilization",
+            "avg_treatments_per_day"
+          ]
+        },
+        {
+          "location": "MCO",
+          "scheduler_compliance_avg": 68.92,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 15.21,
+          "avg_delay_median": 14.2,
+          "chair_utilization_avg": 70.76,
+          "chair_utilization_median": 87.91,
+          "tx_past_close_avg": 1.58,
+          "tx_past_close_median": 0.5,
+          "tx_mins_past_close_avg": 23.03,
+          "tx_mins_past_close_median": 2.0,
+          "mom_deltas": {
+            "avg_chair_utilization": -9.56,
+            "avg_delay_mins": 0.5,
+            "avg_treatment_mins_per_patient": -1.35,
+            "avg_treatments_per_day": 1.04,
+            "scheduler_compliance": 16.45,
+            "avg_chairs_per_nurse": -1.15,
+            "avg_nurse_to_patient_chair_time": -39.57,
+            "avg_patients_per_nurse": -3.45,
+            "iassign_utilization": 4.16
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Plano",
+          "scheduler_compliance_avg": 85.03,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 30.76,
+          "avg_delay_median": 26.96,
+          "chair_utilization_avg": 61.53,
+          "chair_utilization_median": 61.25,
+          "tx_past_close_avg": 0.65,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 32.62,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {
+            "avg_chair_utilization": 11.65,
+            "avg_delay_mins": -5.51,
+            "avg_treatment_mins_per_patient": -3.38,
+            "avg_treatments_per_day": 0.27,
+            "scheduler_compliance": -0.34,
+            "avg_chairs_per_nurse": 0.15,
+            "avg_nurse_to_patient_chair_time": 6.04,
+            "avg_patients_per_nurse": 0.72,
+            "iassign_utilization": 4.05
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        },
+        {
+          "location": "Weatherford",
+          "scheduler_compliance_avg": 81.26,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 20.16,
+          "avg_delay_median": 17.14,
+          "chair_utilization_avg": 56.53,
+          "chair_utilization_median": 54.5,
+          "tx_past_close_avg": 1.9,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 45.89,
+          "tx_mins_past_close_median": 22.25,
+          "mom_deltas": {
+            "avg_chair_utilization": 8.12,
+            "avg_delay_mins": 0.96,
+            "avg_treatment_mins_per_patient": 10.94,
+            "avg_treatments_per_day": 0.95,
+            "scheduler_compliance": 0.54
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above"
+          },
+          "outlier_flags": []
+        }
+      ],
+      "iassign": [
+        {
+          "location": "Global Avg",
+          "iassign_utilization_avg": 95.06,
+          "patients_per_nurse_avg": 5.84,
+          "patients_per_nurse_median": null,
+          "chairs_per_nurse_avg": 3.59,
+          "chairs_per_nurse_median": null,
+          "nurse_utilization_avg": 53.91,
+          "nurse_utilization_median": null,
+          "mom_deltas": {},
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "MCO",
+          "iassign_utilization_avg": 8.33,
+          "patients_per_nurse_avg": 3.73,
+          "patients_per_nurse_median": 3.72,
+          "chairs_per_nurse_avg": 2.3,
+          "chairs_per_nurse_median": 2.31,
+          "nurse_utilization_avg": 33.58,
+          "nurse_utilization_median": 33.52,
+          "mom_deltas": {
+            "avg_chair_utilization": -9.56,
+            "avg_delay_mins": 0.5,
+            "avg_treatment_mins_per_patient": -1.35,
+            "avg_treatments_per_day": 1.04,
+            "scheduler_compliance": 16.45,
+            "avg_chairs_per_nurse": -1.15,
+            "avg_nurse_to_patient_chair_time": -39.57,
+            "avg_patients_per_nurse": -3.45,
+            "iassign_utilization": 4.16
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "below",
+            "avg_nurse_to_patient_chair_time": "below",
+            "avg_patients_per_nurse": "below",
+            "iassign_utilization": "below"
+          },
+          "outlier_flags": []
+        },
+        {
+          "location": "Plano",
+          "iassign_utilization_avg": 85.0,
+          "patients_per_nurse_avg": 4.12,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 2.62,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 38.32,
+          "nurse_utilization_median": 33.82,
+          "mom_deltas": {
+            "avg_chair_utilization": 11.65,
+            "avg_delay_mins": -5.51,
+            "avg_treatment_mins_per_patient": -3.38,
+            "avg_treatments_per_day": 0.27,
+            "scheduler_compliance": -0.34,
+            "avg_chairs_per_nurse": 0.15,
+            "avg_nurse_to_patient_chair_time": 6.04,
+            "avg_patients_per_nurse": 0.72,
+            "iassign_utilization": 4.05
+          },
+          "vs_company": {
+            "avg_chair_utilization": "below",
+            "avg_delay_mins": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "above",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "above",
+            "avg_patients_per_nurse": "above",
+            "iassign_utilization": "above"
+          },
+          "outlier_flags": [
+            "avg_delay_mins"
+          ]
+        }
+      ],
+      "benchmarks": {
+        "company_avg": {
+          "scheduler_compliance_avg": 71.99,
+          "avg_delay_avg": 18.28,
+          "chair_utilization_avg": 73.87,
+          "tx_past_close_avg": 2.46
+        },
+        "onco_benchmark": {}
+      },
+      "ai_insights": {
+        "executive_summary": "CCBD's network averaged a Performance Score of 35.4 out of 100 (where 50 represents the network average) in February 2026, reflecting meaningful but uneven progress across five clinics. While three sites showed measurable month-over-month improvements in delay and compliance metrics, structural capacity and scheduling challenges persist, particularly at Plano and Huguley. The data suggests we are at an inflection point where targeted operational adjustments could move the network meaningfully closer to parity with company benchmarks.",
+        "highlights": [
+          "MCO demonstrated the most substantial month-over-month turnaround, with Scheduler Compliance rising 31.4 percentage points from 52.5% in January to 68.9% in February, now aligned with the company average of 71.99%. Arlington's patient flow improved materially, with average delay falling 25.0% from 15.8 minutes in January to 11.8 minutes in February\u2014well below the company average of 18.28 minutes\u2014while treatments running past closing time declined 31.3% over the same period. Huguley's chair utilization normalized healthily from 107.2% in January to 129.4% in February, reflecting a strategic shift toward higher-capacity operations alongside a 24.5% reduction in average delay from 17.8 to 13.5 minutes."
+        ],
+        "concerns": [
+          "We noticed that Plano's average patient delay of 30.8 minutes sits 68% above the company average of 18.28 minutes\u2014the largest performance gap across the network\u2014despite strong Scheduler Compliance of 85.0% and iAssign Utilization of 85.0%. This suggests the compliance discipline is not translating into timely patient flow, and one area worth exploring together is whether scheduling templates account for realistic chair turnover times or whether nurse-to-chair assignment bottlenecks are creating queue buildup despite optimal scheduling adherence. Additionally, Weatherford's treatments past closing time have been declining consistently over three months (averaging 37.4 minutes past close per session), which alongside moderate average delay of 20.2 minutes and below-average chair utilization of 56.5% suggests potential understaffing or capacity constraints that merit review of staffing alignment to demand patterns."
+        ],
+        "recommendations": [
+          "We recommend Plano conduct an immediate audit of nurse-to-chair assignment workflows and chair transition times during peak hours, paired with a review of current scheduling templates to validate whether appointment spacing accounts for actual clinical throughput. This clinic's paradox\u2014high compliance and iAssign adoption yet 68% above-average delays\u2014suggests the bottleneck lies in execution rather than planning, and a half-day operational walkthrough with nursing leadership could surface whether the issue is assignment sequencing, patient preparation delays, or chair availability misalignment."
+        ]
+      }
+    }
+  },
+  "chatbot_context": {
+    "kpi_definitions": {
+      "scheduler_compliance": {
+        "label": "Scheduler Compliance",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Percentage of appointments scheduled following iOptimize recommendations. Higher is better. Company average is typically 60-70%. OncoSmart benchmark target is 75%."
+      },
+      "avg_delay_mins": {
+        "label": "Avg Delay",
+        "unit": "mins",
+        "higher_is_better": false,
+        "explanation": "Average daily schedule delay in minutes. Lower is better. Measures how far behind the clinic is running on average."
+      },
+      "avg_treatments_per_day": {
+        "label": "Tx Past Close/Day",
+        "unit": "count",
+        "higher_is_better": false,
+        "explanation": "Average treatments running past treatment close per day (overtime patients per day). Lower is better."
+      },
+      "avg_treatment_mins_per_patient": {
+        "label": "Tx Mins Past Close/Patient",
+        "unit": "mins",
+        "higher_is_better": false,
+        "explanation": "Average treatment minutes past closing time per patient. Lower is better."
+      },
+      "avg_chair_utilization": {
+        "label": "Chair Utilization",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Average chair utilization rate. Higher is better."
+      },
+      "iassign_utilization": {
+        "label": "iAssign Utilization",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Percentage of nurse assignments completed via iAssign. Higher means more consistent, optimized assignments."
+      },
+      "avg_patients_per_nurse": {
+        "label": "Patients/Nurse/Day",
+        "unit": "count",
+        "higher_is_better": null,
+        "explanation": "Average patients per nurse per day. Context-dependent -- too high means understaffing, too low means inefficiency."
+      },
+      "avg_chairs_per_nurse": {
+        "label": "Chairs/Nurse",
+        "unit": "count",
+        "higher_is_better": null,
+        "explanation": "Average chairs assigned per nurse. Context-dependent."
+      },
+      "avg_nurse_to_patient_chair_time": {
+        "label": "Nurse Utilization",
+        "unit": "%",
+        "higher_is_better": true,
+        "explanation": "Average nurse-to-patient in-chair time per day. Higher is better."
+      }
+    },
+    "data_notes": "Company Avg rows represent the network average across all locations for this client in the given month. Onco rows are global oncology benchmarks from the OncoSmart network. Rows named Global Avg, Network Avg, Total, or Overall are network-wide aggregates, not individual clinic locations. MoM (Month-over-Month) deltas compare the current month to the prior month. Composite scores are weighted 0 to 100 where 100 is best-in-class performance.",
+    "historical_kpis": [
+      {
+        "month": "2025-11",
+        "location": "Arlington",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 11.74,
+        "chair_utilization_avg": 59.69,
+        "tx_past_close_avg": 4.11
+      },
+      {
+        "month": "2025-11",
+        "location": "Huguley",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 17.26,
+        "chair_utilization_avg": 116.71,
+        "tx_past_close_avg": 3.28
+      },
+      {
+        "month": "2025-11",
+        "location": "MCO",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 14.87,
+        "chair_utilization_avg": 87.32,
+        "tx_past_close_avg": 1.82
+      },
+      {
+        "month": "2025-11",
+        "location": "Plano",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 37.56,
+        "chair_utilization_avg": 57.88,
+        "tx_past_close_avg": 0.44
+      },
+      {
+        "month": "2025-11",
+        "location": "Weatherford",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 16.97,
+        "chair_utilization_avg": 51.08,
+        "tx_past_close_avg": 2.44
+      },
+      {
+        "month": "2025-12",
+        "location": "Arlington",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 14.28,
+        "chair_utilization_avg": 55.63,
+        "tx_past_close_avg": 1.43
+      },
+      {
+        "month": "2025-12",
+        "location": "Huguley",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 15.29,
+        "chair_utilization_avg": 125.07,
+        "tx_past_close_avg": 4.0
+      },
+      {
+        "month": "2025-12",
+        "location": "MCO",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 15.62,
+        "chair_utilization_avg": 70.22,
+        "tx_past_close_avg": 1.75
+      },
+      {
+        "month": "2025-12",
+        "location": "Plano",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 38.12,
+        "chair_utilization_avg": 57.68,
+        "tx_past_close_avg": 0.67
+      },
+      {
+        "month": "2025-12",
+        "location": "Weatherford",
+        "scheduler_compliance_avg": null,
+        "avg_delay_avg": 20.35,
+        "chair_utilization_avg": 54.81,
+        "tx_past_close_avg": 3.0
+      },
+      {
+        "month": "2026-01",
+        "location": "Arlington",
+        "scheduler_compliance_avg": 60.81,
+        "avg_delay_avg": 15.8,
+        "chair_utilization_avg": 50.49,
+        "tx_past_close_avg": 1.76
+      },
+      {
+        "month": "2026-01",
+        "location": "Huguley",
+        "scheduler_compliance_avg": 65.73,
+        "avg_delay_avg": 17.82,
+        "chair_utilization_avg": 107.16,
+        "tx_past_close_avg": 3.19
+      },
+      {
+        "month": "2026-01",
+        "location": "MCO",
+        "scheduler_compliance_avg": 52.47,
+        "avg_delay_avg": 14.71,
+        "chair_utilization_avg": 80.32,
+        "tx_past_close_avg": 0.54
+      },
+      {
+        "month": "2026-01",
+        "location": "Plano",
+        "scheduler_compliance_avg": 85.37,
+        "avg_delay_avg": 36.27,
+        "chair_utilization_avg": 49.88,
+        "tx_past_close_avg": 0.38
+      },
+      {
+        "month": "2026-01",
+        "location": "Weatherford",
+        "scheduler_compliance_avg": 80.72,
+        "avg_delay_avg": 19.2,
+        "chair_utilization_avg": 48.41,
+        "tx_past_close_avg": 0.95
+      },
+      {
+        "month": "2026-02",
+        "location": "Arlington",
+        "scheduler_compliance_avg": 71.13,
+        "avg_delay_avg": 11.85,
+        "chair_utilization_avg": 54.11,
+        "tx_past_close_avg": 2.4
+      },
+      {
+        "month": "2026-02",
+        "location": "Global Avg",
+        "scheduler_compliance_avg": 76.73,
+        "avg_delay_avg": 11.68,
+        "chair_utilization_avg": 67.95,
+        "tx_past_close_avg": 1.06
+      },
+      {
+        "month": "2026-02",
+        "location": "Huguley",
+        "scheduler_compliance_avg": 70.11,
+        "avg_delay_avg": 13.46,
+        "chair_utilization_avg": 129.36,
+        "tx_past_close_avg": 5.8
+      },
+      {
+        "month": "2026-02",
+        "location": "MCO",
+        "scheduler_compliance_avg": 68.92,
+        "avg_delay_avg": 15.21,
+        "chair_utilization_avg": 70.76,
+        "tx_past_close_avg": 1.58
+      },
+      {
+        "month": "2026-02",
+        "location": "Plano",
+        "scheduler_compliance_avg": 85.03,
+        "avg_delay_avg": 30.76,
+        "chair_utilization_avg": 61.53,
+        "tx_past_close_avg": 0.65
+      },
+      {
+        "month": "2026-02",
+        "location": "Weatherford",
+        "scheduler_compliance_avg": 81.26,
+        "avg_delay_avg": 20.16,
+        "chair_utilization_avg": 56.53,
+        "tx_past_close_avg": 1.9
+      }
+    ]
+  }
+}
