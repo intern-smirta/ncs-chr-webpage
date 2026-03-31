@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "PCC",
-    "generated_at": "2026-03-31T00:22:24.425883Z",
+    "generated_at": "2026-03-31T00:41:36.863656Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -423,15 +423,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "Monterey Office delivered a Performance Score of 56 out of 100 (where 50 represents the network average), positioning the clinic slightly above the midpoint. The clinic matched company-average Scheduler Compliance at 81.1% and Average Delay at 13.5 minutes, while Chair Utilization of 87.0% aligned closely with the network benchmark of 86.96%. The primary operational tension sits in Treatments Past Closing, where 2.5 daily overruns suggest workflow pressure that warrants collaborative exploration.",
+        "executive_summary": "Monterey Office delivered a performance score of 56 out of 100 in February 2026, where 50 represents the network average, placing it modestly above the midpoint. The clinic matched the company average on scheduler compliance at 81.1% and average patient delay at 13.5 minutes, while chair utilization of 87.0% aligned closely with the company benchmark of 86.96%. The primary operational headwind remains treatments extending past closing time at 2.5 per day, an area where focused workflow adjustment could yield meaningful gains.",
         "highlights": [
-          "Monterey achieved perfect iAssign Utilization at 100.0% in February, demonstrating exceptional disciplined adoption of the assignment system. Nurse Utilization of 80.3% reflects healthy capacity positioning\u2014well calibrated between underuse and burnout\u2014offering room for modest workflow optimization without stress."
+          "Monterey achieved perfect iAssign utilization at 100.0% in February, demonstrating exceptional discipline in adhering to assignment protocols across all treatment scheduling. Nurse utilization of 80.3% sits at a healthy operating level, suggesting balanced capacity management without signs of understaffing or burnout risk."
         ],
         "concerns": [
-          "We noticed Treatments Past Closing averaging 2.5 daily at Monterey, which represents operational leakage beyond the facility's closing window. While we lack detailed prior-month data to establish a trend, this pattern often associates with either patient volume clustering late in the schedule, compressed appointment buffers, or extended treatment times. One area worth exploring together is whether the iOptimize scheduling recommendations are accounting for realistic treatment-duration margins, or whether patient demand is naturally concentrating in afternoon slots."
+          "We noticed that Monterey averages 2.5 treatments running past closing each day, a metric where the data suggests room for optimization. One area worth exploring together is whether patient arrival patterns, appointment spacing, or treatment duration forecasting could be adjusted to bring this closer to zero, thereby protecting staff time and clinic schedule integrity."
         ],
         "recommendations": [
-          "We recommend a brief operational review at Monterey focused on closing-time adherence. Specifically, pull two weeks of daily schedule data to map when overruns occur (morning vs. afternoon), which chair types are involved, and whether any clinical or administrative friction (e.g., late patient arrivals, extended chair prep) is predictable. This granular lens will help distinguish between scheduling calibration, staffing rhythm, or volume-driven factors\u2014and unlock a quick win that protects team well-being without compromising care."
+          "We recommend a brief operational review with Monterey leadership focused on the treatments-past-closing metric. A simple workflow audit\u2014examining whether iOptimize slot recommendations are being stretched during peak hours or whether buffer time between appointments needs adjustment\u2014could help identify whether a scheduling or sequencing change would bring this metric down without sacrificing chair or nurse utilization."
         ]
       }
     }

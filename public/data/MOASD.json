@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "MOASD",
-    "generated_at": "2026-03-31T00:22:24.609389Z",
+    "generated_at": "2026-03-31T00:41:37.005597Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -689,15 +689,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "MOASD delivered a performance score of 59 out of 100 (where 50 represents the network average) in February 2026, demonstrating solid operational fundamentals alongside a critical breakthrough in scheduling discipline. Scheduler Compliance surged from 42.8% in January to 72.8% in February\u2014a 30-point improvement that now sits just 2.1 points below the company average of 74.86%\u2014while the clinic maintained tight control on patient flow with an average delay of 6.0 minutes, below the company average of 7.11 minutes. Chair Utilization rose modestly from 67.0% in January to 69.3% in February, and iAssign Utilization reached 100.0%, indicating flawless adoption of our assignment protocol.",
+        "executive_summary": "MOASD delivered a solid February performance with a composite score of 59 out of 100 (where 50 represents the network average), associated with a dramatic 70-point improvement in scheduler compliance from 42.8% in January to 72.8% in February. The clinic is now operating near network parity on compliance (72.8% vs. the company average of 74.86%) while maintaining excellent average patient delays of 6.0 minutes, well below the company average of 7.11 minutes. Chair utilization rose modestly from 67.0% in January to 69.3% in February, reflecting healthy normalisation toward optimal capacity use.",
         "highlights": [
-          "MOASD achieved a 30-point month-over-month gain in Scheduler Compliance, rising from 42.8% in January to 72.8% in February, which now positions the clinic within 2.1 points of the company average of 74.86% and demonstrates strong operational discipline. iAssign Utilization stands at a perfect 100.0%, reflecting complete adherence to our assignment system and indicating that nurse-to-chair assignment efficiency may be operating at optimal levels. Average Delay of 6.0 minutes runs 1.1 minutes below the company average of 7.11 minutes, confirming that MOASD is delivering faster patient throughput and better appointment-to-treatment flow."
+          "MOASD achieved a transformational 70-point gain in scheduler compliance, rising from 42.8% in January to 72.8% in February, now tracking within 2 percentage points of the company average of 74.86%. The clinic also reached 100% iAssign utilization in February, demonstrating complete adoption of assignment protocols and positioning MOASD as a model for systematic workflow discipline across the network."
         ],
         "concerns": [
-          "We noticed that Treatments Past Closing rose from 0.1 in January to 0.2 in February\u2014a small absolute number but worth monitoring as the clinic scales compliance improvements, as scheduling discipline gains may occasionally push treatments closer to end-of-day without careful buffer management. Chair Utilization, while healthy at 69.3%, sits 2.2 points below the company average of 67.46%, suggesting room to optimize patient volume or appointment density; we'd recommend reviewing whether current scheduling templates are capturing available capacity fully, especially given the strong compliance gains that have already been realized."
+          "We noticed that treatments extending past closing time rose from 0.1 per day in January to 0.2 per day in February, a 220% month-over-month increase; while modest in absolute terms, this trend warrants brief review to ensure the compliance gains are not creating downstream scheduling pressure. Nurse utilization at 55.2% sits notably below optimal capacity, and we would benefit from exploring whether chair assignments via iAssign are being fully matched with available nursing bandwidth to unlock additional throughput."
         ],
         "recommendations": [
-          "The network's largest performance gap sits at La Jolla, where Chair Utilization stands at 45.6%\u2014a 21.9-point deficit versus the company average of 67.46%\u2014despite the clinic's strong Scheduler Compliance of 88.2% and iAssign Utilization of 93.3%. We recommend conducting a scheduling template audit at La Jolla to review appointment block sizing, patient throughput per chair, and idle time patterns; this concrete review may reveal capacity constraints in template design that are preventing the clinic from translating its discipline into higher asset utilization."
+          "We recommend that La Jolla conduct a targeted review of its chair utilization patterns, as the clinic's utilization of 45.6% falls substantially short of the company average of 67.46%\u2014a 32-point gap representing significant underdeployed capacity. A concrete first step would be to audit the clinic's scheduling templates and patient volume distribution against iOptimize recommendations, to identify whether template constraints or patient mix shifts are limiting chair throughput, then pilot corrective adjustments in a 2-week window before broader rollout."
         ]
       }
     }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "TNO",
-    "generated_at": "2026-03-31T00:22:24.522261Z",
+    "generated_at": "2026-03-31T00:41:36.936766Z",
     "months_available": [
       "2026-02"
     ]
@@ -56,12 +56,12 @@
           "tx_mins_past_close_median": 13.42,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
             "scheduler_compliance": "below",
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
+            "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below"
@@ -82,15 +82,15 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "below",
-            "avg_chair_utilization": "below",
+            "scheduler_compliance": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below",
-            "scheduler_compliance": "above"
+            "avg_delay_mins": "below",
+            "avg_chair_utilization": "below"
           },
           "outlier_flags": []
         },
@@ -108,10 +108,10 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
@@ -136,15 +136,15 @@
           "tx_mins_past_close_median": 0.5,
           "mom_deltas": {},
           "vs_company": {
-            "scheduler_compliance": "above",
-            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
+            "scheduler_compliance": "above",
+            "avg_delay_mins": "below",
             "avg_chair_utilization": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below"
+            "avg_treatment_mins_per_patient": "above"
           },
           "outlier_flags": []
         },
@@ -162,15 +162,15 @@
           "tx_mins_past_close_median": 6.0,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "iassign_utilization": "above",
             "avg_delay_mins": "below",
             "avg_chair_utilization": "above",
-            "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "below"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": [
             "avg_chair_utilization"
@@ -190,11 +190,11 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "above",
@@ -218,13 +218,13 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "below",
-            "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
             "avg_chair_utilization": "above",
             "avg_treatment_mins_per_patient": "above"
           },
@@ -244,10 +244,10 @@
           "tx_mins_past_close_median": null,
           "mom_deltas": {},
           "vs_company": {
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
             "avg_treatments_per_day": "below",
+            "avg_chair_utilization": "below",
+            "avg_nurse_to_patient_chair_time": "above",
             "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
@@ -299,15 +299,15 @@
           "tx_mins_past_close_median": 5.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "above"
+            "scheduler_compliance": "above",
+            "avg_chair_utilization": "above"
           },
           "outlier_flags": [
             "avg_patients_per_nurse"
@@ -327,15 +327,15 @@
           "tx_mins_past_close_median": null,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "below",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "iassign_utilization": "below",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "below"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": []
         },
@@ -353,15 +353,15 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "iassign_utilization": "above",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below"
+            "scheduler_compliance": "below",
+            "iassign_utilization": "above"
           },
           "outlier_flags": []
         },
@@ -379,20 +379,20 @@
           "tx_mins_past_close_median": 13.33,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "above",
-            "avg_treatments_per_day": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "below",
             "scheduler_compliance": "below"
           },
           "outlier_flags": [
-            "avg_treatment_mins_per_patient",
             "avg_patients_per_nurse",
-            "avg_nurse_to_patient_chair_time"
+            "avg_nurse_to_patient_chair_time",
+            "avg_treatment_mins_per_patient"
           ]
         },
         {
@@ -409,15 +409,15 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
+            "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "above"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": []
         },
@@ -435,14 +435,14 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_patients_per_nurse": "below",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
+            "iassign_utilization": "above",
+            "avg_patients_per_nurse": "below",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "below"
           },
           "outlier_flags": []
@@ -461,9 +461,9 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
             "scheduler_compliance": "below",
             "iassign_utilization": "above",
@@ -487,10 +487,10 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "iassign_utilization": "above",
+            "avg_patients_per_nurse": "above",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "above",
             "avg_treatment_mins_per_patient": "below",
@@ -513,11 +513,11 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "below",
+            "scheduler_compliance": "below",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below"
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below"
           },
           "outlier_flags": []
         },
@@ -535,11 +535,11 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
@@ -566,12 +566,12 @@
           "vs_company": {
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -618,14 +618,14 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -644,14 +644,14 @@
           "tx_mins_past_close_median": 28.5,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
             "scheduler_compliance": "above"
           },
           "outlier_flags": [
@@ -700,14 +700,14 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -726,13 +726,13 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chairs_per_nurse": "above",
-            "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
+            "scheduler_compliance": "below",
+            "avg_chair_utilization": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above"
           },
@@ -752,11 +752,11 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "above",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
@@ -780,9 +780,9 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "below",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
@@ -808,11 +808,11 @@
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
@@ -890,12 +890,12 @@
           "nurse_utilization_median": 46.11,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
             "scheduler_compliance": "below",
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
+            "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below"
@@ -913,15 +913,15 @@
           "nurse_utilization_median": 45.34,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "below",
-            "avg_chair_utilization": "below",
+            "scheduler_compliance": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below",
-            "scheduler_compliance": "above"
+            "avg_delay_mins": "below",
+            "avg_chair_utilization": "below"
           },
           "outlier_flags": []
         },
@@ -936,10 +936,10 @@
           "nurse_utilization_median": 62.65,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
             "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
@@ -961,15 +961,15 @@
           "nurse_utilization_median": 46.17,
           "mom_deltas": {},
           "vs_company": {
-            "scheduler_compliance": "above",
-            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
+            "scheduler_compliance": "above",
+            "avg_delay_mins": "below",
             "avg_chair_utilization": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below"
+            "avg_treatment_mins_per_patient": "above"
           },
           "outlier_flags": []
         },
@@ -984,15 +984,15 @@
           "nurse_utilization_median": 54.97,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "iassign_utilization": "above",
             "avg_delay_mins": "below",
             "avg_chair_utilization": "above",
-            "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "below"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": [
             "avg_chair_utilization"
@@ -1009,11 +1009,11 @@
           "nurse_utilization_median": 42.78,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "above",
@@ -1034,13 +1034,13 @@
           "nurse_utilization_median": 38.17,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "below",
-            "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
+            "scheduler_compliance": "below",
             "avg_chair_utilization": "above",
             "avg_treatment_mins_per_patient": "above"
           },
@@ -1057,10 +1057,10 @@
           "nurse_utilization_median": 47.64,
           "mom_deltas": {},
           "vs_company": {
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
             "avg_treatments_per_day": "below",
+            "avg_chair_utilization": "below",
+            "avg_nurse_to_patient_chair_time": "above",
             "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
@@ -1106,15 +1106,15 @@
           "nurse_utilization_median": 55.46,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "above"
+            "scheduler_compliance": "above",
+            "avg_chair_utilization": "above"
           },
           "outlier_flags": [
             "avg_patients_per_nurse"
@@ -1149,15 +1149,15 @@
           "nurse_utilization_median": null,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "below",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "iassign_utilization": "below",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "below"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": []
         },
@@ -1172,15 +1172,15 @@
           "nurse_utilization_median": 50.44,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "iassign_utilization": "above",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below"
+            "scheduler_compliance": "below",
+            "iassign_utilization": "above"
           },
           "outlier_flags": []
         },
@@ -1195,20 +1195,20 @@
           "nurse_utilization_median": 25.88,
           "mom_deltas": {},
           "vs_company": {
-            "avg_delay_mins": "above",
-            "avg_treatments_per_day": "above",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "below",
             "scheduler_compliance": "below"
           },
           "outlier_flags": [
-            "avg_treatment_mins_per_patient",
             "avg_patients_per_nurse",
-            "avg_nurse_to_patient_chair_time"
+            "avg_nurse_to_patient_chair_time",
+            "avg_treatment_mins_per_patient"
           ]
         },
         {
@@ -1222,15 +1222,15 @@
           "nurse_utilization_median": 53.42,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
+            "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
-            "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
-            "scheduler_compliance": "above"
+            "avg_nurse_to_patient_chair_time": "above"
           },
           "outlier_flags": []
         },
@@ -1245,14 +1245,14 @@
           "nurse_utilization_median": 45.09,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_patients_per_nurse": "below",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
+            "iassign_utilization": "above",
+            "avg_patients_per_nurse": "below",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "below"
           },
           "outlier_flags": []
@@ -1268,9 +1268,9 @@
           "nurse_utilization_median": 42.12,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatment_mins_per_patient": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
             "scheduler_compliance": "below",
             "iassign_utilization": "above",
@@ -1291,10 +1291,10 @@
           "nurse_utilization_median": 41.74,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
-            "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
+            "iassign_utilization": "above",
+            "avg_patients_per_nurse": "above",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "above",
             "avg_treatment_mins_per_patient": "below",
@@ -1314,11 +1314,11 @@
           "nurse_utilization_median": 17.52,
           "mom_deltas": {},
           "vs_company": {
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
@@ -1342,12 +1342,12 @@
           "vs_company": {
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
+            "avg_delay_mins": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -1388,14 +1388,14 @@
           "nurse_utilization_median": 42.94,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -1411,14 +1411,14 @@
           "nurse_utilization_median": 48.55,
           "mom_deltas": {},
           "vs_company": {
+            "avg_treatments_per_day": "above",
+            "avg_treatment_mins_per_patient": "above",
+            "avg_chair_utilization": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "above",
-            "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "above",
-            "avg_treatments_per_day": "above",
             "scheduler_compliance": "above"
           },
           "outlier_flags": [
@@ -1461,14 +1461,14 @@
           "nurse_utilization_median": 39.7,
           "mom_deltas": {},
           "vs_company": {
+            "avg_delay_mins": "below",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "above",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
-            "avg_delay_mins": "below",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above"
           },
           "outlier_flags": []
@@ -1484,13 +1484,13 @@
           "nurse_utilization_median": 42.52,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chairs_per_nurse": "above",
-            "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
+            "scheduler_compliance": "below",
+            "avg_chair_utilization": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "below",
+            "avg_chairs_per_nurse": "above",
+            "avg_nurse_to_patient_chair_time": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above"
           },
@@ -1507,11 +1507,11 @@
           "nurse_utilization_median": 55.51,
           "mom_deltas": {},
           "vs_company": {
+            "scheduler_compliance": "above",
             "avg_chair_utilization": "above",
             "avg_delay_mins": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
-            "scheduler_compliance": "above",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "above",
             "avg_chairs_per_nurse": "below",
@@ -1532,9 +1532,9 @@
           "nurse_utilization_median": 27.68,
           "mom_deltas": {},
           "vs_company": {
-            "avg_chair_utilization": "below",
-            "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
@@ -1557,11 +1557,11 @@
           "nurse_utilization_median": 35.78,
           "mom_deltas": {},
           "vs_company": {
-            "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
+            "iassign_utilization": "above",
+            "avg_chair_utilization": "below",
             "avg_chairs_per_nurse": "below",
             "avg_nurse_to_patient_chair_time": "below",
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "below",
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below",
@@ -1610,15 +1610,15 @@
         }
       },
       "ai_insights": {
-        "executive_summary": "The TNO network delivered a composite performance score of 60.4 out of 100 (where 50 represents the network average) in February 2026, reflecting solid operational discipline across most clinics. Scheduler Compliance reached 80.0%, marginally above the company average of 79.97%, while average patient delays of 8.9 minutes sit well below the company average of 8.92 minutes, indicating effective patient flow management. However, two clinics\u2014Cookeville and EPCBC\u2014warrant focused attention due to outsized delays and scheduling gaps.",
+        "executive_summary": "The TNO network delivered a composite performance score of 58.4 out of 100 (where 50 = network average) in February 2026, anchored by strong scheduler compliance of 80.0% against the company average of 79.97%, and average patient delays of 8.9 minutes against the company average of 8.92 minutes. However, the network shows material variance across locations, with five clinics scoring 15\u201334 points and four clinics scoring 81\u201385 points, signaling that operational discipline and resource allocation remain inconsistent.",
         "highlights": [
-          "Smyrna continues to lead the network with a performance score of 85 out of 100, combining scheduler compliance of 89.7% (9.7 percentage points above the company average of 80.0%) with an average delay of just 7.0 minutes and chair utilization of 79.8%, demonstrating that high compliance and operational efficiency reinforce each other. Cleveland achieved similarly strong results with a score of 83 out of 100, posting 84.0% scheduler compliance alongside a 3.4-minute average delay\u2014among the fastest in the network\u2014and chair utilization of 81.2%, well positioned against the Onco benchmark of 67.8%. Tullahoma and Columbia represent emerging strengths: Tullahoma's chair utilization reached 90.8% (33.6 percentage points above the company average of 57.2%) with minimal overtime, while Columbia's 89.2% chair utilization demonstrates effective asset deployment even as the network normalizes overbooking toward the 100% threshold."
+          "Smyrna delivered a performance score of 85 out of 100 (compared to the network average of 50), combining scheduler compliance of 89.7% with chair utilization of 79.8% and minimal patient delays of 7.0 minutes\u2014a model profile worth examining. Cleveland and Clarksville followed closely at scores of 83 and 81 respectively, each pairing high scheduler compliance (84.0% and 91.0%) with chair utilization above 77%, demonstrating that disciplined scheduling and asset efficiency move together across the strongest performers."
         ],
         "concerns": [
-          "Cookeville presents the most pressing operational challenge, with an average delay of 22.6 minutes\u2014a 153% gap above the company average of 8.9 minutes\u2014despite respectable scheduler compliance of 88.0%. This disconnect between compliance and delay suggests the scheduling templates may not align with actual treatment duration or patient arrival patterns; we recommend reviewing Cookeville's scheduling intervals and iOptimize recommendations to identify whether templates underestimate procedure times or overlap bookings. EPCBC requires immediate intervention across multiple dimensions: scheduler compliance of 65.9% (14.1 percentage points below the company average of 80.0%), average delay of 19.6 minutes (120% above company average), and critically, iAssign utilization of only 56.0% against near-universal 100% adoption elsewhere in the network. We recommend an audit of EPCBC's iAssign deployment\u2014whether staff training, system access, or process barriers are limiting adoption\u2014as full adoption often correlates with improved scheduling discipline and patient flow."
+          "We noticed that Cookeville shows an average patient delay of 22.6 minutes\u2014more than 2.5 times the company average of 8.9 minutes\u2014despite solid scheduler compliance of 88.0%, suggesting that scheduling discipline alone does not resolve downstream flow friction; a review of nursing capacity relative to chair demand and treatment sequencing at Cookeville may reveal misalignment between booking patterns and operational readiness. We also observed that EPCBC operates at only 56.0% iAssign utilization compared to the network-wide standard of 98.4%, alongside scheduler compliance of 65.9% and average delays of 19.6 minutes; this clinic warrants an audit of iAssign adoption barriers and a structured training intervention to align scheduling with system recommendations."
         ],
         "recommendations": [
-          "We recommend that you partner with Cookeville's leadership to conduct a targeted scheduling template audit, specifically examining whether current iOptimize intervals account for actual chair turnover time and patient check-in variability; this surgical intervention is more likely to yield rapid improvement than broad workflow changes. Simultaneously, engage EPCBC to diagnose barriers to iAssign adoption (staff confidence, system usability, or competing workflows), with the goal of piloting full adoption over the next 30 days\u2014resolving this gap could unlock the 14+ percentage-point compliance lift the data suggests is achievable."
+          "We recommend scheduling a focused operational review at Cookeville to map the root of its 22.6-minute delay gap (versus the company average of 8.9 minutes). Specifically, we suggest auditing the nursing-to-chair assignment model and treatment sequencing workflow to identify whether constraints in nurse capacity, chair transitions, or clinical decision points are creating bottlenecks that persist despite strong scheduler compliance. This will help us understand whether the issue is a capacity mismatch or a process design problem, and position Cookeville for measurable improvement in Q1."
         ]
       }
     }

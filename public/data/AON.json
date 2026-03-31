@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "AON",
-    "generated_at": "2026-03-31T00:22:24.387904Z",
+    "generated_at": "2026-03-31T00:41:36.822311Z",
     "months_available": [
       "2025-12",
       "2026-01",
@@ -418,15 +418,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "AON's February 2026 performance reflects a network operating near the 50-point midline, with two clinics showing divergent operational profiles. GAMCN CGCC Macon achieved a performance score of 28 out of 100 (where 50 represents the network average), while INHAR Harcourt scored 44 out of 100, indicating both clinics face distinct capacity and flow challenges relative to company benchmarks.",
+        "executive_summary": "AON's February 2026 performance reflects a network in transition, with two clinics showing divergent operational patterns. GAMCN CGCC Macon posted a Performance Score of 28 out of 100 (where 50 represents the network average), while INHAR Harcourt achieved 44 out of 100, indicating both sites require targeted intervention. The most pressing gap centres on patient wait times at Macon, where average delays of 32.2 minutes exceed the company average of 20.69 minutes by 56 percent.",
         "highlights": [
-          "GAMCN CGCC Macon demonstrated scheduler compliance of 78.5%, exceeding the company average of 73.12%, and achieved perfect iAssign utilization at 100.0%, reflecting strong adoption of assignment protocols. INHAR Harcourt's average delay of 9.2 minutes sits substantially below the company average of 20.69 minutes, indicating efficient patient flow management at that location."
+          "INHAR Harcourt's average delay of 9.2 minutes sits substantially below the company average of 20.69 minutes, reflecting effective patient flow despite concurrent operational pressures. Both clinics achieved 100 percent iAssign Utilization, demonstrating full adoption of assignment protocols across AON's February cohort and signalling strong compliance with system recommendations."
         ],
         "concerns": [
-          "We noticed that GAMCN CGCC Macon's average delay of 32.2 minutes represents a 56 percent gap above the company average of 20.69 minutes\u2014the most significant performance gap in the network\u2014occurring alongside notably low chair utilization of 59.7 percent and underutilized nursing capacity at 48.8 percent. We also observed that INHAR Harcourt continues to operate at 113.7 percent chair utilization, which exceeds nameplate capacity; while a gradual normalization toward 100 percent is healthy, the current overbooking state warrants attention alongside 4.0 daily treatments running past closing time."
+          "We noticed that GAMCN CGCC Macon's chair utilization of 59.7 percent falls well below the company average of 81.84 percent, suggesting either lower patient volume or schedule inefficiencies that may be associated with the elevated 32.2-minute delay. Additionally, Macon's nurse utilization stands at 48.8 percent\u2014notably lower than Harcourt's 65.4 percent\u2014which warrants exploration of whether nurse capacity alignment with chair scheduling may be coinciding with downstream patient wait accumulation."
         ],
         "recommendations": [
-          "To address the delay gap at GAMCN CGCC Macon, we recommend a focused review of scheduling templates and chair-to-nurse assignment protocols to identify whether current slot design or nurse allocation patterns are creating bottlenecks upstream of the treatment chair. This clinic's strong scheduler compliance suggests the scheduling rules themselves are sound; the opportunity lies in exploring whether templates align with actual patient volume patterns and nurse availability during peak hours."
+          "We recommend conducting a focused audit of scheduling templates and nurse-to-chair assignment ratios at GAMCN CGCC Macon, with particular attention to the 32.2-minute average delay gap versus the company benchmark of 20.69 minutes. A practical first step would be to review how iOptimize recommendations are being coincided with the daily schedule and to validate whether nurse availability patterns align with peak treatment windows, as this may unlock capacity and reduce patient wait time."
         ]
       }
     }
