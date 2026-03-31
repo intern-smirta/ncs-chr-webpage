@@ -155,6 +155,7 @@ export default function ChatBot({ chatbotContext, currentMonthData }) {
               </div>
             )}
             {messages.map((m, i) => {
+              // Suppress empty assistant placeholder while streaming — TypingIndicator renders instead (see showTyping below)
               if (m.role === 'assistant' && m.content === '' && streaming) return null
               return <Message key={i} role={m.role} content={m.content} />
             })}
