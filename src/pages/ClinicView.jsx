@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useClinicData } from '../hooks/useClinicData'
 import NavBar from '../components/NavBar'
 import ScoreBadge from '../components/ScoreBadge'
@@ -53,6 +53,12 @@ export default function ClinicView() {
       {/* Hero header */}
       <div className="bg-slate-900 px-6 py-8" style={{ boxShadow: '0 4px 24px rgba(13,148,136,0.1)' }}>
         <div className="max-w-7xl mx-auto">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-teal-400 transition-colors mb-4"
+          >
+            {'\u2190'} Back to CTO Dashboard
+          </Link>
           <div className="text-xs font-semibold text-teal-400 uppercase tracking-widest mb-1">Clinic Detail</div>
           <div className="flex items-start gap-5 flex-wrap">
             <div className="flex-1 min-w-0">
@@ -87,7 +93,7 @@ export default function ClinicView() {
           {/* KPI hero cards */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
             <KpiCard
-              label="Sched Compliance"
+              label="Scheduler Compliance"
               value={ioptimize[0]?.scheduler_compliance_avg ?? null}
               unit="%"
               delta={ioptimize[0]?.mom_deltas?.scheduler_compliance ?? null}
