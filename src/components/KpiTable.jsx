@@ -41,22 +41,30 @@ function CellValue({ value, unit, vsCompany, isOutlier, delta, higherIsBetter })
 }
 
 const IOPTIMIZE_COLS = [
-  { key: 'scheduler_compliance_avg', label: 'Sched\u00a0Compliance', unit: '%', higherIsBetter: true, deltaKey: 'scheduler_compliance' },
+  { key: 'scheduler_compliance_avg', label: 'Scheduler\u00a0Compliance', unit: '%', higherIsBetter: true, deltaKey: 'scheduler_compliance' },
   { key: 'avg_delay_avg', label: 'Avg\u00a0Delay', unit: 'min', higherIsBetter: false, deltaKey: 'avg_delay_mins' },
-  { key: 'chair_utilization_avg', label: 'Chair\u00a0Util', unit: '%', higherIsBetter: true, deltaKey: 'avg_chair_utilization' },
+  { key: 'chair_utilization_avg', label: 'Chair\u00a0Utilization', unit: '%', higherIsBetter: true, deltaKey: 'avg_chair_utilization' },
   { key: 'tx_past_close_avg', label: 'Tx\u00a0Past\u00a0Close', unit: '/day', higherIsBetter: false, deltaKey: 'avg_treatments_per_day' },
   { key: 'tx_mins_past_close_avg', label: 'Tx\u00a0Mins\u00a0Past\u00a0Close', unit: 'min', higherIsBetter: false, deltaKey: 'avg_treatment_mins_per_patient' },
 ]
 
 const IASSIGN_COLS = [
-  { key: 'iassign_utilization_avg', label: 'iAssign\u00a0Util', unit: '%', higherIsBetter: true, deltaKey: 'iassign_utilization' },
+  { key: 'iassign_utilization_avg', label: 'iAssign\u00a0Utilization', unit: '%', higherIsBetter: true, deltaKey: 'iassign_utilization' },
   { key: 'patients_per_nurse_avg', label: 'Pts/Nurse', unit: '/day', higherIsBetter: null, deltaKey: 'avg_patients_per_nurse' },
   { key: 'chairs_per_nurse_avg', label: 'Chairs/Nurse', unit: '', higherIsBetter: null, deltaKey: 'avg_chairs_per_nurse' },
-  { key: 'nurse_utilization_avg', label: 'Nurse\u00a0Util', unit: '%', higherIsBetter: true, deltaKey: 'avg_nurse_to_patient_chair_time' },
+  { key: 'nurse_utilization_avg', label: 'Nurse\u00a0Utilization', unit: '%', higherIsBetter: true, deltaKey: 'avg_nurse_to_patient_chair_time' },
 ]
+
+const AVG_LOCATION_NAMES = ['company avg', 'global avg']
 
 function Table({ rows, cols, title }) {
   if (!rows || rows.length === 0) return null
+
+  const avgRows = rows.filter(r => AVG_LOCATION_NAMES.includes(r.location?.toLowerCase()))
+  const clinicRows = rows
+    .filter(r => !AVG_LOCATION_NAMES.includes(r.location?.toLowerCase()))
+    .sort((a, b) => (a.location ?? '').localeCompare(b.location ?? ''))
+  const sortedRows = [...clinicRows, ...avgRows]
 
   return (
     <div className="mb-6">
@@ -74,22 +82,33 @@ function Table({ rows, cols, title }) {
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
-            {rows.map(row => (
-              <tr key={row.location} className="hover:bg-slate-50 transition-colors">
-                <td className="px-3 py-2 font-medium text-slate-900 whitespace-nowrap">{row.location}</td>
-                {cols.map(col => (
-                  <CellValue
-                    key={col.key}
-                    value={row[col.key]}
-                    unit={col.unit}
-                    vsCompany={row.vs_company?.[col.deltaKey]}
-                    isOutlier={row.outlier_flags?.includes(col.deltaKey)}
-                    delta={row.mom_deltas?.[col.deltaKey] ?? null}
-                    higherIsBetter={col.higherIsBetter}
-                  />
-                ))}
-              </tr>
-            ))}
+            {sortedRows.map(row => {
+              const isAvg = AVG_LOCATION_NAMES.includes(row.location?.toLowerCase())
+              return (
+                <tr
+                  key={row.location}
+                  className={isAvg
+                    ? 'bg-slate-100 border-t-2 border-slate-300'
+                    : 'hover:bg-slate-50 transition-colors'
+                  }
+                >
+                  <td className={`px-3 py-2 whitespace-nowrap ${isAvg ? 'font-semibold text-slate-700' : 'font-medium text-slate-900'}`}>
+                    {row.location}
+                  </td>
+                  {cols.map(col => (
+                    <CellValue
+                      key={col.key}
+                      value={row[col.key]}
+                      unit={col.unit}
+                      vsCompany={row.vs_company?.[col.deltaKey]}
+                      isOutlier={row.outlier_flags?.includes(col.deltaKey)}
+                      delta={row.mom_deltas?.[col.deltaKey] ?? null}
+                      higherIsBetter={col.higherIsBetter}
+                    />
+                  ))}
+                </tr>
+              )
+            })}
           </tbody>
         </table>
       </div>
