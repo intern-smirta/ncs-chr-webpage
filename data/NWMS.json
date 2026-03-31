@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NWMS",
-    "generated_at": "2026-03-31T00:22:24.586452Z",
+    "generated_at": "2026-03-31T00:41:36.987909Z",
     "months_available": [
       "2025-11",
       "2025-12",
@@ -1155,22 +1155,22 @@
           "tx_mins_past_close_avg": 14.5,
           "tx_mins_past_close_median": 0.0,
           "mom_deltas": {
-            "avg_chair_utilization": -11.03,
             "avg_delay_mins": 1.01,
-            "avg_treatment_mins_per_patient": -11.56,
-            "avg_treatments_per_day": -0.49,
             "scheduler_compliance": 7.38,
+            "avg_treatments_per_day": -0.49,
+            "avg_treatment_mins_per_patient": -11.56,
+            "avg_chair_utilization": -11.03,
             "iassign_utilization": 0.0,
             "avg_patients_per_nurse": 0.21,
             "avg_chairs_per_nurse": 0.27,
             "avg_nurse_to_patient_chair_time": 0.85
           },
           "vs_company": {
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
@@ -1355,22 +1355,22 @@
           "nurse_utilization_avg": 54.68,
           "nurse_utilization_median": 53.12,
           "mom_deltas": {
-            "avg_chair_utilization": -11.03,
             "avg_delay_mins": 1.01,
-            "avg_treatment_mins_per_patient": -11.56,
-            "avg_treatments_per_day": -0.49,
             "scheduler_compliance": 7.38,
+            "avg_treatments_per_day": -0.49,
+            "avg_treatment_mins_per_patient": -11.56,
+            "avg_chair_utilization": -11.03,
             "iassign_utilization": 0.0,
             "avg_patients_per_nurse": 0.21,
             "avg_chairs_per_nurse": 0.27,
             "avg_nurse_to_patient_chair_time": 0.85
           },
           "vs_company": {
-            "avg_chair_utilization": "below",
             "avg_delay_mins": "above",
-            "avg_treatment_mins_per_patient": "below",
-            "avg_treatments_per_day": "below",
             "scheduler_compliance": "above",
+            "avg_treatments_per_day": "below",
+            "avg_treatment_mins_per_patient": "below",
+            "avg_chair_utilization": "below",
             "iassign_utilization": "above",
             "avg_patients_per_nurse": "below",
             "avg_chairs_per_nurse": "below",
@@ -1389,15 +1389,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "NWMS delivered a composite performance score of 72.8 out of 100 (where 50 represents the network average) in February 2026, reflecting solid operational discipline across the region. Our five clinics maintained scheduler compliance averaging 91.1% against the company benchmark of 89.32%, and we made measurable progress on closure adherence, with four of five sites reducing treatments running past closing time month-over-month. However, average patient delay across the region sits at 7.1 minutes, slightly elevated versus the company average of 6.68 minutes, driven primarily by scheduling variability at two key sites.",
+        "executive_summary": "NWMS delivered solid operational momentum in February 2026, with four of five clinics posting measurable gains in schedule adherence and closing-time performance. The network's composite Performance Score sits above the 50-point midpoint across all locations, reflecting disciplined scheduling and improving nurse-to-chair alignment. One clinic requires focused attention on patient wait times, which currently outpace the company benchmark.",
         "highlights": [
-          "Federal Way demonstrated the most encouraging trajectory, with minutes past close per patient improving 61.3% from 42.2 minutes in January to 16.3 minutes in February, while nurse utilization rose 15.0 percentage points from 58.0% to 66.7% over the same period. Gig Harbour continues to lead our region in iAssign adoption at 100% utilization with a performance score of 79 out of 100, and has maintained closure discipline with only 0.3 treatments past closing daily in February, down from 0.4 in January."
+          "Federal Way demonstrated the month's most dramatic progress, with minutes past close per patient falling 61.3 percent from 42.2 minutes in January to 16.3 minutes in February, while nurse utilization rose 15.0 percent from 58.0 percent to 66.7 percent over the same period. Tacoma achieved parallel momentum, cutting treatments past closing daily from 0.8 in January to 0.3 in February, a 60.5 percent reduction, while a three-month trend in minutes past close per patient shows consistent improvement with an R\u00b2 of 0.99 and a three-month average of 25.1 minutes."
         ],
         "concerns": [
-          "We noticed Puyallup's iAssign utilization at 42.1% remains significantly below the company average of 86.4%, and a three-month trend shows consistent decline from a three-month rolling average of 79.1%; exploring barriers to adoption here alongside their elevated 1.2 treatments past closing per day could unlock efficiency gains. Olympia's chair utilization of 80.0% is performing well above the company average of 64.13%, but the clinic is managing 3.2 treatments past closing daily\u2014notably 1.9 standard deviations above our regional mean of 1.1\u2014suggesting that high utilization may be creating scheduling pressure worth examining together."
+          "We noticed Puyallup's iAssign utilization stands at 42.1 percent, substantially below the clinic group mean of 86.4 percent and representing a concerning 67-point gap. This underadoption coincides with Puyallup's relatively lower Performance Score of 69 out of 100 (where 50 equals network average) and elevated minutes past close per patient at 26.5 minutes, 98.4 percent above the company mean of 26.4 minutes. Additionally, Tacoma's average patient delay of 8.5 minutes exceeds the company average of 6.68 minutes by 27 percent, representing the largest single-clinic gap in wait-time performance despite strong iAssign adoption at 100 percent."
         ],
         "recommendations": [
-          "Tacoma presents our biggest performance gap: average patient delay of 8.5 minutes represents a 27% gap versus the company average of 6.68 minutes, despite strong scheduler compliance of 93.8%. We recommend conducting a detailed audit of Tacoma's scheduling templates and appointment interval standards to identify whether gaps in iOptimize adoption or patient flow sequencing are inflating wait times, with the goal of bringing delay performance in line with Federal Way's benchmark of 3.4 minutes."
+          "We recommend Tacoma conduct a focused audit of its current scheduling templates against iOptimize recommendations, with particular attention to appointment spacing logic. While Tacoma's scheduler compliance of 93.8 percent sits above the company average of 89.32 percent and iAssign utilization is at full adoption, the persistent 8.5-minute delay suggests the templates themselves may benefit from refinement to better distribute patient arrival patterns and reduce bunching. This would be a natural complement to Tacoma's recent operational wins and may illuminate whether the delay stems from template structure or execution discipline."
         ]
       }
     }

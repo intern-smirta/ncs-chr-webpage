@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "LOA",
-    "generated_at": "2026-03-31T00:22:24.446397Z",
+    "generated_at": "2026-03-31T00:41:36.879856Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -1348,15 +1348,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "The LOA network is performing below the company average across all four clinics, with composite performance scores ranging from 17 to 29 out of 100 (where 50 represents the network average). Summerville delivered the most encouraging movement in February, with scheduler compliance rising from 46.7% in January to 61.3% in February and chair utilization climbing from 74.3% to 81.1% over the same period. However, two clinics are operating with concerning after-hours patterns, and one clinic faces a substantial patient delay challenge that warrants focused attention.",
+        "executive_summary": "The LOA network finished February 2026 with a composite performance score of 22.75 out of 100 (where 50 represents the network average), reflecting meaningful operational headwinds across all four clinics. While iAssign adoption remains universal at 100% across the board, persistent gaps in scheduler compliance, patient delays, and chair utilization signal systemic scheduling and capacity challenges that warrant coordinated attention.",
         "highlights": [
-          "Summerville achieved a 31.4% improvement in scheduler compliance, moving from 46.7% in January to 61.3% in February\u2014now matching the company average of 61.11%\u2014while simultaneously improving average patient delay from 27.4 minutes in January to 25.5 minutes in February, a 7.1% reduction that aligns with company benchmarks. NorthCharleston's average delay has shown consistent improvement over three consecutive months, with a three-month average of 25.3 minutes and a trend coefficient of R\u00b2 = 0.90, suggesting sustained operational gains in patient flow efficiency."
+          "Summerville demonstrated the month's most compelling turnaround, with scheduler compliance rising 31.4% from 46.7% in January to 61.3% in February, now matching the company average of 61.11%. Alongside this compliance gain, chair utilization at Summerville climbed 9.2% from 74.3% in January to 81.1% in February, indicating tighter asset allocation and improved scheduling discipline."
         ],
         "concerns": [
-          "WestAshely's average patient delay of 35.3 minutes represents a 34% gap above the company average of 26.39 minutes\u2014the largest performance shortfall across the network\u2014and we noticed this delay pattern coincides with scheduler compliance at 64.5%, which is above company average but with a patient experience cost; a targeted review of scheduling templates and nurse-to-chair assignment patterns may clarify whether capacity constraints or workflow sequencing are at play. NorthCharleston is operating with 2.8 treatments past closing per day (125.8% above the group mean of 1.2), and MtPleasant's after-hours extension of 1.8 minutes per patient sits 79.6% above the group mean of 23.8 minutes, suggesting both clinics would benefit from exploring whether appointment stacking, patient volume surges, or treatment duration estimation are creating these closures."
+          "WestAshely's average patient delay of 35.3 minutes exceeds the company average of 26.39 minutes by 34%, the largest efficiency gap in the network, and warrants review of scheduling templates and appointment spacing to reduce bottlenecks. NorthCharleston's treatments running past closing have reached 2.8 per day, 1.6 standard deviations above the group mean of 1.2, while MtPleasant's minutes past close per patient sits at 41.7 minutes (79.6% above the group mean of 23.8), suggesting both clinics face scheduling boundaries that may require staffing or operational model recalibration."
         ],
         "recommendations": [
-          "We recommend that WestAshely's scheduling and clinical leadership conduct a focused audit of nurse-to-chair assignment protocols and treatment duration predictions over the next two weeks, comparing actual versus planned slot times to identify whether the 35.3-minute delay reflects over-booking, underestimated procedural length, or resource misalignment\u2014this concrete operational review will surface the root driver and inform whether staffing, template adjustment, or case-mix adjustment is the right lever."
+          "We recommend that WestAshely pilot a targeted audit of nurse-to-chair assignment workflows under iAssign, since universal iAssign adoption has not yet translated the clinic's 100% utilization rate into faster patient flow. A structured review of how iAssign recommendations map to actual chair scheduling may reveal bottlenecks in the assignment-to-treatment cycle that are distinct from overall compliance scores."
         ]
       }
     }

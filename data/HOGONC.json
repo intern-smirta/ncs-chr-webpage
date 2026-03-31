@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "HOGONC",
-    "generated_at": "2026-03-31T00:22:24.510821Z",
+    "generated_at": "2026-03-31T00:41:36.928122Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -1078,15 +1078,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "HOGONC's February 2026 performance reflects a network finding its footing, with two clinics demonstrating meaningful momentum while others face distinct operational headwinds. Our composite performance sits at an average of 42.75 out of 100 (where 50 represents the network average), associated with strong gains in scheduling compliance and chair utilization at NH MO and BCC MO, but offset by persistent delays and underutilization challenges at MTH MO and PW MO.",
+        "executive_summary": "HOGONC's four clinics delivered mixed performance in February 2026, with a network Performance Score average of 42.75 out of 100 (where 50 represents the company average). Two clinics posted substantial month-over-month gains in scheduling compliance and chair utilization, while delays and nurse deployment remain areas requiring attention across the portfolio. The data suggests we have the operational foundations in place\u2014particularly strong iAssign adoption and improving scheduling discipline\u2014but uneven execution is holding back collective performance.",
         "highlights": [
-          "NH MO has emerged as our clearest turnaround story, with scheduler compliance climbing 24.4 percentage points from 42.3% in January to 66.7% in February, while chair utilization rose 24.5 percentage points from 45.2% to 69.7% over the same period. BCC MO similarly strengthened its scheduling discipline, improving from 47.0% compliance in January to 67.1% in February\u2014a 20.1 percentage point jump\u2014and simultaneously boosted iAssign utilization from 76.2% to 95.0%, alongside chair utilization rising from 76.6% to 95.2%. Both clinics are approaching or meeting company benchmarks on core operational metrics, and BCC MO's chair utilization of 95.2% now sits 24.2 percentage points above the company average of 71.04%, reflecting disciplined capacity management."
+          "NH MO achieved the most dramatic turnaround, with Scheduler Compliance rising from 42.3% in January to 66.7% in February (a 24.4-point gain), accompanied by Chair Utilization climbing from 45.2% to 69.7% in the same period. BCC MO also showed disciplined improvement, with Scheduler Compliance rising from 47.0% in January to 67.1% in February (a 20.1-point gain) and iAssign Utilization jumping from 76.2% to 95.0%, now matching the company's highest adoption tier. Both clinics' gains in scheduling compliance coincide with tighter wait times: NH MO's Avg Delay improved from 7.5 minutes in January to 6.4 minutes in February, sitting 3.8 minutes below the company average of 10.25 minutes."
         ],
         "concerns": [
-          "We noticed that MTH MO's average patient delay of 13.7 minutes sits 3.5 minutes (33%) above the company average of 10.25 minutes\u2014the widest gap across our network\u2014while its nurse utilization of 45.8% runs meaningfully below the 53.4% clinic group mean, suggesting potential staffing or assignment misalignment. PW MO warrants attention on iAssign adoption, with utilization at 83.3% compared to the 94.7% clinic group average, which may reflect scheduling template or staff training gaps worth exploring together with the leadership team."
+          "We noticed MTH MO's Avg Delay of 13.7 minutes stands 33% above the company average of 10.25 minutes\u2014the largest single performance gap in HOGONC\u2014despite solid Scheduler Compliance of 74.9%; this disconnect warrants exploring whether appointment spacing aligns with actual treatment duration or if chair-to-nurse capacity balance is creating bottlenecks. Additionally, MTH MO's Nurse Utilization sits at 45.8%, approximately 7.6 percentage points below PW MO (53.4%) and notably underdeployed relative to peer clinics, suggesting potential staffing or workflow alignment opportunities."
         ],
         "recommendations": [
-          "We recommend MTH MO conduct a structured audit of its scheduling templates and nurse-to-chair assignment workflows to address the 33% delay gap versus company average. Given that scheduler compliance and average delay show an operational association\u2014higher scheduling discipline typically coincides with tighter appointment spacing\u2014reviewing how iOptimize recommendations are being applied to MTH MO's appointment book, and whether nurse capacity is being optimally distributed across chair assignments, would likely yield quick wins in patient flow."
+          "We recommend MTH MO conduct a targeted audit of scheduling templates and nurse-to-chair assignments to uncover why strong compliance (74.9%) is not translating into faster patient flow. Specifically, review whether scheduled appointment intervals match actual treatment cycle times and whether current nurse assignments are sized appropriately for the chair volume; this targeted diagnostic will help close the 33% delay gap versus company average and unlock the clinic's compliance gains."
         ]
       }
     }

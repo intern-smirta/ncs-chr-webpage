@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NMCC",
-    "generated_at": "2026-03-31T00:22:24.467640Z",
+    "generated_at": "2026-03-31T00:41:36.895086Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -426,15 +426,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "Albuquerque delivered a composite performance score of 63 out of 100 (where 50 represents the network average), positioning the clinic 13 points above the midline. The clinic posted two meaningful month-over-month gains in February 2026: scheduler compliance improved 9.0 percentage points from 70.6% in January to 79.6% in February, and average patient delay declined 1.7 minutes from 15.5 in January to 13.8 in February\u2014both metrics now aligned with the company average across the network.",
+        "executive_summary": "Albuquerque delivered a composite performance score of 63 out of 100 (where 50 represents the network average), marking solid mid-range execution in February 2026. The clinic posted scheduler compliance of 79.6% and average patient delay of 13.8 minutes, both tracking directly in line with company averages of 79.58% and 13.8 minutes respectively. Two meaningful month-over-month gains\u2014scheduler compliance rising from 70.6% in January to 79.6% in February, and average delay falling from 15.5 minutes in January to 13.8 minutes in February\u2014suggest the clinic is tightening operational discipline.",
         "highlights": [
-          "Albuquerque achieved perfect iAssign utilization at 100.0%, reflecting disciplined adoption of the assignment protocol across all treatment scheduling decisions. Scheduler compliance rose from 70.6% in January to 79.6% in February, a 9.0 percentage point gain that brought the clinic into full alignment with the company average of 79.58%, suggesting the team's scheduling practices have matured substantially over the month."
+          "Scheduler compliance improved by a 9-point margin, climbing from 70.6% in January to 79.6% in February, now matching the company benchmark. Albuquerque also achieved perfect iAssign utilization at 100%, demonstrating strong adoption of algorithmic assignment protocols. These gains coincided with a 1.7-minute reduction in average patient delay over the same period, reflecting tighter appointment flow."
         ],
         "concerns": [
-          "We noticed that chair utilization has declined consistently over three consecutive months, with a three-month average of 103.2% moving toward the 102.6% observed in February\u2014a healthy normalisation away from overbooking, though worth monitoring to ensure patient flow remains optimal. At the same time, nurse utilization sits at 71.6%, suggesting capacity for additional clinical support deployment; the data warrants a conversation about whether nurse scheduling aligns with treatment volume patterns, particularly as chair utilization normalises."
+          "We noticed that Albuquerque's chair utilization has been declining over the past three months, with a three-month average of 103.2% moving toward the 100% mark\u2014a healthy normalisation from overbooking rather than a concern, yet worth monitoring to ensure patient volume forecasting remains accurate. Nurse utilization sits at 71.6%, notably below the optimal threshold, suggesting capacity exists to absorb additional patient volume or complexity without stretching staffing resources."
         ],
         "recommendations": [
-          "We'd recommend a brief operational sync with Albuquerque to explore the drivers behind the chair utilization decline and confirm that patient appointments are being distributed evenly across available capacity without compromising access. A focused review of nurse scheduling against the current treatment demand could unlock efficiency gains if clinical staffing is currently undersized relative to the normalising chair load."
+          "We'd recommend exploring whether the declining chair utilization trend reflects intentional scheduling adjustments or external factors such as patient no-shows or volume seasonality. A brief operational review with the Albuquerque team\u2014perhaps comparing actual vs. iOptimize-recommended slot allocation over the past two months\u2014could clarify whether further optimization opportunities exist, and whether the spare nurse capacity can be strategically deployed to support growth."
         ]
       }
     }
