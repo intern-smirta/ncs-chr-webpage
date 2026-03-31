@@ -55,7 +55,7 @@ const IASSIGN_COLS = [
   { key: 'nurse_utilization_avg', label: 'Nurse\u00a0Utilization', unit: '%', higherIsBetter: true, deltaKey: 'avg_nurse_to_patient_chair_time' },
 ]
 
-const AVG_LOCATION_NAMES = ['company avg', 'global avg']
+const AVG_LOCATION_NAMES = ['company avg', 'copany avg', 'global avg']
 
 function Table({ rows, cols, title }) {
   if (!rows || rows.length === 0) return null
