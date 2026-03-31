@@ -3,10 +3,10 @@ import {
 } from 'recharts'
 
 const KPI_CONFIG = {
-  scheduler_compliance_avg: { label: 'Sched Compliance', unit: '%', color: '#0D9488', higherIsBetter: true },
-  avg_delay_avg:            { label: 'Avg Delay',         unit: 'min', color: '#DC2626', higherIsBetter: false },
-  chair_utilization_avg:    { label: 'Chair Util',        unit: '%', color: '#6366F1', higherIsBetter: true },
-  composite_score:          { label: 'Composite Score',   unit: '', color: '#0F172A', higherIsBetter: true },
+  scheduler_compliance_avg: { label: 'Scheduler Compliance', unit: '%', color: '#0D9488', higherIsBetter: true },
+  avg_delay_avg:            { label: 'Avg Delay',             unit: 'min', color: '#DC2626', higherIsBetter: false },
+  chair_utilization_avg:    { label: 'Chair Utilization',     unit: '%', color: '#6366F1', higherIsBetter: true },
+  composite_score:          { label: 'Composite Score',       unit: '', color: '#0F172A', higherIsBetter: true },
 }
 
 function formatMonth(m) {
