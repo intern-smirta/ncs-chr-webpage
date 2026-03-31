@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NCS",
-    "generated_at": "2026-03-31T00:41:37.022652Z",
+    "generated_at": "2026-03-31T20:57:52.147175Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -14,6 +14,22 @@
     "2025-10": {
       "composite_score": 74.9,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.29,
+          "avg_delay_median": 5.25,
+          "chair_utilization_avg": 66.9,
+          "chair_utilization_median": 69.81,
+          "tx_past_close_avg": 0.11,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 10.67,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "scheduler_compliance_avg": null,
@@ -66,6 +82,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.74,
+          "patients_per_nurse_median": 6.82,
+          "chairs_per_nurse_avg": 4.22,
+          "chairs_per_nurse_median": 4.33,
+          "nurse_utilization_avg": 71.81,
+          "nurse_utilization_median": 71.8,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "iassign_utilization_avg": 100.0,
@@ -130,6 +159,22 @@
     "2025-11": {
       "composite_score": 77.4,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.12,
+          "avg_delay_median": 5.0,
+          "chair_utilization_avg": 69.36,
+          "chair_utilization_median": 72.65,
+          "tx_past_close_avg": 0.19,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 7.57,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "scheduler_compliance_avg": null,
@@ -200,6 +245,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.59,
+          "patients_per_nurse_median": 6.64,
+          "chairs_per_nurse_avg": 3.92,
+          "chairs_per_nurse_median": 3.71,
+          "nurse_utilization_avg": 69.09,
+          "nurse_utilization_median": 70.3,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "iassign_utilization_avg": 100.0,
@@ -283,6 +341,22 @@
       "composite_score": 73.6,
       "ioptimize": [
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 6.29,
+          "avg_delay_median": 5.12,
+          "chair_utilization_avg": 73.68,
+          "chair_utilization_median": 70.34,
+          "tx_past_close_avg": 0.17,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 13.5,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Legacy",
           "scheduler_compliance_avg": null,
           "scheduler_compliance_median": null,
@@ -352,6 +426,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.97,
+          "patients_per_nurse_median": null,
+          "chairs_per_nurse_avg": 4.05,
+          "chairs_per_nurse_median": null,
+          "nurse_utilization_avg": 73.23,
+          "nurse_utilization_median": 73.42,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "iassign_utilization_avg": 100.0,
@@ -440,6 +527,22 @@
       "composite_score": 63.4,
       "ioptimize": [
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 54.75,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.67,
+          "avg_delay_median": 5.37,
+          "chair_utilization_avg": 67.57,
+          "chair_utilization_median": 69.09,
+          "tx_past_close_avg": 0.17,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 46.7,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Legacy",
           "scheduler_compliance_avg": 52.48,
           "scheduler_compliance_median": null,
@@ -511,6 +614,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.66,
+          "patients_per_nurse_median": 6.73,
+          "chairs_per_nurse_avg": 4.11,
+          "chairs_per_nurse_median": 4.33,
+          "nurse_utilization_avg": 69.35,
+          "nurse_utilization_median": 66.65,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Legacy",
           "iassign_utilization_avg": 100.0,
@@ -600,6 +716,22 @@
     "2026-02": {
       "composite_score": 71.0,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 80.14,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 5.06,
+          "avg_delay_median": 5.05,
+          "chair_utilization_avg": 66.31,
+          "chair_utilization_median": 65.53,
+          "tx_past_close_avg": 0.08,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 6.5,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "Global Avg",
           "scheduler_compliance_avg": 76.73,
@@ -701,6 +833,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 6.47,
+          "patients_per_nurse_median": 6.54,
+          "chairs_per_nurse_avg": 4.1,
+          "chairs_per_nurse_median": 4.33,
+          "nurse_utilization_avg": 67.43,
+          "nurse_utilization_median": 66.17,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "iassign_utilization_avg": 95.06,
           "patients_per_nurse_avg": 5.84,
@@ -800,7 +945,7 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "NCS delivered a strong February, with both Legacy and Methodist clinics posting performance scores of 66 and 76 respectively (where 50 represents the network average). The most striking gains came in scheduler compliance\u2014Legacy improved from 52.5% in January to 78.0% in February, and Methodist rose from 57.2% in January to 82.7% in February\u2014both now tracking near or above the company average of 80.14%. Equally important, both clinics eliminated or substantially reduced overtime: Legacy went from 0.1 treatments past closing per day in January to 0.0 in February, while Methodist fell from 0.2 to 0.1 over the same period.",
+        "executive_summary": "NCS operated across 2 locations in February 2026. Scheduler compliance ranged from 78.0% (Legacy) to 82.7% (Methodist).",
         "highlights": [
           "Legacy's turnaround on closing-time discipline was decisive. Minutes past close per patient dropped from 45.0 in January to 0.0 in February, eliminating all daily treatments that ran past scheduled end time. Methodist followed with a comparable shift: minutes past close per patient fell from 48.4 in January to 13.0 in February, a 73% reduction that reflects tighter operational tempo. Both clinics' scheduler compliance gains\u2014Legacy +48.6 percentage points and Methodist +44.5 percentage points\u2014suggest the iOptimize scheduling engine is now being applied with consistent discipline; both clinics report 100% iAssign utilization, which may be accompanying improved nurse-to-chair assignment efficiency."
         ],

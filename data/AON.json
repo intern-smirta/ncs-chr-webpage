@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "AON",
-    "generated_at": "2026-03-31T00:41:36.822311Z",
+    "generated_at": "2026-03-31T20:57:52.007345Z",
     "months_available": [
       "2025-12",
       "2026-01",
@@ -12,6 +12,22 @@
     "2025-12": {
       "composite_score": 42.3,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 25.86,
+          "avg_delay_median": 18.13,
+          "chair_utilization_avg": 86.2,
+          "chair_utilization_median": 85.64,
+          "tx_past_close_avg": 4.89,
+          "tx_past_close_median": 5.0,
+          "tx_mins_past_close_avg": 33.95,
+          "tx_mins_past_close_median": 30.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "GAMCN CGCC Macon",
           "scheduler_compliance_avg": null,
@@ -64,6 +80,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 61.9,
+          "patients_per_nurse_avg": 5.41,
+          "patients_per_nurse_median": 5.5,
+          "chairs_per_nurse_avg": 3.67,
+          "chairs_per_nurse_median": 2.28,
+          "nurse_utilization_avg": 57.12,
+          "nurse_utilization_median": 58.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "GAMCN CGCC Macon",
           "iassign_utilization_avg": 23.81,
@@ -134,6 +163,22 @@
       "composite_score": 40.2,
       "ioptimize": [
         {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 50.41,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 23.99,
+          "avg_delay_median": 13.94,
+          "chair_utilization_avg": 82.52,
+          "chair_utilization_median": 81.33,
+          "tx_past_close_avg": 4.15,
+          "tx_past_close_median": 4.0,
+          "tx_mins_past_close_avg": 29.51,
+          "tx_mins_past_close_median": 28.0,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "GAMCN Macon",
           "scheduler_compliance_avg": 53.45,
           "scheduler_compliance_median": null,
@@ -187,6 +232,19 @@
         }
       ],
       "iassign": [
+        {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 5.46,
+          "patients_per_nurse_median": 5.5,
+          "chairs_per_nurse_avg": 3.72,
+          "chairs_per_nurse_median": 3.2,
+          "nurse_utilization_avg": 57.1,
+          "nurse_utilization_median": 55.55,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "GAMCN Macon",
           "iassign_utilization_avg": 100.0,
@@ -258,6 +316,22 @@
     "2026-02": {
       "composite_score": 36.4,
       "ioptimize": [
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 73.12,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 20.69,
+          "avg_delay_median": 12.85,
+          "chair_utilization_avg": 81.84,
+          "chair_utilization_median": 86.64,
+          "tx_past_close_avg": 3.92,
+          "tx_past_close_median": 4.0,
+          "tx_mins_past_close_avg": 26.51,
+          "tx_mins_past_close_median": 25.01,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
         {
           "location": "GAMCN CGCC Macon",
           "scheduler_compliance_avg": 78.45,
@@ -339,6 +413,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 5.24,
+          "patients_per_nurse_median": 5.01,
+          "chairs_per_nurse_avg": 3.42,
+          "chairs_per_nurse_median": 3.52,
+          "nurse_utilization_avg": 57.81,
+          "nurse_utilization_median": 56.93,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "GAMCN CGCC Macon",
           "iassign_utilization_avg": 100.0,
           "patients_per_nurse_avg": 4.48,
@@ -418,15 +505,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "AON's February 2026 performance reflects a network in transition, with two clinics showing divergent operational patterns. GAMCN CGCC Macon posted a Performance Score of 28 out of 100 (where 50 represents the network average), while INHAR Harcourt achieved 44 out of 100, indicating both sites require targeted intervention. The most pressing gap centres on patient wait times at Macon, where average delays of 32.2 minutes exceed the company average of 20.69 minutes by 56 percent.",
+        "executive_summary": "AON's network averaged a Performance Score of 36 out of 100 (where 50 represents the network average) in February 2026, reflecting mixed operational discipline across our two reporting clinics. Scheduler Compliance across the network sits at 70.5% against a company average of 73.12%, while patient delays average 20.7 minutes against the company benchmark of 20.69 minutes. The data suggests meaningful opportunity to tighten scheduling consistency and patient flow, particularly at our underperforming locations.",
         "highlights": [
-          "INHAR Harcourt's average delay of 9.2 minutes sits substantially below the company average of 20.69 minutes, reflecting effective patient flow despite concurrent operational pressures. Both clinics achieved 100 percent iAssign Utilization, demonstrating full adoption of assignment protocols across AON's February cohort and signalling strong compliance with system recommendations."
+          "INHAR Harcourt's iAssign utilization reached 100.0%, matching GAMCN CGCC Macon and reflecting strong adoption of our assignment protocol across the network. INHAR Harcourt also delivered patient delays of 9.2 minutes, sitting 55% below the company average of 20.69 minutes, indicating efficient treatment flow despite operating at 113.7% chair utilization\u2014a sign of healthy patient volume and strong operational throughput."
         ],
         "concerns": [
-          "We noticed that GAMCN CGCC Macon's chair utilization of 59.7 percent falls well below the company average of 81.84 percent, suggesting either lower patient volume or schedule inefficiencies that may be associated with the elevated 32.2-minute delay. Additionally, Macon's nurse utilization stands at 48.8 percent\u2014notably lower than Harcourt's 65.4 percent\u2014which warrants exploration of whether nurse capacity alignment with chair scheduling may be coinciding with downstream patient wait accumulation."
+          "We noticed that GAMCN CGCC Macon's average patient delay of 32.2 minutes exceeds the company average of 20.69 minutes by 56%, the largest single performance gap in the network. Alongside this, the clinic's chair utilization of 59.7% sits well below the company average of 81.84%, which may reflect underutilized capacity and scheduling inefficiency. A second area worth exploring is GAMCN CGCC Macon's 3.8 daily treatments running past closing time, suggesting workflow bottlenecks in the latter part of the operating day."
         ],
         "recommendations": [
-          "We recommend conducting a focused audit of scheduling templates and nurse-to-chair assignment ratios at GAMCN CGCC Macon, with particular attention to the 32.2-minute average delay gap versus the company benchmark of 20.69 minutes. A practical first step would be to review how iOptimize recommendations are being coincided with the daily schedule and to validate whether nurse availability patterns align with peak treatment windows, as this may unlock capacity and reduce patient wait time."
+          "We recommend that GAMCN CGCC Macon conduct a review of its scheduling templates and appointment distribution patterns, with particular focus on how iOptimize recommendations are being implemented in daily operations. Despite strong Scheduler Compliance of 78.5%, the 32.2-minute patient delay and underutilized chairs suggest that template design or staff adherence to sequencing may need refinement; a structured audit of how the scheduling system's capacity recommendations map to actual chair assignments would help unlock the latent capacity in the clinic."
         ]
       }
     }

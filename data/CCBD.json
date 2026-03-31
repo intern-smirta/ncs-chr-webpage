@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "CCBD",
-    "generated_at": "2026-03-31T00:41:36.971858Z",
+    "generated_at": "2026-03-31T20:57:52.031667Z",
     "months_available": [
       "2025-11",
       "2025-12",
@@ -32,6 +32,22 @@
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "above"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 19.68,
+          "avg_delay_median": 16.37,
+          "chair_utilization_avg": 78.79,
+          "chair_utilization_median": 68.78,
+          "tx_past_close_avg": 2.41,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 24.44,
+          "tx_mins_past_close_median": 10.42,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -129,6 +145,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 100.0,
+          "patients_per_nurse_avg": 4.18,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 3.27,
+          "chairs_per_nurse_median": 3.33,
+          "nurse_utilization_avg": 39.04,
+          "nurse_utilization_median": 38.35,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Plano",
           "iassign_utilization_avg": 100.0,
           "patients_per_nurse_avg": 4.18,
@@ -196,6 +225,22 @@
             "avg_treatment_mins_per_patient": "below",
             "avg_treatments_per_day": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": null,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 20.73,
+          "avg_delay_median": 15.75,
+          "chair_utilization_avg": 71.72,
+          "chair_utilization_median": 65.81,
+          "tx_past_close_avg": 2.17,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 26.56,
+          "tx_mins_past_close_median": 11.5,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -323,6 +368,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 51.78,
+          "patients_per_nurse_avg": 4.22,
+          "patients_per_nurse_median": 4.0,
+          "chairs_per_nurse_avg": 3.35,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 38.71,
+          "nurse_utilization_median": 35.9,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "MCO",
           "iassign_utilization_avg": 8.33,
           "patients_per_nurse_avg": 4.44,
@@ -434,6 +492,22 @@
             "avg_treatments_per_day": "above",
             "scheduler_compliance": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 63.27,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 20.76,
+          "avg_delay_median": 16.33,
+          "chair_utilization_avg": 73.42,
+          "chair_utilization_median": 58.75,
+          "tx_past_close_avg": 1.36,
+          "tx_past_close_median": 0.0,
+          "tx_mins_past_close_avg": 27.55,
+          "tx_mins_past_close_median": 0.0,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -568,6 +642,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 42.56,
+          "patients_per_nurse_avg": 5.29,
+          "patients_per_nurse_median": 3.0,
+          "chairs_per_nurse_avg": 2.96,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 39.3,
+          "nurse_utilization_median": 28.67,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "MCO",
           "iassign_utilization_avg": 4.17,
           "patients_per_nurse_avg": 7.18,
@@ -684,6 +771,22 @@
             "avg_delay_mins": "below",
             "avg_chair_utilization": "below"
           },
+          "outlier_flags": []
+        },
+        {
+          "location": "Company Avg",
+          "scheduler_compliance_avg": 71.99,
+          "scheduler_compliance_median": null,
+          "avg_delay_avg": 18.28,
+          "avg_delay_median": 15.54,
+          "chair_utilization_avg": 73.87,
+          "chair_utilization_median": 66.97,
+          "tx_past_close_avg": 2.46,
+          "tx_past_close_median": 1.0,
+          "tx_mins_past_close_avg": 29.69,
+          "tx_mins_past_close_median": 8.0,
+          "mom_deltas": {},
+          "vs_company": {},
           "outlier_flags": []
         },
         {
@@ -848,6 +951,19 @@
       ],
       "iassign": [
         {
+          "location": "Company Avg",
+          "iassign_utilization_avg": 46.67,
+          "patients_per_nurse_avg": 3.92,
+          "patients_per_nurse_median": 3.88,
+          "chairs_per_nurse_avg": 2.46,
+          "chairs_per_nurse_median": 2.67,
+          "nurse_utilization_avg": 36.47,
+          "nurse_utilization_median": 33.82,
+          "mom_deltas": {},
+          "vs_company": {},
+          "outlier_flags": []
+        },
+        {
           "location": "Global Avg",
           "iassign_utilization_avg": 95.06,
           "patients_per_nurse_avg": 5.84,
@@ -949,15 +1065,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "CCBD's February 2026 performance reflects a network in transition, with a composite Performance Score averaging 35.4 out of 100 (where 50 represents the network average), indicating we remain 29.2% below peer performance. However, the data reveals encouraging momentum: MCO's Scheduler Compliance improved 31.4 percentage points from 52.5% in January to 68.9% in February, while Arlington's average patient delay fell 25.0% from 15.8 minutes to 11.8 minutes over the same period. These gains suggest our operational interventions are beginning to take hold, even as three clinics remain notably underperforming against company benchmarks.",
+        "executive_summary": "CCBD's five-clinic network is performing below the company average across most key metrics in February 2026. The network's composite Performance Score averages 35.4 out of 100 (where 50 represents the network average), driven primarily by underutilization of chair capacity and scheduling challenges. However, several clinics showed meaningful month-over-month gains\u2014MCO's iAssign adoption jumped from 4.2% in January to 8.3% in February, and Arlington's average patient delay fell from 15.8 minutes in January to 11.8 minutes in February\u2014suggesting that targeted operational shifts are taking hold.",
         "highlights": [
-          "Arlington delivered the month's most striking improvement, reducing average delay to 11.8 minutes in February\u2014a 25.0% reduction from the 15.8-minute January baseline and now 35.5% better than the company average of 18.28 minutes, while simultaneously cutting minutes past close per patient by 31.3% from 16.7 to 11.5. MCO's iAssign adoption more than doubled from 4.2% in January to 8.3% in February, a 99.8% gain that accompanied a parallel 31.4-point jump in Scheduler Compliance from 52.5% to 68.9%, suggesting the two metrics may be reinforcing one another as clinic staff become more comfortable with automated assignment workflows."
+          "Arlington delivered a 25.0% reduction in average delay, dropping from 15.8 minutes in January to 11.8 minutes in February, now sitting below the company average of 18.28 minutes. MCO's scheduler compliance more than doubled, improving 31.4 percentage points from 52.5% in January to 68.9% in February, nearly matching the company average of 71.99%. Plano's chair utilization grew 23.4 percentage points from 49.9% in January to 61.5% in February, signaling better asset deployment across that location."
         ],
         "concerns": [
-          "We noticed Weatherford's minutes past close per patient is following a downward trend (37.4-minute three-month average with R\u00b2=0.71 consistency), which is encouraging, but the clinic's absolute performance remains constrained by low chair utilization of 56.5%, well below the company average of 73.87%, suggesting untapped scheduling capacity. Plano presents a different puzzle: despite exceptional Scheduler Compliance of 85.0% and strong iAssign adoption of 85.0%, the clinic's average patient delay stands at 30.8 minutes\u201468% above the company average of 18.28 minutes and among the most significant outliers in the network; the data hints that high scheduling discipline alone is not resolving wait times, pointing toward potential bottlenecks in chair or nurse throughput rather than scheduling precision."
+          "We noticed Plano carries an outsized average patient delay of 30.8 minutes, representing a 68.3% gap above the company average of 18.28 minutes\u2014the largest performance gap in the network. At the same time, Plano's iAssign utilization has declined over the past two months (down from a three-month average of 87.1%), which may warrant a check-in on staffing or system adoption challenges. Weatherford's treatments running past closing time show a concerning three-month decline, averaging 37.4 minutes past close per patient with a linear trend confidence of 0.71, suggesting workflow bottlenecks that merit exploration alongside the clinic's scheduler compliance of 81.3% versus the company average of 71.99%."
         ],
         "recommendations": [
-          "We recommend Plano conduct a targeted audit of nurse-to-chair assignment efficiency and treatment cycle times during peak hours, as the disconnect between strong scheduling compliance and elevated delays suggests the constraint may lie downstream of the appointment book. Given that higher iAssign utilization is associated with improved nurse efficiency in other contexts, a structured pilot to expand iAssign's role in real-time chair assignments\u2014rather than relying solely on the current 85.0% adoption for initial scheduling\u2014may help translate Plano's scheduling discipline into better patient flow."
+          "We recommend scheduling a brief operational review with Plano to audit current scheduling templates and patient flow patterns. Given Plano's 30.8-minute average delay sits 68% above company benchmarks despite strong scheduler compliance of 85.0%, the issue likely stems from appointment density or buffer-time assumptions rather than scheduling discipline\u2014a targeted review of appointment spacing and chair-to-nurse assignments could unlock meaningful gains without adding resources."
         ]
       }
     }
