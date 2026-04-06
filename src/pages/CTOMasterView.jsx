@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useManifest } from '../hooks/useManifest'
+import { useAi } from '../contexts/AiContext'
 import NavBar from '../components/NavBar'
 import ScoreBadge from '../components/ScoreBadge'
 import KpiCard from '../components/KpiCard'
+import AiView from '../components/AiView'
 
 const TREND_ICON = { up: '\u2191', down: '\u2193', flat: '\u2192' }
 const TREND_COLOR = { up: 'text-teal-600', down: 'text-red-500', flat: 'text-slate-400' }
@@ -39,6 +41,7 @@ export default function CTOMasterView() {
   const navigate = useNavigate()
   const [sortDir, setSortDir] = useState('desc')
   const [trendFilter, setTrendFilter] = useState('all')
+  const { aiOpen } = useAi()
 
   if (loading) return (
     <div className="min-h-screen bg-slate-50">
@@ -65,6 +68,52 @@ export default function CTOMasterView() {
     const sb = b.composite_score ?? 0
     return sortDir === 'desc' ? sb - sa : sa - sb
   })
+
+  // Build a network-level chatbot context from manifest data so AI has meaningful data
+  const networkChatbotContext = {
+    kpi_definitions: {
+      composite_score: {
+        label: 'Composite Score',
+        explanation: 'Weighted aggregate performance score (0-100) combining Scheduler Compliance, Avg Delay, Chair Utilization, and Tx Past Close metrics.',
+      },
+    },
+    data_notes: [
+      `Network of ${clients.length} clinics. Report period: ${latest_month}.`,
+      `Network average composite score: ${network_summary.avg_composite_score ?? '\u2014'}.`,
+      `Top performer: ${network_summary.top_performer ?? '\u2014'}.`,
+      `Most improved: ${network_summary.most_improved ?? '\u2014'}.`,
+      `${belowThreshold} clinic${belowThreshold !== 1 ? 's' : ''} below the 65-point threshold.`,
+      `${improving} clinic${improving !== 1 ? 's' : ''} improving month-over-month.`,
+    ].join(' '),
+    historical_kpis: [],
+  }
+
+  const networkMonthData = {
+    ioptimize: [...clients]
+      .sort((a, b) => (b.composite_score ?? 0) - (a.composite_score ?? 0))
+      .map(c => ({
+        location: c.display_name,
+        composite_score: c.composite_score,
+        scheduler_compliance_avg: null,
+        avg_delay_avg: null,
+        chair_utilization_avg: null,
+      })),
+  }
+
+  // AI view replaces all content below the NavBar
+  if (aiOpen) {
+    return (
+      <div className="h-screen flex flex-col bg-slate-900">
+        <NavBar />
+        <AiView
+          chatbotContext={networkChatbotContext}
+          currentMonthData={networkMonthData}
+          clinicName={null}
+          activeMonth={latest_month}
+        />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">

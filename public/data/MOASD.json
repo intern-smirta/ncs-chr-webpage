@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "MOASD",
-    "generated_at": "2026-03-31T20:57:52.130563Z",
+    "generated_at": "2026-03-31T21:00:12.937590Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -821,15 +821,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "MOASD operated across 2 locations in February 2026. Scheduler compliance ranged from 72.8% (MOASD) to 88.2% (La jolla).",
+        "executive_summary": "MOASD delivered a performance score of 59 out of 100 (where 50 represents the network average) in February 2026, associated with a dramatic 70-point improvement in scheduler compliance from 42.8% in January to 72.8% in February. While this compliance gain sits just below the company average of 74.86%, the clinic continues to operate with minimal treatment overruns (0.2 per day) and maintains full adoption of iAssign protocols. The clinic remains positioned just above the network midline, with clear momentum in scheduling discipline offsetting softer chair utilization relative to company benchmarks.",
         "highlights": [
-          "MOASD achieved a transformational 70-point gain in scheduler compliance, rising from 42.8% in January to 72.8% in February, now tracking within 2 percentage points of the company average of 74.86%. The clinic also reached 100% iAssign utilization in February, demonstrating complete adoption of assignment protocols and positioning MOASD as a model for systematic workflow discipline across the network."
+          "MOASD achieved a 30-point gain in scheduler compliance, rising from 42.8% in January to 72.8% in February, now tracking within 2 percentage points of the company average of 74.86%. The clinic also maintained perfect iAssign utilization at 100.0%, the highest adoption in the cohort, while chair utilization grew modestly from 67.0% in January to 69.3% in February, keeping pace with the company average of 67.46%."
         ],
         "concerns": [
-          "We noticed that treatments extending past closing time rose from 0.1 per day in January to 0.2 per day in February, a 220% month-over-month increase; while modest in absolute terms, this trend warrants brief review to ensure the compliance gains are not creating downstream scheduling pressure. Nurse utilization at 55.2% sits notably below optimal capacity, and we would benefit from exploring whether chair assignments via iAssign are being fully matched with available nursing bandwidth to unlock additional throughput."
+          "We noticed that La Jolla's chair utilization stands at 45.6%, representing a 32-point gap below the company average of 67.46%, suggesting meaningful opportunity to align scheduling volume with available capacity. Alongside this, La Jolla's nurse utilization has declined over the past three months, averaging 38.0% and falling to 35.5% in February, which we might explore in relation to iAssign assignment patterns to ensure clinical workflows are fully leveraged."
         ],
         "recommendations": [
-          "We recommend that La Jolla conduct a targeted review of its chair utilization patterns, as the clinic's utilization of 45.6% falls substantially short of the company average of 67.46%\u2014a 32-point gap representing significant underdeployed capacity. A concrete first step would be to audit the clinic's scheduling templates and patient volume distribution against iOptimize recommendations, to identify whether template constraints or patient mix shifts are limiting chair throughput, then pilot corrective adjustments in a 2-week window before broader rollout."
+          "We recommend that La Jolla conduct a focused audit of its scheduling templates and nurse-to-chair assignment workflows to close the 32-point chair utilization gap against the company average of 67.46%. Given the clinic's strong iAssign adoption at 93.3%, a review of how assignments align with actual patient volume would help identify whether template constraints or patient mix factors are constraining capacity use, and we'd welcome partnering on this exercise."
         ]
       }
     }

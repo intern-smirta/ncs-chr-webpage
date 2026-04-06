@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "NCS",
-    "generated_at": "2026-03-31T20:57:52.147175Z",
+    "generated_at": "2026-03-31T21:00:12.953750Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -945,15 +945,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "NCS operated across 2 locations in February 2026. Scheduler compliance ranged from 78.0% (Legacy) to 82.7% (Methodist).",
+        "executive_summary": "Both Legacy and Methodist delivered strong operational progress in February 2026, with scheduler compliance climbing 48.6 points at Legacy (from 52.5% in January to 78.0% in February) and 44.5 points at Methodist (from 57.2% in January to 82.7% in February), now tracking at or above the company average of 80.14%. Legacy achieved a performance score of 66 out of 100 (where 50 represents the network average) and Methodist reached 76 out of 100, reflecting disciplined execution across scheduling and patient flow metrics.",
         "highlights": [
-          "Legacy's turnaround on closing-time discipline was decisive. Minutes past close per patient dropped from 45.0 in January to 0.0 in February, eliminating all daily treatments that ran past scheduled end time. Methodist followed with a comparable shift: minutes past close per patient fell from 48.4 in January to 13.0 in February, a 73% reduction that reflects tighter operational tempo. Both clinics' scheduler compliance gains\u2014Legacy +48.6 percentage points and Methodist +44.5 percentage points\u2014suggest the iOptimize scheduling engine is now being applied with consistent discipline; both clinics report 100% iAssign utilization, which may be accompanying improved nurse-to-chair assignment efficiency."
+          "Legacy eliminated overtime entirely, reducing treatments past closing from 0.1 daily in January to 0.0 in February and minutes past close per patient from 45.0 to 0.0\u2014a complete resolution of our closing-time friction. Methodist showed parallel progress, cutting minutes past close per patient by 73.1% from 48.4 in January to 13.0 in February, while both clinics reduced average patient delay (Legacy fell to 4.9 minutes and Methodist to 5.2 minutes, each improving versus their January baselines), demonstrating tighter patient flow discipline."
         ],
         "concerns": [
-          "We noticed Legacy's chair utilization sits at 61.1%, trailing the company average of 66.31% by approximately 8 percentage points. This gap suggests unused chair capacity relative to network peers, despite the clinic's flawless compliance and on-time performance. Methodist, by contrast, operates at 71.5% chair utilization, above the company average, which may reflect better scheduling density or patient flow. One area worth exploring together at Legacy is whether scheduling templates are optimized for patient volume and acuity mix, or whether nurse-to-chair assignment patterns could absorb more throughput without sacrificing the operational discipline both clinics have now built."
+          "We noticed Legacy's chair utilization sits at 61.1%, which is 5.2 percentage points below the company average of 66.31%\u2014an 8% gap relative to the benchmark. Given that Legacy has maintained perfect iAssign utilization at 100.0% and nurse utilization at 65.4%, the underutilized chair capacity may reflect either conservative scheduling templates or an imbalance between appointment volume and available slots. Methodist's chair utilization of 71.5% sits comfortably above the company average, so Legacy offers a concrete opportunity to bring capacity alignment into focus."
         ],
         "recommendations": [
-          "We recommend Legacy conduct a structured audit of its scheduling templates and iOptimize recommendations to identify why chair capacity utilization lags 8 points behind the network average. A brief cross-clinic calibration session with Methodist's scheduling leads\u2014who have achieved 71.5% utilization with identical 100% iAssign adoption\u2014may surface differences in patient sequencing, buffer time allocation, or treatment-mix assumptions that can be tested and adapted. This action directly targets Legacy's largest performance gap without disrupting the compliance and overtime discipline the clinic has worked hard to establish."
+          "We recommend that Legacy conduct a focused audit of its current scheduling templates and iOptimize recommendations to understand why chair utilization remains 5.2 points below the company benchmark despite full iAssign adoption. A review of how appointment block sizes are configured and whether the scheduler's recommendations align with actual patient demand patterns may reveal quick wins to close this gap without adding complexity."
         ]
       }
     }

@@ -21,8 +21,6 @@ jobs:
       - run: npm ci
 
       - run: npm run build
-        env:
-          VITE_ANTHROPIC_API_KEY: ${{ secrets.VITE_ANTHROPIC_API_KEY }}
 
       - uses: peaceiris/actions-gh-pages@v4
         with:

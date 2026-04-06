@@ -1,18 +1,20 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useClinicData } from '../hooks/useClinicData'
+import { useAi } from '../contexts/AiContext'
 import NavBar from '../components/NavBar'
 import ScoreBadge from '../components/ScoreBadge'
 import KpiCard from '../components/KpiCard'
 import KpiTable from '../components/KpiTable'
 import TrendChart from '../components/TrendChart'
 import InsightPanel from '../components/InsightPanel'
-import ChatBot from '../components/ChatBot'
+import AiView from '../components/AiView'
 
 export default function ClinicView() {
   const { clientCode } = useParams()
   const { data, loading, error } = useClinicData(clientCode)
   const [selectedMonth, setSelectedMonth] = useState(null)
+  const { aiOpen } = useAi()
 
   if (loading) return (
     <div className="min-h-screen bg-slate-50">
@@ -45,6 +47,21 @@ export default function ClinicView() {
     const s = months[m]?.composite_score
     if (s !== null && s !== undefined) compositeByMonth[m] = s
   })
+
+  // AI view replaces all content below the NavBar
+  if (aiOpen) {
+    return (
+      <div className="h-screen flex flex-col bg-slate-900">
+        <NavBar />
+        <AiView
+          chatbotContext={chatbot_context}
+          currentMonthData={monthData}
+          clinicName={clientCode}
+          activeMonth={activeMonth}
+        />
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -164,8 +181,6 @@ export default function ClinicView() {
           </div>
         </section>
       </div>
-
-      <ChatBot chatbotContext={chatbot_context} currentMonthData={monthData} />
     </div>
   )
 }

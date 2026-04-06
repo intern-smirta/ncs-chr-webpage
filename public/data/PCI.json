@@ -1,7 +1,7 @@
 {
   "meta": {
     "client_code": "PCI",
-    "generated_at": "2026-03-31T20:57:52.240611Z",
+    "generated_at": "2026-03-31T21:00:12.973098Z",
     "months_available": [
       "2025-10",
       "2025-11",
@@ -1837,15 +1837,15 @@
         "onco_benchmark": {}
       },
       "ai_insights": {
-        "executive_summary": "PCI operated across 7 locations in February 2026. Scheduler compliance ranged from 68.9% (Pcinewnan) to 95.4% (PciSandySprings).",
+        "executive_summary": "PCI's February 2026 portfolio delivered mixed results across a portfolio where the network average Performance Score is 50 out of 100. Three clinics exceeded that benchmark\u2014PciStockbridge at 75, PciLocustGrove at 73, and PciSandySprings at 63\u2014while three fell below it: PciNewnan at 49, PciAtlanta at 46, and PciFayatteville at 38. The network showed broad gains in scheduler compliance across five clinics in February versus January, with progress in closing-time discipline at PciStockbridge, where minutes past close per patient fell 74.2% from 22.2 in January to 5.8 in February.",
         "highlights": [
-          "PciStockbridge achieved a composite performance score of 75 out of 100 (where 50 represents the network average), associated with a 74.2% reduction in minutes past close per patient, falling from 22.2 minutes in January to 5.8 minutes in February, alongside scheduler compliance of 87.2%, which exceeds the company average of 77.84%. PciLocustGrove and PciSandySprings demonstrated exceptional patient flow, with average delays of 4.9 and 10.2 minutes respectively, both tracking below the company average of 13.18 minutes."
+          "PciStockbridge delivered the month's strongest operational win, with minutes past close per patient improving 74.2% from 22.2 in January to 5.8 in February, alongside a 22.8% reduction in average delay from 19.0 to 14.7 minutes. PciLocustGrove achieved the lowest patient delay in the portfolio at 4.9 minutes\u201462.7% better than the company average of 13.0 minutes\u2014while maintaining scheduler compliance of 95.3%, matching PciSandySprings and exceeding the network average of 77.84%."
         ],
         "concerns": [
-          "We noticed that Pci Fayatteville is experiencing material scheduling friction, with an average delay of 22.4 minutes per patient\u2014nearly 70% above the company average of 13.18 minutes\u2014despite scheduler compliance rising from 59.0% in January to 74.2% in February. We also observed that Pci-Atlanta recorded 2.2 treatments running past closing time daily, more than triple the company average of 0.7, suggesting that flow coordination between chair and nurse scheduling may be worth reviewing alongside patient volume patterns at that location."
+          "We noticed PciFayatteville is carrying the portfolio's heaviest patient load burden: average delay of 22.4 minutes is 69.9% above the company average of 13.0 minutes, and this clinic trails all peers on this metric despite scheduler compliance of 74.2%. Alongside this, PciAtlanta shows a concerning pattern with 2.2 treatments running past closing daily\u2014245.3% above the company average of 0.7\u2014and nurse utilization declining across the last two months (3-month average: 60.5%). We'd benefit from understanding whether volume, staffing, or scheduling rhythm is the root driver at each site."
         ],
         "recommendations": [
-          "We recommend that Pci Fayatteville's scheduling team audit current appointment templates and nurse-to-chair assignment protocols to identify bottlenecks between patient arrival and treatment start. Given that iAssign utilization stands at 100% but delays persist, a focused review of how iAssign recommendations are being coincided with real-time chair flow\u2014rather than adoption of the tool itself\u2014may help convert the recent compliance gains into tangible reductions in wait time."
+          "We recommend scheduling a joint review with PciFayatteville leadership to audit the current scheduling templates and patient-to-chair flow against actual demand patterns; the 22.4-minute average delay suggests either templates misaligned with true appointment complexity or capacity constraints not yet visible in the compliance data. Pairing this with a review of how iAssign assignments are sequenced in the daily schedule may reveal optimization levers that don't require additional resources."
         ]
       }
     }
